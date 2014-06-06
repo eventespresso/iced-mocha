@@ -241,9 +241,17 @@ if($iced_mocha_fronttext4) {?><div id="front-text4"> <blockquote><?php echo do_s
 
 	 remove_filter( 'excerpt_length', 'iced_mocha_excerpt_length_slider', 999 );
 	 remove_filter( 'excerpt_more', 'iced_mocha_excerpt_more_slider', 999 );
-if ($iced_mocha_frontposts=="Enable"): get_template_part('content/content', 'frontpage'); endif;
-if ($iced_mocha_frontevents=="Enable"): get_template_part('content/content', 'frontevents'); endif; ?>
+   if ($iced_mocha_frontposts=="Enable" || $iced_mocha_frontevents=="Enable"):
+?>
+  <section id="container" class="one-column <?php //echo iced_mocha_get_layout_class(); ?>">
+    <div id="content" role="main">
+      <?php
+      if ($iced_mocha_frontposts=="Enable"): get_template_part('content/content', 'frontpage'); endif;
+      if ($iced_mocha_frontevents=="Enable"): get_template_part('content/content', 'frontevents'); endif; ?>
+   </div><!-- #content -->
+    <?php //iced_mocha_get_sidebar(); ?>
+  </section><!-- #container -->
+<?php endif; ?>
 </div> <!-- #pp-afterslider -->
 </div> <!-- #frontpage -->
 <?php // End of iced_mocha_frontpage_generator
-?>

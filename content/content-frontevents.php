@@ -11,21 +11,18 @@ $iced_mochas = iced_mocha_get_theme_options();
 foreach ($iced_mochas as $key => $value) { ${"$key"} = $value; } 
 ?>
 
-		<section id="container" class="one-column <?php //echo iced_mocha_get_layout_class(); ?>">
-
-			<div id="content" role="main">
-
+		
 			<?php //espresso_theme_before_content_hook();
 
 			if ( have_posts() ) :
 
 				/* Start the Loop */
 				$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-				$the_query = new WP_Query( array('posts_per_page'=>$iced_mochas['iced_mocha_fronteventscount'],'paged'=> $paged) ); 
+				$the_query = new WP_Query( array('post_type'=>'espresso_events','posts_per_page'=>$iced_mochas['iced_mocha_fronteventscount'],'paged'=> $paged) ); 
 				while ( $the_query->have_posts() ) : $the_query->the_post(); 
  
  		            global $more; $more=0; 
-					get_template_part( 'content/content', get_post_format() );
+					get_template_part( 'content/content', 'content' );
 
 				endwhile;
 
@@ -48,7 +45,3 @@ foreach ($iced_mochas as $key => $value) { ${"$key"} = $value; }
 			endif;
 			//espresso_theme_after_content_hook();
 			?>
-
-			</div><!-- #content -->
-		<?php //iced_mocha_get_sidebar(); ?>
-		</section><!-- #container -->

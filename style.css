@@ -2113,7 +2113,7 @@ margin: 0 0 5px 0;
 
 /* ARTICLES */
 
-article.post, article.page {
+article.post,article.espresso_events, article.page {
 	display:block;
 	overflow:hidden;
 	margin:0;
@@ -2747,6 +2747,7 @@ padding:10px;
 
 /* Magazine layout */
 .magazine-layout #content article.post,
+.magazine-layout #content article.espresso_events,
 .magazine-layout.search #content article{
 float:left; width:48%;
 padding: 0px 0px 10px;

@@ -11,9 +11,7 @@ $iced_mochas = iced_mocha_get_theme_options();
 foreach ($iced_mochas as $key => $value) { ${"$key"} = $value; } 
 ?>
 
-		<section id="container" class="one-column <?php //echo iced_mocha_get_layout_class(); ?>">
-
-			<div id="content" role="main">
+		
 
 			<?php //espresso_theme_before_content_hook();
 
@@ -48,7 +46,3 @@ foreach ($iced_mochas as $key => $value) { ${"$key"} = $value; }
 			endif;
 			//espresso_theme_after_content_hook();
 			?>
-
-			</div><!-- #content -->
-		<?php //iced_mocha_get_sidebar(); ?>
-		</section><!-- #container -->
