@@ -184,6 +184,7 @@ function iced_mocha_init_fn(){
 	add_settings_field('iced_mocha_breadcrumbs', __('Breadcrumbs','iced_mocha') , 'espresso_theme_setting_breadcrumbs_fn', __FILE__, 'graphics_section');
 	add_settings_field('iced_mocha_pagination', __('Pagination','iced_mocha') , 'espresso_theme_setting_pagination_fn', __FILE__, 'graphics_section');
 	add_settings_field('iced_mocha_menualign', __('Menu Alignment','iced_mocha') , 'espresso_theme_setting_menualign_fn', __FILE__, 'graphics_section');
+	add_settings_field('iced_mocha_contentmargins', __('Content Margins','iced_mocha') , 'espresso_theme_setting_contentmargins_fn', __FILE__, 'graphics_section');
 	add_settings_field('iced_mocha_image', __('Post Images Border','iced_mocha') , 'espresso_theme_setting_image_fn', __FILE__, 'graphics_section');
 	add_settings_field('iced_mocha_contentlist', __('Content List Bullets','iced_mocha') , 'espresso_theme_setting_contentlist_fn', __FILE__, 'graphics_section');
 	add_settings_field('iced_mocha_pagetitle', __('Page Titles','iced_mocha') , 'espresso_theme_setting_pagetitle_fn', __FILE__, 'graphics_section');
@@ -329,11 +330,11 @@ if ($iced_mocha_varalert): ?><div id="varlimitalert"> <?php echo $iced_mocha_var
 					<p class="imex-text"><?php _e("Without the import, the export would just be a fool's exercise. Make sure you have the exported file ready and see you after the mouse click.","iced_mocha"); ?></p>
                 </form>
 				<br />
-			<!--	<form action="" method="post">
+			<form action="" method="post">
                     <input type="hidden" name="iced_mocha_presets" value="true" />
                     <input type="submit" class="button" id="presets_button" value="<?php _e('Color Schemes', 'iced_mocha'); ?>" />
 					<p class="imex-text"><?php _e("A collection of preset color schemes to use as the starting point for your site. Just load one up and see your blog in a different light.","iced_mocha"); ?></p>
-                </form>  -->
+                </form> 
 
 		</div><!-- inside -->
 	</div><!-- export -->
