@@ -1,4 +1,4 @@
-Event Espresso - Iced Mocha Theme for WordPress
+Iced Mocha Theme
 ==========
 
 The Iced Mocha Theme by Event Espresso is packed full of features and is fully integrated with Event Espresso 4.
