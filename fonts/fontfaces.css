@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('DroidSans-webfont.eot');
+    src: url('DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DroidSans-webfont.woff') format('woff'),
+         url('DroidSans-webfont.ttf') format('truetype'),
+         url('DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url('ubuntu-light-webfont.eot');
+    src: url('ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-light-webfont.woff') format('woff'),
+         url('ubuntu-light-webfont.ttf') format('truetype'),
+         url('ubuntu-light-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('ubuntu-regular-webfont.eot');
+    src: url('ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu-regular-webfont.woff') format('woff'),
+         url('ubuntu-regular-webfont.ttf') format('truetype'),
+         url('ubuntu-regular-webfont.svg#ubunturegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Regular-webfont.woff') format('woff'),
+         url('OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('OpenSans-Light-webfont.eot');
+    src: url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Light-webfont.woff') format('woff'),
+         url('OpenSans-Light-webfont.ttf') format('truetype'),
+         url('OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz Regular';
+    src: url('yanonekaffeesatz-regular-webfont.eot');
+    src: url('yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('yanonekaffeesatz-regular-webfont.woff') format('woff'),
+         url('yanonekaffeesatz-regular-webfont.ttf') format('truetype'),
+         url('yanonekaffeesatz-regular-webfont.svg#yanone_kaffeesatzregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz Light';
+    src: url('yanonekaffeesatz-light-webfont.eot');
+    src: url('yanonekaffeesatz-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('yanonekaffeesatz-light-webfont.woff') format('woff'),
+         url('yanonekaffeesatz-light-webfont.ttf') format('truetype'),
+         url('yanonekaffeesatz-light-webfont.svg#yanone_kaffeesatzlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'Oswald Light';
+    src: url('Oswald-Light-webfont.eot');
+    src: url('Oswald-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Oswald-Light-webfont.woff') format('woff'),
+         url('Oswald-Light-webfont.ttf') format('truetype'),
+         url('Oswald-Light-webfont.svg#OswaldLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Regular-webfont.eot');
+    src: url('Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Oswald-Regular-webfont.woff') format('woff'),
+         url('Oswald-Regular-webfont.ttf') format('truetype'),
+         url('Oswald-Regular-webfont.svg#OswaldBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ICON FONT - ELUSIVE */
+@font-face {
+  font-family: 'elusive';
+  src: url('elusive.eot');
+  src: url('elusive.eot?#iefix') format('embedded-opentype'),
+       url('elusive.woff') format('woff'),
+       url('elusive.ttf') format('truetype'),
+       url('elusive.svg?#elusive') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'elusive';
+    src: url('../font/elusive.svg?#elusive') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "elusive";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: inherit;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);  */
+   
+   cursor:inherit;
+   font-size:inherit;
+}
+
+/* Post info */
+.icon-author:before { content: '\e801'; } /* '?' */
+.icon-category:before { content: '\e805'; } /* '?' */
+.icon-category2:before { content: '\e817'; } /* '?' */
+.icon-folder-close:before { content: '\e81c'; } /* '?' */
+.icon-folder-open:before { content: '\e81d'; } /* '?' */
+.icon-tag:before { content: '\e802'; } /* '?' */
+.icon-bookmark:before { content: '\e810'; } /* '?' */
+.icon-edit:before { content: '\e804'; } /* '?' */
+.icon-comment:before { content: '\e800'; } /* '?' */
+.icon-comments:before { content: '\e815';} /* '?' */
+.icon-replies {float:left;margin-right:5px;}
+.icon-replies:before { content: '\e815';font-size:26px; } /* '?' */
+.icon-date:before { content: '\e82b'; } /* '?' */
+.icon-time:before { content: '\e80d'; } /* '?' */
+.icon-forward:before { content: '\e81b';-webkit-transform:rotate(180deg)  scale(-1, 1);-ms-transform:rotate(180deg)  scale(-1, 1);transform:rotate(180deg) scale(-1, 1);margin-left:5px;font-size:10px;
+-moz-transition:.2s margin ease; -o-transition:.2s margin ease; -webkit-transition:.2s margin ease; transition:.2s margin ease; } /* '?' */
+.icon-reply:before { content: '\e81b';transform:rotate(180deg);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);margin-right:5px;font-size:10px;
+-moz-transition:.2s margin ease; -o-transition:.2s margin ease; -webkit-transition:.2s margin ease; transition:.2s margin ease; } /* '?' */
+
+/* Post metas */
+.icon-metas:before {
+font-size:11px;
+cursor:pointer;
+margin-right:5px;
+color:#555;
+}
+
+.icon-comments:before {font-size:12px; } /* '?' */
+.icon-time:before,.icon-folder-close:before, .icon-folder-open:before {font-size:11px; } /* '?' */
+.icon-edit:before {margin-right:1px; } /* '?' */
+
+/* Post formats */
+.icon-status:before { content: '\e81a'; } /* '?' */
+.icon-aside:before { content: '\e82a'; } /* '?' */
+.icon-link:before { content: '\e818'; } /* '?' */
+.icon-audio:before { content: '\e823'; } /* '?' */
+.icon-video:before { content: '\e829'; } /* '?' */
+.icon-image:before { content: '\e824'; } /* '?' */
+.icon-gallery:before { content: '\e825'; } /* '?' */
+.icon-quote:before { content: '\e80f'; } /* '?' */
+
+/* Misc */
+.icon-search:before { content: '\e816'; } /* '?' */
+.icon-ok:before { content: '\e811'; } /* '?' */
+.icon-home:before { content: '\e819'; } /* '?' */
+.icon-plus:before { content: '\e813'; } /* '?' */
+.icon-minus:before { content: '\e814'; } /* '?' */
+.icon-cancel:before { content: '\e812'; } /* '?' */
+
+/* Arrows */
+.icon-down-dir:before { content: '\e80e'; } /* '?' */
+.icon-up-dir:before { content: '\e830'; } /* '?' */
+.icon-left-dir:before { content: '\e831'; } /* '?' */
+.icon-right-dir:before { content: '\e832'; } /* '?' */
+.icon-angle-left:before { content: '\e833'; } /* '?' */
+.icon-angle-right:before { content: '\e834'; } /* '?' */
+.icon-angle-up:before { content: '\e835'; } /* '?' */
+.icon-angle-down:before { content: '\e836'; } /* '?' */
+.icon-down-open:before { content: '\e803'; } /* '?' */
+.icon-left-open:before { content: '\e806'; } /* '?' */
+.icon-right-open:before { content: '\e807'; } /* '?' */
+.icon-up-open:before { content: '\e808'; } /* '?' */
+.icon-down:before { content: '\e809'; } /* '?' */
+.icon-left:before { content: '\e80a'; } /* '?' */
+.icon-right:before { content: '\e80b'; } /* '?' */
+.icon-up:before { content: '\e80c'; } /* '?' */
+
+
+ 

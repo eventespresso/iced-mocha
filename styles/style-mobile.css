@@ -1,0 +1,194 @@
+	/* =Responsive Structure 
+	----------------------------------------------- */ 
+@media (max-width: 1100px) { 
+	body.mobile #header, body.mobile #access, body.mobile #branding, body.mobile #topbar-inner, body.mobile #footer-widget-area { width:100%; } 
+	body.mobile .topmenu {float:left;}
+	body.mobile #header-full, body.mobile #footer { min-width: 100%; } 
+	body.mobile #wrapper, body.mobile #colophon, body.mobile #main, body.mobile article.post, body.mobile #container, body.mobile #linky {width: auto;} 
+	body.mobile #branding, body.mobile #bg_image { min-height:100px; } 
+	
+	body.mobile	#footer2 {margin-bottom:0;}
+	body.mobile #footer {margin-top:0;}
+	
+	body.mobile #forbottom,body.mobile  #colophon {margin:0 20px;}
+	body.mobile.presentation-page #forbottom{margin:0;}
+	body.mobile.presentation-page #pp-afterslider {margin:0 20px;}
+	body.mobile #front-text1,body.mobile  #front-text2 {padding:20px 0;} 
+	body.mobile .nivo-caption {top:0;left:0;width:100%;bottom:auto;}
+	 
+	body.mobile #bg_image {width:100%;} 
+	body.mobile #header-container > div {height:100%;} 
+	 
+	body.mobile a#logo { height:100%; display: block !important; } 
+	body.mobile a#logo img { width:auto; max-width:90%;height:80%; } 
+	body.mobile.safari a#logo img { max-height: 80px;height:auto; } 
+ 
+	body.mobile .nivo-caption h2 {margin-bottom:5px;} 
+	 
+	body.mobile #slefts, body.mobile #srights {display:none;} 
+ 
+	body.mobile #access .menu-header, body.mobile div.menu {margin:0 5px;} 
+	body.mobile #container[class*='column'] #primary, body.mobile #container[class*='column'] #secondary, 
+	body.mobile #container[class*='column'] #content {width:100%;float:none;margin:0;clear:both;} 
+	body.mobile #container[class*='column'] #content {margin-bottom:20px !important;} 
+ 
+	body.mobile .slider-wrapper {width:100%;}
+	body.mobile #slider {width:auto;height:auto;} 
+ 
+	body.mobile #content img, body.mobile #content article.post img, body.mobile #content article .wp-caption, body.mobile article embed { 
+		max-width:100% !important; 
+ } 
+
+ 	body.mobile #site-title span a {font-size:35px;line-height: 40px;} 
+	body.mobile #site-description {font-size:15px;line-height: 20px;} 
+
+	body.mobile #site-title, body.mobile #site-description { margin-left: 5px; } 
+
+	body.mobile article.post, body.mobile article.page {padding:20px 10px 10px;} 
+	body.mobile article.sticky {padding:20px 5px 5px;border-width:5px;} 
+	body.mobile .footertwo .widget-area, body.mobile .footerthree .widget-area, body.mobile .footerfour .widget-area {width:98%;margin-left:1%;} 
+	body.mobile {-webkit-text-size-adjust: 100%;} /* Iphone browser fix*/ 
+	body.mobile .nivo-controlNav {top:-30px;}
+	
+	/* Column text and Readmore button visible on mobile devices */
+	body.mobile .column-image {overflow:visible;}	body.mobile .column-image-inside {display:none;}
+	body.mobile .column-text {position:relative;top:0;left:0;-webkit-transform:none;transform:none;-webkit-transition:none;transition:none;font-size:15px;line-height:1.7em;color:#999;padding:10px 0;width:100%;display:table;margin:0 auto;}
+	body.mobile .columnmore {position:relative;bottom:0;}
+	body.mobile .column-image:hover .columnmore {bottom:0;}
+	
+} 
+	
+	
+@media (max-width: 800px) {
+	#header, #access, #branding, #topbar-inner,  #footer-widget-area { width:100%; }
+	.topmenu {float:left;}
+	#header-full, #footer { min-width: 100%; }
+	#wrapper, #colophon,  #main, article.post, #container, #linky {width: auto;}
+	#branding, #bg_image { min-height:100px; }
+	#footer2 {margin-bottom:0;}
+	#footer {margin-top:0;}
+	
+	#forbottom, #colophon {margin:0 20px;}
+	.presentation-page #forbottom{margin:0;}
+	.presentation-page #pp-afterslider {margin:0 20px;}
+	#front-text1, #front-text2 {padding:20px 0;} 
+	.nivo-caption {top:0;left:0;width:100%;bottom:auto;}
+	
+	#bg_image {width:100%;}
+	#header-container > div {height:100%;}
+	
+	a#logo { height:100%; display: block !important; }
+	a#logo img { width:auto; max-width:90%;height:80%; }
+	.safari a#logo img { max-height: 80px;height:auto; }
+	
+	.nivo-caption h2 {margin-bottom:5px;}
+	
+	#slefts, #srights {display:none;}
+	
+	#access .menu-header, div.menu {margin:0 5px;}
+	#container[class*='column'] #primary, #container[class*='column'] #secondary, 
+	#container[class*='column'] #content {width:100%;float:none;margin:0;clear:both;} 
+	#container[class*='column'] #content {margin-bottom:20px !important;}
+	
+	.slider-wrapper {width:100%;}
+	#slider {width:auto;height:auto;}
+	
+	#front-columns > div {width:47%;}
+	#front-columns div.column1 {clear:none;}
+	#front-columns > div.column3 {margin-right:5%;}
+	#front-columns > div:nth-child(2n+2){margin-right:0;}
+	.column-image img {/*height:auto;*/}
+	.column-image > div { }
+	
+	#content img, #content article.post img, #content article .wp-caption, article embed {
+		max-width:100% !important;
+	}
+	
+	#site-title span a {font-size:35px;line-height: 40px;}
+	#site-description {font-size:15px;line-height: 20px;}
+	
+	#site-title, #site-description { margin-left: 5px; }
+	
+	article.post, article.page {padding:20px 10px 10px;}
+	article.sticky {padding:20px 5px 5px;border-width:5px;}
+	.footertwo .widget-area, .footerthree .widget-area, .footerfour .widget-area {width:100%;}	
+	body {-webkit-text-size-adjust: 100%;} /* Iphone browser fix*/
+}
+
+@media (max-width: 650px) {
+	body, #content, #content p, #content ul, #content ol,#content code, #content pre, #content blockquote {
+		font-size: 13px !important;}
+
+	#main {margin-top:1px;}	
+	#forbottom, #colophon {margin:0 10px;}
+	.presentation-page #forbottom{margin:0;}
+	.presentation-page #pp-afterslider {margin:0 10px;}
+	
+	#branding {	height:auto; }
+	a#logo img {margin-top:-25px;max-height:75%;max-width:90%;width:auto;height:auto;}
+	#header-container > div { margin-top:35px; }
+	
+	#site-title span a {font-size:25px;line-height: 30px;}
+	#site-description {margin-top:3px;font-size:12px;line-height: 15px;}
+	#front-text1 h1, #front-text2 h1 {font-size:2em;line-height:1.3em;}
+	#front-text2 h1{margin-bottom:0px;}
+	#frontpage blockquote { font-size: 1.0em; line-height: 1.6em; padding: 10px 0; }
+	
+	.nivo-caption h2 {font-size:16px;padding:5px 10px;}
+	
+	article.intro .entry-content {font-size: 12px;}
+	.featured-post .entry-title {font-size: 14px;}
+	.entry-meta a , .entry-meta, .comments-link{
+		font-size: 10px !important;
+	}
+
+	#content .entry-title {font-size:30px !important;}
+	#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+		margin-left:0 !important;}
+		
+	#front-columns > div { margin-bottom: 10px; }
+		
+	.widget-area a:link, .widget-area a:visited { font-size:12px !important; }	
+	.tinynav	{ display: block;}
+    #access .menu ul:first-child { display: none;}
+	.theme-default .nivo-caption { font-size:9px; }	
+	#content p, #content ul, #content ol, .sidey, .sidey a, table, table td { line-height: 1.4em; }
+	
+
+	.nivo-directionNav { display: none; }
+	
+	#header .socials a { width: 20px; height: 20px; }
+	#header .socials a img { width: 20px; height: 20px; }
+	
+	.theme-default .nivoSlider {background-image:none;}
+	.nivo-caption {position:relative;padding:5px 5px 35px;background:#222;color:#EEE;}
+	.slide-text {font-size:12px;}
+	
+	.column-header-image {margin-bottom:0;font-size:20px;}
+	
+	.footermenu {display:table;margin:0 auto;float:none;}
+	
+}
+
+
+@media (max-width: 480px) {	
+	body, #content, #content p, #content ul, #content ol,#content code, #content pre, #content blockquote {
+		font-size: 12px !important;}
+	
+	#site-title span a{font-size: 18px;line-height:20px;}
+	#site-description {	font-size: 11px;line-height:10px;}
+	
+	
+	.nivo-caption h2 {margin-bottom:0px;font-size:14px;}
+	
+	body {padding: 0;}
+	#page {margin-top: 0;}
+	.magazine-layout #content article.post, .magazine-layout .search #content article{margin:5px 0;width:100%;}
+	#front-columns > div { width:90%; display:table; margin:10px auto !important;float:none;clear:both;}
+	.column-image img {height:auto;}
+}
+
+/* used to be 400px */
+@media (max-width: 480px) {	
+
+}

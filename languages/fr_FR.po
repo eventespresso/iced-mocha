@@ -1,0 +1,2741 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Iced Mocha Theme v0.9.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-04 23:00+0200\n"
+"PO-Revision-Date: 2014-01-14 14:59:46+0000\n"
+"Last-Translator: Jérôme Avisseau <dvorakliszt@gmail.com>\n"
+"Language-Team: Event Espresso\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:17
+#@ iced_mocha
+msgid "Not Found"
+msgstr "Pas trouvé"
+
+#: 404.php:20
+#@ iced_mocha
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr "Désolé, la page que vous voulez charger ne peut être trouvée. Lancez une recherche."
+
+#: archive.php:26
+#, php-format
+#@ iced_mocha
+msgid "Daily Archives: %s"
+msgstr "Archives du jour : %s"
+
+#: archive.php:28
+#, php-format
+#@ iced_mocha
+msgid "Monthly Archives: %s"
+msgstr "Archives du mois : %s"
+
+#: archive.php:30
+#, php-format
+#@ iced_mocha
+msgid "Yearly Archives: %s"
+msgstr "Archives de l'année : %s"
+
+#: archive.php:32
+#@ iced_mocha
+msgid "Blog Archives"
+msgstr "Archives du blog"
+
+#: archive.php:56
+#: author.php:71
+#: category.php:49
+#: content/content-frontpage.php:38
+#: content/content-index.php:37
+#: search.php:38
+#: tag.php:50
+#: templates/template-blog.php:34
+#@ iced_mocha
+msgid "Nothing Found"
+msgstr "Pas trouvé"
+
+#: archive.php:60
+#: author.php:75
+#: category.php:53
+#: content/content-frontpage.php:42
+#: content/content-index.php:41
+#: tag.php:54
+#: templates/template-blog.php:38
+#@ iced_mocha
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Désolé, aucun résultat trouvé pour cette archive. Une recherche peut vous aide à trouver un article similaire."
+
+#: attachment.php:18
+#, php-format
+#@ iced_mocha
+msgid "Return to %s"
+msgstr "Retour à %s"
+
+#. translators: %s - title of parent post
+#: attachment.php:32
+#, php-format
+#@ iced_mocha
+msgid "Full size is %s pixels"
+msgstr "La taille réelle est de %s pixels"
+
+#: attachment.php:35
+#@ iced_mocha
+msgid "Link to full-size image"
+msgstr "Lien vers l'image en taille réelle"
+
+#: attachment.php:75
+#: content/content-page.php:23
+#: includes/theme-loop.php:201
+#: single.php:49
+#: templates/template-page-with-intro.php:17
+#@ iced_mocha
+msgid "Edit"
+msgstr "Editer"
+
+#: attachment.php:86
+#@ iced_mocha
+msgid "Continue reading"
+msgstr "Suite"
+
+#: attachment.php:87
+#: content/content-aside.php:29
+#: content/content-audio.php:24
+#: content/content-chat.php:29
+#: content/content-gallery.php:51
+#: content/content-image.php:23
+#: content/content-link.php:29
+#: content/content-page.php:22
+#: content/content-quote.php:27
+#: content/content-video.php:24
+#: content/content.php:40
+#: content/content.php:56
+#: single.php:27
+#: templates/template-page-with-intro.php:16
+#@ iced_mocha
+msgid "Pages:"
+msgstr "Pages :"
+
+#: attachment.php:92
+#@ iced_mocha
+msgid "Previous image"
+msgstr "Image précédente"
+
+#: attachment.php:93
+#@ iced_mocha
+msgid "Next image"
+msgstr "Image suivante"
+
+#: author.php:29
+#, php-format
+#@ iced_mocha
+msgid "Author Archives: %s"
+msgstr "Archives de l'auteur : %s"
+
+#: category.php:20
+#, php-format
+#@ iced_mocha
+msgid "Category Archives: %s"
+msgstr "Archives de la catégorie : %s"
+
+#: comments.php:25
+#@ iced_mocha
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Cet article est protégé par mot de passe. Entrez-le pour voir les commentaires."
+
+#: comments.php:50
+#@ iced_mocha
+msgid "Comments are closed"
+msgstr "Les commentaires sont fermés"
+
+#: search.php:18
+#, php-format
+#@ iced_mocha
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour : %s"
+
+#: search.php:40
+#, php-format
+#@ iced_mocha
+msgid "No search results for: %s."
+msgstr "Pas de résultat pour : %s"
+
+#: searchform.php:1
+#@ iced_mocha
+msgid "Search"
+msgstr "Recherche"
+
+#: admin/settings.php:1564
+#: includes/theme-setup.php:210
+#: sidebar-left.php:26
+#@ iced_mocha
+msgid "Left Sidebar"
+msgstr "Barre latérale gauche"
+
+#: sidebar-left.php:28
+#, php-format
+#@ iced_mocha
+msgid "You currently have no widgets set in the left sidebar. You can add widgets via the <a href=\"%s\">Dasboard</a>."
+msgstr "Vous n'avez pas de widget dans la barre latérale gauche. Vous pouvez en installer via <a href=\"%s\">Dasboard</a>."
+
+#: sidebar-left.php:29
+#: sidebar-right.php:29
+#, php-format
+#@ iced_mocha
+msgid "To hide this sidebar, switch to a different Layout via the <a href=\"%s\">Theme Settings</a>."
+msgstr "Pour cacher cette barre latérale, optez pour une disposition différente via <a href=\"%s\">Theme Settings</a>."
+
+#: admin/settings.php:1568
+#: includes/theme-setup.php:221
+#: sidebar-right.php:26
+#@ iced_mocha
+msgid "Right Sidebar"
+msgstr "Barre latérale droite"
+
+#: sidebar-right.php:28
+#, php-format
+#@ iced_mocha
+msgid "You currently have no widgets set in the right sidebar. You can add widgets via the <a href=\"%s\">Dasboard</a>."
+msgstr "Vous n'avez pas de widget dans la barre latérale droite. Vous pouvez en installer via <a href=\"%s\">Dasboard</a>."
+
+#: single.php:40
+#@ iced_mocha
+msgid "View all posts by "
+msgstr "Voir tous les articles de "
+
+#: tag.php:21
+#, php-format
+#@ iced_mocha
+msgid "Tag Archives: %s"
+msgstr "Mots-clés des archives : %s"
+
+#: admin/admin-functions.php:62
+#@ iced_mocha
+msgid "Before you can upload your import file, you will need to fix the following error:"
+msgstr "Avant de charger votre fichier, supprimez l'erreur suivante :"
+
+#: admin/admin-functions.php:70
+#@ iced_mocha
+msgid "Import Iced Mocha Options"
+msgstr "Importer les réglages"
+
+#: admin/admin-functions.php:72
+#@ iced_mocha
+msgid "Hi! This is where you import the  Iced Mocha Theme settings.<i> Please remember that this is still an experimental feature.</i>"
+msgstr "Ici, vous importez les réglages de Iced Mocha Theme.<i> Attention : caractéristique en cours de développement !</i>"
+
+#: admin/admin-functions.php:74
+#@ iced_mocha
+msgid "Just choose a file from your computer:"
+msgstr "Sélectionnez un fichier sur votre ordinateur"
+
+#: admin/admin-functions.php:76
+#, php-format
+#@ iced_mocha
+msgid "Maximum size: %s"
+msgstr "Taille maxi : %s"
+
+#: admin/admin-functions.php:82
+#@ iced_mocha
+msgid "And import!"
+msgstr "Importez !"
+
+#: admin/admin-functions.php:148
+#@ iced_mocha
+msgid "Import Iced Mocha Options "
+msgstr "Importer les réglages"
+
+#: admin/admin-functions.php:151
+#@ iced_mocha
+msgid "Great! The options have been imported!"
+msgstr "Les options ont été importées !"
+
+#: admin/admin-functions.php:152
+#@ iced_mocha
+msgid "Go back to the Iced Mocha Theme options page and check them out!"
+msgstr "Retournez sur la page des options de Iced Mocha Theme et vérifiez celles-ci !"
+
+#: admin/admin-functions.php:155
+#: admin/admin-functions.php:161
+#: admin/admin-functions.php:167
+#@ iced_mocha
+msgid "Oops, there's a small problem."
+msgstr "Oups, il y a un petit problème..."
+
+#: admin/admin-functions.php:156
+#@ iced_mocha
+msgid "The uploaded file does not contain valid Iced Mocha Theme options. Make sure the file is exported from the Iced Mocha Theme Options page."
+msgstr "Le fichier importé ne contient pas d'options Iced Mocha Theme. Assurez-vous qu'il a été créé à partir d'une page des options de Iced Mocha Theme."
+
+#: admin/admin-functions.php:162
+#@ iced_mocha
+msgid "The uploaded file could not be read."
+msgstr "Le fichier importé ne peut être lu."
+
+#: admin/admin-functions.php:168
+#@ iced_mocha
+msgid "The uploaded file is not supported. Make sure the file was exported from the Iced Mocha Theme page and that it is a text file."
+msgstr "Le fichier importé n'est pas lisible. Assurez-vous qu'il a été créé à partir de la page Iced Mocha Theme au format texte."
+
+#: admin/admin-functions.php:177
+#@ iced_mocha
+msgid "Oops! The file is empty or there was no file. This error could also be caused by uploads being disabled in your php.ini or by post_max_size being defined as smaller than upload_max_filesize in php.ini."
+msgstr "Oups ! Le fichier est vide ou n'existe pas. Cette erreur peut aussi être causée par la désactivation des uploads dans le fichier php.ini ou si le paramètre post_max_size est inférieur à celui de upload_max_filesize dans php.ini."
+
+#: admin/admin-functions.php:183
+#@ iced_mocha
+msgid "ERROR: You are not authorised to perform that operation"
+msgstr "ERREUR : vous n'êtes pas autorisé(e) à effectuer cette opération"
+
+#: admin/admin-functions.php:198
+#@ iced_mocha
+msgid "Select one of the preset color schemes and press the Load button.<br> <b> CAUTION! </b> When loading a color scheme, the Iced Mocha Theme theme settings under Text and Color Settings will be overriden. All other settings will remain intact.<br> <u>SUGGESTION:</u> It's always better to export your current theme settings before loading a color scheme."
+msgstr "Sélectionnez l'un des jeux de couleurs préétablis et cliquez sur le bouton Importer.<br> <b> ATTENTION ! </b> En chargeant un jeu de couleurs, les réglages des rubriques Texte et Couleurs seront écrasés. Tous les autres réglages resteront inchangés.<br> <u>SUGGESTION :</u> Il est préférable de toujours exporter votre jeu de couleurs actuel avant d'en importer un autre."
+
+#: admin/admin-functions.php:222
+#@ iced_mocha
+msgid "Load Color Scheme"
+msgstr "Importer un jeu de couleurs"
+
+#: admin/main.php:114
+#@ iced_mocha
+msgid "Layout Settings"
+msgstr "Mise en page"
+
+#: admin/main.php:115
+#@ iced_mocha
+msgid "Header Settings"
+msgstr "En-tête"
+
+#: admin/main.php:116
+#: admin/main.php:172
+#@ iced_mocha
+msgid "Presentation Page"
+msgstr "Page de présentation"
+
+#: admin/main.php:117
+#@ iced_mocha
+msgid "Text Settings"
+msgstr "Texte"
+
+#: admin/main.php:118
+#@ iced_mocha
+msgid "Color Settings"
+msgstr "Couleurs"
+
+#: admin/main.php:119
+#@ iced_mocha
+msgid "Graphics Settings"
+msgstr "Graphiques"
+
+#: admin/main.php:120
+#@ iced_mocha
+msgid "Post Information Settings"
+msgstr "Articles et pages"
+
+#: admin/main.php:121
+#@ iced_mocha
+msgid "Post Excerpt Settings"
+msgstr "Extraits des articles"
+
+#: admin/main.php:122
+#@ iced_mocha
+msgid "Featured Image Settings"
+msgstr "Images à la Une"
+
+#: admin/main.php:123
+#@ iced_mocha
+msgid "Social Media Settings"
+msgstr "Réseaux sociaux"
+
+#: admin/main.php:124
+#@ iced_mocha
+msgid "Miscellaneous Settings"
+msgstr "Divers"
+
+#: admin/main.php:127
+#@ iced_mocha
+msgid "Main Layout"
+msgstr "Mise en page principale"
+
+#: admin/main.php:128
+#@ iced_mocha
+msgid "Content / Sidebar Width"
+msgstr "Largeur"
+
+#: admin/main.php:129
+#@ iced_mocha
+msgid "Responsiveness"
+msgstr "Adaptable tous écrans"
+
+#: admin/main.php:132
+#@ iced_mocha
+msgid "Enable Presentation Page"
+msgstr "Activer page de présentation"
+
+#: admin/main.php:133
+#@ iced_mocha
+msgid "Show Posts on Presentation Page"
+msgstr "Afficher articles sur page de présentation"
+
+#: admin/main.php:134
+#@ iced_mocha
+msgid "Slider Settings"
+msgstr "Réglages du slider"
+
+#: admin/main.php:135
+#@ iced_mocha
+msgid "Slides"
+msgstr "Diapositives"
+
+#: admin/main.php:136
+#: includes/theme-setup.php:311
+#@ iced_mocha
+msgid "Presentation Page Columns"
+msgstr "Colonnes page de présentation"
+
+#: admin/main.php:137
+#@ iced_mocha
+msgid "Extras"
+msgstr "Extras"
+
+#: admin/main.php:140
+#@ iced_mocha
+msgid "Header Height"
+msgstr "Hauteur de l'en-tête"
+
+#: admin/main.php:141
+#@ iced_mocha
+msgid "Header Image"
+msgstr "Image de l'en-tête"
+
+#: admin/main.php:142
+#@ iced_mocha
+msgid "Site Header"
+msgstr "En-tête du site"
+
+#: admin/main.php:143
+#@ iced_mocha
+msgid "Custom Logo Upload"
+msgstr "Importer votre logo"
+
+#: admin/main.php:144
+#@ iced_mocha
+msgid "Header Content Spacing"
+msgstr "Espacement de l'en-tête"
+
+#: admin/main.php:145
+#@ iced_mocha
+msgid "FavIcon Upload"
+msgstr "Charger un FavIcon"
+
+#: admin/main.php:148
+#: admin/settings.php:603
+#: admin/settings.php:622
+#: admin/settings.php:640
+#: admin/settings.php:658
+#: admin/settings.php:679
+#@ iced_mocha
+msgid "General Font"
+msgstr "Police standard"
+
+#: admin/main.php:149
+#@ iced_mocha
+msgid "Post Title Font "
+msgstr "Police des titres d'articles"
+
+#: admin/main.php:150
+#@ iced_mocha
+msgid "Widget Title Font"
+msgstr "Police des titres de widget"
+
+#: admin/main.php:151
+#@ iced_mocha
+msgid "Site Title Font"
+msgstr "Police du titre du site"
+
+#: admin/main.php:152
+#@ iced_mocha
+msgid "Main Menu Font"
+msgstr "Police du menu principal"
+
+#: admin/main.php:153
+#@ iced_mocha
+msgid "Headings Font"
+msgstr "Police des titres"
+
+#: admin/main.php:154
+#@ iced_mocha
+msgid "Force Text Align"
+msgstr "Forcer l'alignement du texte"
+
+#: admin/main.php:155
+#@ iced_mocha
+msgid "Paragraph spacing"
+msgstr "Espacement inter-paragraphes"
+
+#: admin/main.php:156
+#@ iced_mocha
+msgid "Paragraph Indent"
+msgstr "Indentation des paragraphes"
+
+#: admin/main.php:157
+#@ iced_mocha
+msgid "Headings Indent"
+msgstr "Indentation des titres"
+
+#: admin/main.php:158
+#@ iced_mocha
+msgid "Line Height"
+msgstr "Interligne"
+
+#: admin/main.php:159
+#@ iced_mocha
+msgid "Word Spacing"
+msgstr "Espacement des mots"
+
+#: admin/main.php:160
+#@ iced_mocha
+msgid "Letter Spacing"
+msgstr "Approche des caractères"
+
+#: admin/main.php:161
+#@ iced_mocha
+msgid "Uppercase Text"
+msgstr "Mise en majuscules"
+
+#: admin/main.php:165
+#@ iced_mocha
+msgid "Background Image"
+msgstr "Image d'arrière-plan"
+
+#: admin/main.php:166
+#@ iced_mocha
+msgid "General"
+msgstr "Général"
+
+#: admin/main.php:167
+#@ iced_mocha
+msgid "Accents"
+msgstr "Spécial"
+
+#: admin/main.php:168
+#: admin/settings.php:801
+#@ iced_mocha
+msgid "Site Title"
+msgstr "Titre du site"
+
+#: admin/main.php:169
+#@ iced_mocha
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: admin/main.php:170
+#: admin/main.php:182
+#: admin/settings.php:1546
+#@ iced_mocha
+msgid "Top Bar"
+msgstr "Barre supérieure"
+
+#: admin/main.php:171
+#@ iced_mocha
+msgid "Content"
+msgstr "Contenu"
+
+#: admin/main.php:173
+#@ iced_mocha
+msgid "Sidebar Widgets"
+msgstr "Widgets - Barre latérale"
+
+#: admin/main.php:174
+#@ iced_mocha
+msgid "Footer Widgets"
+msgstr "Widgets - Pied de page"
+
+#: admin/main.php:175
+#@ iced_mocha
+msgid "Links"
+msgstr "Liens"
+
+#: admin/main.php:176
+#@ iced_mocha
+msgid "Post metas"
+msgstr "Métadonnées des articles"
+
+#: admin/main.php:177
+#@ iced_mocha
+msgid "Socials"
+msgstr "Social"
+
+#: admin/main.php:178
+#@ iced_mocha
+msgid "Caption type"
+msgstr "Légende"
+
+#: admin/main.php:183
+#@ iced_mocha
+msgid "Breadcrumbs"
+msgstr "Fil d'Ariane"
+
+#: admin/main.php:184
+#@ iced_mocha
+msgid "Pagination"
+msgstr "Pagination"
+
+#: admin/main.php:185
+#@ iced_mocha
+msgid "Menu Alignment"
+msgstr "Alignement du menu"
+
+#: admin/main.php:186
+#@ iced_mocha
+msgid "Post Images Border"
+msgstr "Cadre des images"
+
+#: admin/main.php:187
+#@ iced_mocha
+msgid "Content List Bullets"
+msgstr "Listes à puces"
+
+#: admin/main.php:188
+#@ iced_mocha
+msgid "Page Titles"
+msgstr "Titres des pages"
+
+#: admin/main.php:189
+#@ iced_mocha
+msgid "Category Titles"
+msgstr "Titres des catégories"
+
+#: admin/main.php:190
+#@ iced_mocha
+msgid "Hide Tables"
+msgstr "Cacher les tableaux"
+
+#: admin/main.php:191
+#@ iced_mocha
+msgid "Back to Top button"
+msgstr "Bouton \"retour en haut\""
+
+#: admin/main.php:194
+#@ iced_mocha
+msgid "Meta Bar Position"
+msgstr "Position de la barre de métadonnées"
+
+#: admin/main.php:195
+#@ iced_mocha
+msgid "Show on Blog Metas"
+msgstr "Afficher sur le blog"
+
+#: admin/main.php:196
+#@ iced_mocha
+msgid "Show on Single Pages"
+msgstr "Afficher sur les pages"
+
+#: admin/main.php:197
+#@ iced_mocha
+msgid "Text Under Comments"
+msgstr "Texte sous les commentaires"
+
+#: admin/main.php:198
+#@ iced_mocha
+msgid "Comments are closed text"
+msgstr "Mention \"commentaires fermés\""
+
+#: admin/main.php:199
+#@ iced_mocha
+msgid "Comments off"
+msgstr "Pas de commentaires"
+
+#: admin/main.php:202
+#: includes/theme-functions.php:237
+#@ iced_mocha
+msgid "Home Page"
+msgstr "Page principale"
+
+#: admin/main.php:203
+#: admin/settings.php:333
+#: admin/settings.php:429
+#@ iced_mocha
+msgid "Sticky Posts"
+msgstr "Articles mis en avant"
+
+#: admin/main.php:204
+#@ iced_mocha
+msgid "Archive and Category Pages"
+msgstr "Pages Archives et Catégories"
+
+#: admin/main.php:205
+#@ iced_mocha
+msgid "Number of Words for Post Excerpts "
+msgstr "Nombre de mots pour les extraits"
+
+#: admin/main.php:206
+#@ iced_mocha
+msgid "Magazine Layout"
+msgstr "Disposition \"magazine\""
+
+#: admin/main.php:207
+#@ iced_mocha
+msgid "Excerpt suffix"
+msgstr "Suffixe des extraits"
+
+#: admin/main.php:208
+#@ iced_mocha
+msgid "Continue reading link text "
+msgstr "Texte \"Continuer à lire\""
+
+#: admin/main.php:209
+#@ iced_mocha
+msgid "HTML tags in Excerpts"
+msgstr "Tags HTML dans les extraits"
+
+#: admin/main.php:212
+#@ iced_mocha
+msgid "Featured Images as POST Thumbnails "
+msgstr "Images à la Une comme vignettes"
+
+#: admin/main.php:213
+#@ iced_mocha
+msgid "Auto Select Images From Posts "
+msgstr "Auto-sélection d'images"
+
+#: admin/main.php:214
+#@ iced_mocha
+msgid "Thumbnails Alignment "
+msgstr "Alignement des vignettes"
+
+#: admin/main.php:215
+#@ iced_mocha
+msgid "Thumbnails Size "
+msgstr "Taille des vignettes"
+
+#: admin/main.php:216
+#@ iced_mocha
+msgid "Featured Images as HEADER Images "
+msgstr "Images à la Une comme En-Tête"
+
+#: admin/main.php:219
+#@ iced_mocha
+msgid "Link nr. 1"
+msgstr "Lien n°1"
+
+#: admin/main.php:220
+#@ iced_mocha
+msgid "Link nr. 2"
+msgstr "Lien n°2"
+
+#: admin/main.php:221
+#@ iced_mocha
+msgid "Link nr. 3"
+msgstr "Lien n°3"
+
+#: admin/main.php:222
+#@ iced_mocha
+msgid "Link nr. 4"
+msgstr "Lien n°4"
+
+#: admin/main.php:223
+#@ iced_mocha
+msgid "Link nr. 5"
+msgstr "Lien n°5"
+
+#: admin/main.php:224
+#@ iced_mocha
+msgid "Socials display"
+msgstr "Affichage réseaux sociaux"
+
+#: admin/main.php:227
+#@ iced_mocha
+msgid "Internet Explorer Compatibility Tag"
+msgstr "Compatibilité Internet Explorer"
+
+#: admin/main.php:228
+#@ iced_mocha
+msgid "Custom Footer Text"
+msgstr "Votre texte de pied de page"
+
+#: admin/main.php:229
+#@ iced_mocha
+msgid "Custom CSS"
+msgstr "Votre CSS"
+
+#: admin/main.php:230
+#@ iced_mocha
+msgid "Custom JavaScript"
+msgstr "Votre JavaScript"
+
+#: admin/main.php:256
+#@ iced_mocha
+msgid "Sorry, but you do not have sufficient permissions to access this page."
+msgstr "Désolé, vous n'avez pas de droits suffisants pour accéder à cette page"
+
+#: admin/main.php:275
+#@ iced_mocha
+msgid "Iced Mocha Theme settings updated successfully."
+msgstr "Les réglages de Iced Mocha Theme ont été mis à jour."
+
+#: admin/main.php:291
+#@ iced_mocha
+msgid "Save Changes"
+msgstr "Sauvegarder les modifications"
+
+#: admin/main.php:292
+#@ iced_mocha
+msgid "Reset to Defaults"
+msgstr "Rétablir les réglages standards"
+
+#: admin/main.php:324
+#@ iced_mocha
+msgid "Import/Export Settings"
+msgstr "Importer / exporter les réglages"
+
+#: admin/main.php:329
+#@ iced_mocha
+msgid "Export Theme options"
+msgstr "Exporter les réglages"
+
+#: admin/main.php:330
+#@ iced_mocha
+msgid "It's that easy: a mouse click away - the ability to export your Iced Mocha Theme settings and save them on your computer. Feeling safer? You should!"
+msgstr "D'un seul clic, vous pouvez exporter vos réglages Iced Mocha Theme et les sauvegarder sur votre ordinateur. Vous vous sentez mieux ? Vous devriez !"
+
+#: admin/main.php:335
+#@ iced_mocha
+msgid "Import Theme options"
+msgstr "Importer les réglages"
+
+#: admin/main.php:336
+#@ iced_mocha
+msgid "Without the import, the export would just be a fool's exercise. Make sure you have the exported file ready and see you after the mouse click."
+msgstr "Sans possibilité d'importation, l'exportation serait juste stupide ! Assurez-vous d'avoir le fichier exporté à portée de souris, on se revoit ensuite !"
+
+#: admin/main.php:341
+#@ iced_mocha
+msgid "Color Schemes"
+msgstr "Jeux de couleurs"
+
+#: admin/main.php:342
+#@ iced_mocha
+msgid "A collection of preset color schemes to use as the starting point for your site. Just load one up and see your blog in a different light."
+msgstr "Un ensemble de jeux de couleurs préétabli comme point de départ pour votre site. Chargez-en un et regardez votre blog avec d'autres yeux."
+
+#: admin/main.php:350
+#@ iced_mocha
+msgid "Iced Mocha Theme Latest News"
+msgstr "Dernières nouvelles de Iced Mocha Theme"
+
+#: admin/main.php:364
+#@ iced_mocha
+msgid "No news items."
+msgstr "Pas de nouveaux éléments."
+
+#: admin/main.php:368
+#@ iced_mocha
+msgid "Posted on"
+msgstr "Publié sur"
+
+#: admin/main.php:382
+#@ iced_mocha
+msgid "Reset Iced Mocha Theme Settings to Defaults?"
+msgstr "Voulez-vous rétablir les réglages standards ?"
+
+#: admin/prototypes.php:30
+#@ iced_mocha
+msgid "or Google font"
+msgstr "ou police Google"
+
+#: admin/settings.php:28
+#@ iced_mocha
+msgid "One column (no sidebars)"
+msgstr "Une colonne (pas de barre latérale)"
+
+#: admin/settings.php:29
+#@ iced_mocha
+msgid "Two columns, sidebar on the right"
+msgstr "Deux colonnes, barre latérale à droite"
+
+#: admin/settings.php:30
+#@ iced_mocha
+msgid "Two columns, sidebar on the left"
+msgstr "Deux colonnes, barre latérale à gauche"
+
+#: admin/settings.php:31
+#@ iced_mocha
+msgid "Three columns, sidebars on the right"
+msgstr "Trois colonnes, barres latérales à droite"
+
+#: admin/settings.php:32
+#@ iced_mocha
+msgid "Three columns, sidebars on the left"
+msgstr "Trois colonnes, barres latérales à gauche"
+
+#: admin/settings.php:33
+#@ iced_mocha
+msgid "Three columns, one sidebar on each side"
+msgstr "Trois colonnes, barres latérales à gauche et à droite"
+
+#: admin/settings.php:41
+#@ iced_mocha
+msgid "Choose your layout. Possible options are: <br> No sidebar, a single sidebar on either left of right, two sidebars on either left or right and two sidebars on each side.<br>This can be overriden in pages by using Page Templates."
+msgstr "Choisissez votre mise en page. Les options possibles sont :<br> pas de barre latérale, une barre latérale à gauche ou à droite, deux barres latérales à gauche ou à droite, ou deux barres latérales de chaque côté. Ce réglage peut être modifié dans Page -> Modification rapide -> Modèle"
+
+#: admin/settings.php:90
+#@ iced_mocha
+msgid "Content ="
+msgstr "Contenu = "
+
+#: admin/settings.php:91
+#@ iced_mocha
+msgid "Sidebar(s) ="
+msgstr "Colonne(s) latérale(s) ="
+
+#: admin/settings.php:92
+#@ iced_mocha
+msgid "Total width ="
+msgstr "Largeur totale = "
+
+#: admin/settings.php:99
+#@ iced_mocha
+msgid "Select the width of your <b>content</b> and <b>sidebar(s)</b>. When using a 3 columns layout (with 2 sidebars) they will each have half the configured width."
+msgstr "Sélectionnez la largeur du contenu et des barres latérales. Avec 2 barres latérales, l'espace est réparti équitablement entre chacune d'entre elles."
+
+#: admin/settings.php:108
+#: admin/settings.php:190
+#: admin/settings.php:199
+#: admin/settings.php:710
+#: admin/settings.php:757
+#: admin/settings.php:954
+#: admin/settings.php:969
+#: admin/settings.php:1060
+#: admin/settings.php:1076
+#: admin/settings.php:1339
+#: admin/settings.php:1368
+#: admin/settings.php:1391
+#: admin/settings.php:1410
+#: admin/settings.php:1459
+#: admin/settings.php:1603
+#@ iced_mocha
+msgid "Enable"
+msgstr "Activer"
+
+#: admin/settings.php:108
+#: admin/settings.php:190
+#: admin/settings.php:199
+#: admin/settings.php:710
+#: admin/settings.php:954
+#: admin/settings.php:969
+#: admin/settings.php:1060
+#: admin/settings.php:1076
+#: admin/settings.php:1339
+#: admin/settings.php:1368
+#: admin/settings.php:1391
+#: admin/settings.php:1410
+#: admin/settings.php:1459
+#: admin/settings.php:1603
+#@ iced_mocha
+msgid "Disable"
+msgstr "Désactiver"
+
+#: admin/settings.php:117
+#@ iced_mocha
+msgid "Enable to make Iced Mocha Theme fully responsive. The layout and general sizes of your blog will adjust depending on what device and what resolution it is viewed in.<br> Do not disable unless you have a good reason to."
+msgstr "Permet de rendre Iced Mocha Theme complètement adaptable à tout type d'écran (fully responsive). La mise en pages et les dimensions de votre site s'adapteront automatiquement. En règle générale, ne désactivez pas cette fonction !"
+
+#: admin/settings.php:129
+#@ iced_mocha
+msgid "Select the header's height. After saving the settings go and upload your new header image. The header's width will be "
+msgstr "Sélectionnez la hauteur de l'en-tête. Après, enregistrez les réglages et chargez votre nouvelle image d'en-tête. Sa largeur sera de "
+
+#: admin/settings.php:135
+#@ iced_mocha
+msgid "Define header image"
+msgstr "Choisissez l'image d'en-tête"
+
+#: admin/settings.php:136
+#@ iced_mocha
+msgid "Center the header image horizontally"
+msgstr "Centrer l'image horizontalement"
+
+#: admin/settings.php:137
+#@ iced_mocha
+msgid "Keep header image aspect ratio."
+msgstr "Conserver les proportions de l'image"
+
+#: admin/settings.php:138
+#@ iced_mocha
+msgid "By default the header has a minimum height set. This option removes that and the header becomes fully responsive, scalling to any size.<br> Only enable this if you're <b>not</b> using a logo or site title and description in the header. "
+msgstr "Par défaut, l'en-tête a une hauteur minimale. Cette option l'annule afin que l'en-tête s'adapte à toutes les tailles pour tous les écrans. Activez cette option si vous n'utilisez pas de logo ou de titre de site dans l'en-tête."
+
+#: admin/settings.php:146
+#@ iced_mocha
+msgid "Site Title and Description"
+msgstr "Titre du site et slogan"
+
+#: admin/settings.php:146
+#@ iced_mocha
+msgid "Custom Logo"
+msgstr "Votre logo"
+
+#: admin/settings.php:146
+#@ iced_mocha
+msgid "Clickable header image"
+msgstr "Image d'en-tête cliquable"
+
+#: admin/settings.php:146
+#@ iced_mocha
+msgid "Empty"
+msgstr "Vide"
+
+#: admin/settings.php:148
+#@ iced_mocha
+msgid "Choose what to display inside your header area."
+msgstr "Choisissez quoi afficher dans la zone d'en-tête"
+
+#: admin/settings.php:156
+#@ iced_mocha
+msgid "Custom Logo upload. The logo will appear over the header image if you have used one."
+msgstr "Chargez votre logo. Il apparaître par-dessus l'image d'en-tête (si vous en avez installé une)"
+
+#: admin/settings.php:157
+#: admin/settings.php:174
+#: admin/settings.php:404
+#@ iced_mocha
+msgid "Select / Upload Image"
+msgstr "Sélectionnez et chargez l'image"
+
+#: admin/settings.php:162
+#@ iced_mocha
+msgid "top"
+msgstr "haut"
+
+#: admin/settings.php:163
+#@ iced_mocha
+msgid "left"
+msgstr "gauche"
+
+#: admin/settings.php:164
+#@ iced_mocha
+msgid "Select the top and left spacing for the header content. Use it to better position your site title and description or custom logo inside the header. "
+msgstr "Choisissez les marges haute et gauche pour positionner le contenu de l'en-tête (titre du site et slogan) dans la zone d'en-tête."
+
+#: admin/settings.php:173
+#@ iced_mocha
+msgid "Limitations: It has to be an image. It should be max 64x64 pixels in dimensions. Recommended file extensions .ico and .png. <br> <strong>Note that some browsers do not display the changed favicon instantly.</strong>"
+msgstr "Un FavIcon est une image qui doit avoir une taille maximale de 64x64 px. Extensions recommandées : .ico et .png. <br> <strong>Attention : certains navigateurs n'affichent pas le nouveau FavIcon immédiatement.</strong>"
+
+#: admin/settings.php:192
+#@ iced_mocha
+msgid "Enable the presentation front-page. This will become your new home page. <br> If you want another page to hold your latest blog posts, choose 'Blog Template (Posts Page)' from Page Templates while creating or editing that page."
+msgstr "Activer la page de présentation. Celle-ci devient votre nouvelle page principale (homepage). <br> Si vous souhaitez qu'une autre page contienne vos tous derniers articles, allez dans Page -> Modification rapide -> Modèle et choisissez 'Blog Template (Posts Page)'"
+
+#: admin/settings.php:202
+#@ iced_mocha
+msgid "posts"
+msgstr "articles"
+
+#: admin/settings.php:203
+#@ iced_mocha
+msgid "Enable to display latest posts on the presentation page, below the columns. Sticky posts are always displayed and not counted."
+msgstr "Active l'affichage des derniers articles sur la page de présentation. Les articles mis en avant sont toujours affichés et non comptés."
+
+#: admin/settings.php:210
+#@ iced_mocha
+msgid "Slider Dimensions:"
+msgstr "Dimensions du slider :"
+
+#: admin/settings.php:211
+#@ iced_mocha
+msgid "width"
+msgstr "largeur"
+
+#: admin/settings.php:212
+#@ iced_mocha
+msgid "height"
+msgstr "hauteur"
+
+#: admin/settings.php:213
+#@ iced_mocha
+msgid "The dimensions of your slider. Make sure your images are of the same size."
+msgstr "Les dimensions de votre slider. Assurez-vous que vos images fassent la même taille."
+
+#: admin/settings.php:215
+#@ iced_mocha
+msgid "Animation:"
+msgstr "Animation :"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "Random"
+msgstr "Aléatoire"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "Fold"
+msgstr "Volets"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "Fade"
+msgstr "Fondu"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "SlideInRight"
+msgstr "Recouvre à droite"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "SlideInLeft"
+msgstr "Recouvre à gauche"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "SliceDown"
+msgstr "SliceDown"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "SliceDownLeft"
+msgstr "SliceDownLeft"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "SliceUp"
+msgstr "SliceUp"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "SliceUpLeft"
+msgstr "SliceUpLeft"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "SliceUpDown"
+msgstr "SliceUpDown"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "SliceUpDownLeft"
+msgstr "SliceUpDownLeft"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "BoxRandom"
+msgstr "Panneaux aléatoires"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "BoxRain"
+msgstr "Panneaux tombants"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "BoxRainReverse"
+msgstr "Panneaux montants"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "BoxRainGrow"
+msgstr "BoxRainGrow"
+
+#: admin/settings.php:217
+#@ iced_mocha
+msgid "BoxRainGrowReverse"
+msgstr "BoxRainGrowReverse"
+
+#: admin/settings.php:226
+#@ iced_mocha
+msgid "The transition effect of your slides."
+msgstr "L'effet de transition de vos slides"
+
+#: admin/settings.php:228
+#@ iced_mocha
+msgid "Animation Time:"
+msgstr "Durée d'animation :"
+
+#: admin/settings.php:229
+#: admin/settings.php:233
+#@ iced_mocha
+msgid "milliseconds"
+msgstr "millisecondes"
+
+#: admin/settings.php:230
+#@ iced_mocha
+msgid "The time in which the transition animation will take place."
+msgstr "Durée de la transition :"
+
+#: admin/settings.php:232
+#@ iced_mocha
+msgid "Pause Time:"
+msgstr "Durée d'affichage :"
+
+#: admin/settings.php:234
+#@ iced_mocha
+msgid "The time in which a slide will be still and visible."
+msgstr "La durée durant laquelle chaque slide est affiché."
+
+#: admin/settings.php:236
+#@ iced_mocha
+msgid "Slider navigation:"
+msgstr "Navigation du slider :"
+
+#: admin/settings.php:238
+#@ iced_mocha
+msgid "Numbers"
+msgstr "Chiffres"
+
+#: admin/settings.php:238
+#@ iced_mocha
+msgid "Bullets"
+msgstr "Puces"
+
+#: admin/settings.php:238
+#@ iced_mocha
+msgid "None"
+msgstr "Aucun"
+
+#: admin/settings.php:246
+#@ iced_mocha
+msgid "Your slider navigation type. Shown under the slider."
+msgstr "Type de navigation du slider, affiché sous celui-ci."
+
+#: admin/settings.php:248
+#@ iced_mocha
+msgid "Slider arrows:"
+msgstr "Flèches :"
+
+#: admin/settings.php:250
+#@ iced_mocha
+msgid "Always Visible"
+msgstr "Toujours visibles"
+
+#: admin/settings.php:250
+#@ iced_mocha
+msgid "Visible on Hover"
+msgstr "Visibles au survol"
+
+#: admin/settings.php:250
+#@ iced_mocha
+msgid "Hidden"
+msgstr "Cachées"
+
+#: admin/settings.php:258
+#@ iced_mocha
+msgid "The Left and Right arrows on your slider"
+msgstr "Les flèches droite et gauche du slider"
+
+#: admin/settings.php:260
+#@ iced_mocha
+msgid "Slider Border Width:"
+msgstr "Largeur de la bordure :"
+
+#: admin/settings.php:261
+#: admin/settings.php:265
+#@ iced_mocha
+msgid "px"
+msgstr "px"
+
+#: admin/settings.php:262
+#@ iced_mocha
+msgid "The slider's border width. You can also edit its color from the Color Settings. Use a border width when your slider is smaller than the total site width."
+msgstr "La largeur de la bordure du slider. Vous pouvez également éditer sa couleur depuis la rubrique Couleurs. Utilisez une bordure seulement si le slider est moins large que la largeur totale du site."
+
+#: admin/settings.php:264
+#@ iced_mocha
+msgid "Slider Top Margin:"
+msgstr "Marge supérieure du slider :"
+
+#: admin/settings.php:266
+#@ iced_mocha
+msgid "Add a top margin for the slider. By default this margin is 0 and you will want to increase this value when the width of the slider is smaller than the total width of the site."
+msgstr "Pour ajouter une marge supérieure au slider. Par défaut, celle-ci est à 0."
+
+#: admin/settings.php:333
+#@ iced_mocha
+msgid "Custom Slides"
+msgstr "Vos slides"
+
+#: admin/settings.php:333
+#: admin/settings.php:429
+#@ iced_mocha
+msgid "Latest Posts"
+msgstr "Derniers articles"
+
+#: admin/settings.php:333
+#: admin/settings.php:429
+#@ iced_mocha
+msgid "Random Posts"
+msgstr "Articles au hasard"
+
+#: admin/settings.php:333
+#: admin/settings.php:429
+#@ iced_mocha
+msgid "Latest Posts from Category"
+msgstr "Derniers articles d'une catégorie"
+
+#: admin/settings.php:333
+#: admin/settings.php:429
+#@ iced_mocha
+msgid "Random Posts from Category"
+msgstr "Articles au hasard d'une catégorie"
+
+#: admin/settings.php:333
+#: admin/settings.php:429
+#@ iced_mocha
+msgid "Specific Posts"
+msgstr "Articles spécifiques"
+
+#: admin/settings.php:342
+#@ iced_mocha
+msgid "Only the slides with a defined image will become active and visible in the live slider.<br>When using slides from posts, make sure the selected posts have featured images.<br>Read the FAQs for more info."
+msgstr "Seuls les slides avec une image définie seront visibles dans le slider.<br/>Si vous utilisez des articles comme slides, assurez-vous qu'ils incluent des Images à la Une.<br/>Lisez les FAQ (en anglais) pour plus d'information."
+
+#: admin/settings.php:347
+#@ iced_mocha
+msgid "Latest posts will be loaded into the slider."
+msgstr "Les derniers articles seront publiés dans le slider."
+
+#: admin/settings.php:351
+#@ iced_mocha
+msgid "Random posts will be loaded into the slider."
+msgstr "Des articles au hasard seront publiés dans le slider."
+
+#: admin/settings.php:355
+#@ iced_mocha
+msgid "Latest posts from the category you choose will be loaded in the slider."
+msgstr "Les derniers articles de la catégorie choisie seront publiés dans le slider."
+
+#: admin/settings.php:359
+#@ iced_mocha
+msgid "Random posts from the category you choose will be loaded into the slider."
+msgstr "Des articles au hasard de la catégorie choisie seront publiés dans le slider."
+
+#: admin/settings.php:363
+#@ iced_mocha
+msgid "Only sticky posts will be loaded into the slider."
+msgstr "Seuls les articles mis en avant seront publiés dans le slider."
+
+#: admin/settings.php:367
+#: admin/settings.php:463
+#@ iced_mocha
+msgid "List the post IDs you want to display (separated by a comma): "
+msgstr "Liste des ID des articles à publier (séparées par une virgule) : "
+
+#: admin/settings.php:372
+#: admin/settings.php:473
+#@ iced_mocha
+msgid "<br> Choose the category: "
+msgstr "<br> Choix de la catégorie : "
+
+#: admin/settings.php:374
+#: admin/settings.php:475
+#@ iced_mocha
+msgid "Select Category"
+msgstr "Catégorie"
+
+#: admin/settings.php:388
+#: admin/settings.php:489
+#@ iced_mocha
+msgid "Number of posts to show:"
+msgstr "Nombre d'articles à afficher :"
+
+#: admin/settings.php:399
+#@ iced_mocha
+msgid "Slide"
+msgstr "Slide"
+
+#: admin/settings.php:401
+#: content/content-image.php:26
+#@ iced_mocha
+msgid "Image"
+msgstr "Image"
+
+#: admin/settings.php:405
+#@ iced_mocha
+msgid "Title"
+msgstr "Titre"
+
+#: admin/settings.php:408
+#@ iced_mocha
+msgid "Text"
+msgstr "Texte"
+
+#: admin/settings.php:411
+#: content/content-link.php:33
+#@ iced_mocha
+msgid "Link"
+msgstr "Lien"
+
+#: admin/settings.php:429
+#@ iced_mocha
+msgid "Widget Columns"
+msgstr "Colonnes de widgets"
+
+#: admin/settings.php:438
+#@ iced_mocha
+msgid "Only the columns with a defined image will become active and visible on the presentation page.<br>When using columns from posts, make sure the selected posts have featured images.<br>Read the FAQs for more info."
+msgstr "Seules les colonnes avec une image définie seront visibles dans le slider.<br/>Si vous utilisez des colonnes depuis des articles, assurez-vous que ceux-ci incluent des Images à la Une.<br/>Lisez les FAQ (en anglais) pour plus d'information."
+
+#: admin/settings.php:443
+#@ iced_mocha
+msgid "Latest posts will be loaded into the columns."
+msgstr "Les derniers articles seront publiés dans les colonnes."
+
+#: admin/settings.php:447
+#@ iced_mocha
+msgid "Random posts will be loaded into the columns."
+msgstr "Des articles au hasard seront publiés dans les colonnes."
+
+#: admin/settings.php:451
+#@ iced_mocha
+msgid "Latest posts from the category you choose will be loaded in the columns."
+msgstr "Les derniers articles de la catégorie choisie seront publiés dans les colonnes."
+
+#: admin/settings.php:455
+#@ iced_mocha
+msgid "Random posts from the category you choose will be loaded into the columns."
+msgstr "Des articles au hasard de la catégorie choisie seront publiés dans les colonnes."
+
+#: admin/settings.php:459
+#@ iced_mocha
+msgid "Only sticky posts will be loaded into the columns."
+msgstr "Seuls les articles mis en avant seront publiés dans les colonnes"
+
+#: admin/settings.php:468
+#@ iced_mocha
+msgid "Load your custom Widgets as columns. Go to <a>Appearance >> Widgets</a> and create your custom columns using the Columns widget. You can use as many as you want."
+msgstr "Allez à <a>Apparence -> Widgets</a> et créez vos colonnes à partir du Widget Espresso Columns."
+
+#: admin/settings.php:496
+#@ iced_mocha
+msgid "Columns per row:"
+msgstr "Colonnes par rang :"
+
+#: admin/settings.php:506
+#@ iced_mocha
+msgid "Image Size:"
+msgstr "Taille d'image :"
+
+#: admin/settings.php:507
+#@ iced_mocha
+msgid "Height: "
+msgstr "Hauteur : "
+
+#: admin/settings.php:508
+#@ iced_mocha
+msgid "Width: "
+msgstr "Largeur : "
+
+#: admin/settings.php:509
+#@ iced_mocha
+msgid "The sizes for your column images. The width is dependent on total site width and not configurable."
+msgstr "La taille des colonnes : leur largeur dépend de la largeur totale du site est n'est donc pas configurable."
+
+#: admin/settings.php:511
+#@ iced_mocha
+msgid "Read more text:"
+msgstr "Suite du texte :"
+
+#: admin/settings.php:514
+#@ iced_mocha
+msgid "The linked text that appears at the bottom of each column. Leave empty to hide the link."
+msgstr "Le lien [...] apparaissant au bas de chaque article / colonne. Laissez vide pour cacher le lien."
+
+#: admin/settings.php:523
+#@ iced_mocha
+msgid "Extra Text"
+msgstr "Texte supplémentaire"
+
+#: admin/settings.php:525
+#@ iced_mocha
+msgid "Text for the Presentation Page"
+msgstr "Texte pour la page de présentation"
+
+#: admin/settings.php:527
+#@ iced_mocha
+msgid "More text for the Presentation Page. The top title is just below the slider, the second title is below the columns. A text area supporting HTML tags and shortcodes below each title<br>It's all optional so leave any input field empty to not dispaly it."
+msgstr "Plus de textes pour la page de présentation ! Le \"top title\" est placé sous le slider, le \"second title\" est placé sous les colonnes. Une zone de texte, supportant les tags HTML et les shortcodes, est placée sous chacun de ces titres.<br/>Tous ces éléments étant optionnels, laissez les champs vides si besoin afin de ne pas les afficher. "
+
+#: admin/settings.php:529
+#@ iced_mocha
+msgid "Top Title"
+msgstr "Top title"
+
+#: admin/settings.php:531
+#@ iced_mocha
+msgid "Top Text"
+msgstr "Top text"
+
+#: admin/settings.php:534
+#@ iced_mocha
+msgid "Second Title"
+msgstr "Second title"
+
+#: admin/settings.php:536
+#@ iced_mocha
+msgid "Second text"
+msgstr "Second text"
+
+#: admin/settings.php:539
+#@ iced_mocha
+msgid "Hide areas"
+msgstr "Cacher les zones"
+
+#: admin/settings.php:541
+#@ iced_mocha
+msgid "Choose the areas to hide on the first page."
+msgstr "Choisissez les zones à cacher sur la première page."
+
+#: admin/settings.php:552
+#@ iced_mocha
+msgid "Hide the header area (logo/title and/or image/empty area)."
+msgstr "Cacher la zone d'en-tête (logo/titre et/ou image/zone vide)"
+
+#: admin/settings.php:555
+#@ iced_mocha
+msgid "Hide the main menu and the top menu."
+msgstr "Cacher le menu principal et le menu du haut"
+
+#: admin/settings.php:558
+#@ iced_mocha
+msgid "Hide the footer widgets. "
+msgstr "Cacher le widget de pied de page"
+
+#: admin/settings.php:561
+#@ iced_mocha
+msgid "Hide the footer (copyright area)."
+msgstr "Cacher le pied de page (zone de copyright)"
+
+#: admin/settings.php:586
+#@ iced_mocha
+msgid "Select the general font family and size or insert the Google Font name you'll use in your blog. This will affect all text except the one controlled by the options below. "
+msgstr "Sélectionnez la police de caractères principale dans la liste (ou insérez le nom d'une Google Font). La police de caractères choisie concerne l'ensemble des textes, à l'exception de ceux qui sont paramétrés ci-dessous."
+
+#: admin/settings.php:605
+#@ iced_mocha
+msgid "Select the font family and size or insert the Google Font name you want for your titles. It will affect post titles and page titles. Leave 'General Font' and the general font values you selected will be used."
+msgstr "Sélectionnez dans la liste la police de caractères que vous souhaitez pour les titres d'articles et de pages (ou insérez le nom d'une Google Font). Si vous laissez \"Police principale\", celle-ci sera appliquée."
+
+#: admin/settings.php:624
+#@ iced_mocha
+msgid "Select the font family and size or insert the Google Font name you want your widget titles to have. Leave 'General Font' and the general font values you selected will be used."
+msgstr "Sélectionnez dans la liste la police de caractères que vous souhaitez pour les titres de widgets (ou insérez le nom d'une Google Font). Si vous laissez \"Police principale\", celle-ci sera appliquée."
+
+#: admin/settings.php:642
+#@ iced_mocha
+msgid "Select the font family and size or insert the Google Font name you want your site title and tagline to use. Leave 'General Font' and the general font values you selected will be used."
+msgstr "Sélectionnez dans la liste la police de caractères que vous souhaitez pour le titre de votre site et son slogan (ou insérez le nom d'une Google Font). Si vous laissez \"Police principale\", celle-ci sera appliquée."
+
+#: admin/settings.php:660
+#@ iced_mocha
+msgid "Select the font family and size or insert the Google Font name you want your main menu to use. Leave 'General Font' and the general font values you selected will be used."
+msgstr "Sélectionnez dans la liste la police de caractères que vous souhaitez pour le menu principal (ou insérez le nom d'une Google Font). Si vous laissez \"Police principale\", celle-ci sera appliquée."
+
+#: admin/settings.php:681
+#@ iced_mocha
+msgid "Select the font family and size or insert the Google Font name you want your headings to have (h1 - h6 tags will be affected). Leave 'General Font' and the general font values you selected will be used."
+msgstr "Sélectionnez dans la liste la police de caractères que vous souhaitez pour les titres de texte (h1 à h6) (ou insérez le nom d'une Google Font). Si vous laissez \"Police principale\", celle-ci sera appliquée."
+
+#: admin/settings.php:689
+#: admin/settings.php:730
+#: admin/settings.php:740
+#@ iced_mocha
+msgid "Default"
+msgstr "Défaut"
+
+#: admin/settings.php:689
+#: admin/settings.php:983
+#: admin/settings.php:1426
+#@ iced_mocha
+msgid "Left"
+msgstr "Gauche"
+
+#: admin/settings.php:689
+#: admin/settings.php:983
+#: admin/settings.php:1426
+#@ iced_mocha
+msgid "Right"
+msgstr "Droite"
+
+#: admin/settings.php:689
+#@ iced_mocha
+msgid "Justify"
+msgstr "Justifié"
+
+#: admin/settings.php:689
+#: admin/settings.php:983
+#: admin/settings.php:1426
+#@ iced_mocha
+msgid "Center"
+msgstr "Centré"
+
+#: admin/settings.php:691
+#@ iced_mocha
+msgid "This overwrites the text alignment in posts and pages. Leave 'Default' for normal settings (alignment will remain as declared in posts, comments etc.)."
+msgstr "Pour changer l'alignement du texte des articles et des pages. Laissez \"Défaut\" pour un réglage normal."
+
+#: admin/settings.php:701
+#@ iced_mocha
+msgid "Choose the indent for your paragraphs."
+msgstr "Choisissez l'indentation des paragraphes."
+
+#: admin/settings.php:712
+#@ iced_mocha
+msgid "Disable the default headings indent (left margin)."
+msgstr "Désactiver l'indentation par défaut des titres par rapport à la marge gauche."
+
+#: admin/settings.php:722
+#@ iced_mocha
+msgid "Text line height. The height between 2 rows of text."
+msgstr "Interligne du texte (espace entre deux lignes consécutives)."
+
+#: admin/settings.php:732
+#@ iced_mocha
+msgid "The space between <i>words</i>. Leave 'Default' for normal settings (size value will be as set in the CSS)."
+msgstr "Espacement entre les <i>mots</i>. Laissez \"Défaut\" pour un réglage normal."
+
+#: admin/settings.php:742
+#@ iced_mocha
+msgid "The space between <i>letters</i>. Leave 'Default' for normal settings (size value will be as set in the CSS)."
+msgstr "Espacement entre les <i>lettres</i>, autrement dit, en termes typographiques, \"l'approche\". Laissez \"Défaut\" pour un réglage normal."
+
+#: admin/settings.php:750
+#@ iced_mocha
+msgid "Select the spacing between the paragraphs."
+msgstr "Sélectionnez l'espace entre les paragraphes."
+
+#: admin/settings.php:757
+#@ iced_mocha
+msgid "Default (disabled)"
+msgstr "Défaut (désactivé)"
+
+#: admin/settings.php:759
+#@ iced_mocha
+msgid "Enable uppercase text styling. All text in the site will be uppercase."
+msgstr "Active l'affichage en majuscules. Les menus, titres de pages, etc. s'afficheront automatiquement en majuscules, même s'ils ont été conçus en minuscules."
+
+#: admin/settings.php:767
+#@ iced_mocha
+msgid "Define background image"
+msgstr "Définir l'image de fond"
+
+#: admin/settings.php:772
+#: admin/settings.php:798
+#: admin/settings.php:823
+#: admin/settings.php:851
+#: admin/settings.php:863
+#@ iced_mocha
+msgid "Background:"
+msgstr "Fond :"
+
+#: admin/settings.php:773
+#@ iced_mocha
+msgid "Header Background"
+msgstr "Fond du titre"
+
+#: admin/settings.php:774
+#@ iced_mocha
+msgid "Main Site Background"
+msgstr "Fond du site principal"
+
+#: admin/settings.php:775
+#@ iced_mocha
+msgid "Footer Widgets Area Background"
+msgstr "Fond des widgets en pied de page"
+
+#: admin/settings.php:776
+#@ iced_mocha
+msgid "Footer Background"
+msgstr "Fond du pied de page"
+
+#: admin/settings.php:777
+#: admin/settings.php:800
+#: admin/settings.php:825
+#: admin/settings.php:854
+#: admin/settings.php:866
+#@ iced_mocha
+msgid "Text:"
+msgstr "Texte :"
+
+#: admin/settings.php:778
+#@ iced_mocha
+msgid "General Text"
+msgstr "Texte général"
+
+#: admin/settings.php:779
+#@ iced_mocha
+msgid "General Lighter Text"
+msgstr "Texte général - clair"
+
+#: admin/settings.php:780
+#@ iced_mocha
+msgid "Footer Text"
+msgstr "Texte du pied de page"
+
+#: admin/settings.php:781
+#@ iced_mocha
+msgid "The site background features 4 separately coloured areas.<br />The general text colour applies to all text on the website that is not controlled by any other option."
+msgstr "Le fond du site compte 4 zones de couleurs différentes.<br />La couleur du texte général s'applique à tous les textes du site, sauf à ceux qui sont régis par une autre option de couleur."
+
+#: admin/settings.php:786
+#@ iced_mocha
+msgid "Accent Color #1"
+msgstr "Coul. spéciale #1"
+
+#: admin/settings.php:787
+#@ iced_mocha
+msgid "Accent Color #2"
+msgstr "Coul. spéciale #2"
+
+#: admin/settings.php:788
+#@ iced_mocha
+msgid "Accent Color #3"
+msgstr "Coul. spéciale #3"
+
+#: admin/settings.php:789
+#@ iced_mocha
+msgid "Accent Color #4"
+msgstr "Coul. spéciale #4"
+
+#: admin/settings.php:790
+#@ iced_mocha
+msgid "Accent Color #5"
+msgstr "Coul. spéciale #5"
+
+#: admin/settings.php:791
+#@ iced_mocha
+msgid ""
+"Accents #1 and #2 should either be the same as the link colours or be separate from all other colours on the site.<br />\n"
+"     Accent #5 is used for input fields and buttons backgrounds, borders and lines.<br />\n"
+"     Accents #3 and #4 should be the lighter/darker than the content background colour, being used as borders/shades on elements where accent #5 is background colour."
+msgstr ""
+"Les couleurs spéciales #1 et #2 doivent ou être les mêmes que les couleurs des liens, ou être différentes des autres couleurs du site.<br />\n"
+"La couleur spéciale #5 est utilisée pour les champs de saisie et pour le fond, les bordures et les lignes des boutons.<br />\n"
+"Les couleurs spéciales #3 et #4 doivent être plus claire (#3) et plus sombre (#4) que la couleur du fond du contenu, étant utilisées comme bordures et ombres des éléments pour lesquels la couleur spéciale #5 est la couleur de fond."
+
+#: admin/settings.php:799
+#@ iced_mocha
+msgid "Site Description Background"
+msgstr "Fond de la description du site"
+
+#: admin/settings.php:802
+#@ iced_mocha
+msgid "Site Description"
+msgstr "Description du site"
+
+#: admin/settings.php:808
+#@ iced_mocha
+msgid "Menu:"
+msgstr "Menu :"
+
+#: admin/settings.php:809
+#@ iced_mocha
+msgid "Menu Background"
+msgstr "Fond du menu"
+
+#: admin/settings.php:810
+#@ iced_mocha
+msgid "Menu Text"
+msgstr "Texte du menu"
+
+#: admin/settings.php:813
+#@ iced_mocha
+msgid "Submenu:"
+msgstr "Sous-menu :"
+
+#: admin/settings.php:814
+#@ iced_mocha
+msgid "Submenu Background"
+msgstr "Fond du sous-menu"
+
+#: admin/settings.php:815
+#@ iced_mocha
+msgid "Submenu Text"
+msgstr "Texte du sous-menu"
+
+#: admin/settings.php:816
+#@ iced_mocha
+msgid "Submenu Shadow"
+msgstr "Ombre du sous-menu"
+
+#: admin/settings.php:818
+#@ iced_mocha
+msgid "These colours apply to the main site menu (and dropdown elements)."
+msgstr "Ces couleurs s'appliquent au menu principal du site et à ses sous-menus"
+
+#: admin/settings.php:824
+#@ iced_mocha
+msgid "Top Bar Background"
+msgstr "Fond de la barre supérieure"
+
+#: admin/settings.php:826
+#@ iced_mocha
+msgid "Top Bar Menu Link"
+msgstr "Liens de la barre supérieure"
+
+#: admin/settings.php:827
+#@ iced_mocha
+msgid "Top Bar Menu Link Hover"
+msgstr "Liens de la barre supérieure - survol"
+
+#: admin/settings.php:828
+#@ iced_mocha
+msgid "These colours apply to the top bar menu."
+msgstr "Ces couleurs s'appliquent au menu de la barre supérieure"
+
+#: admin/settings.php:833
+#@ iced_mocha
+msgid "Content Background"
+msgstr "Fond du contenu"
+
+#: admin/settings.php:834
+#@ iced_mocha
+msgid "Page/Post Title"
+msgstr "Titre d'article et de page"
+
+#: admin/settings.php:835
+#@ iced_mocha
+msgid "Page/Post Title Hover"
+msgstr "Titre d'article et de page - survol"
+
+#: admin/settings.php:836
+#@ iced_mocha
+msgid "Content Headings"
+msgstr "Titres de contenu"
+
+#: admin/settings.php:837
+#@ iced_mocha
+msgid "Content colours apply to post and page areas of the site."
+msgstr "Ces couleurs de contenu s'appliquent à tous les articles et pages du site."
+
+#: admin/settings.php:842
+#@ iced_mocha
+msgid "Titles Color"
+msgstr "Couleur des titres"
+
+#: admin/settings.php:843
+#@ iced_mocha
+msgid "Slider Border Color"
+msgstr "Couleur de la bordure du slider"
+
+#: admin/settings.php:844
+#@ iced_mocha
+msgid "Slider Caption Text Color"
+msgstr "Couleur du texte de légende du slider"
+
+#: admin/settings.php:845
+#@ iced_mocha
+msgid "Slider Caption Background"
+msgstr "Fond de la légende du slider"
+
+#: admin/settings.php:846
+#@ iced_mocha
+msgid "These colours apply to specific areas of the presentation page."
+msgstr "Ces couleurs s'appliquent à des zones spécifiques de la page de présentation."
+
+#: admin/settings.php:852
+#@ iced_mocha
+msgid "Sidebars Background"
+msgstr "Fond des barres latérales"
+
+#: admin/settings.php:853
+#@ iced_mocha
+msgid "Sidebars Widget Title Background"
+msgstr "Fond du titre des widgets - barres latérales"
+
+#: admin/settings.php:855
+#@ iced_mocha
+msgid "Sidebars Text"
+msgstr "Texte des barres latérales"
+
+#: admin/settings.php:856
+#@ iced_mocha
+msgid "Sidebars Widget Title Text"
+msgstr "Texte des titres de widgets (barre latérale)"
+
+#: admin/settings.php:857
+#@ iced_mocha
+msgid "These colours apply to the widgets placed in either sidebar."
+msgstr "Ces couleurs s'appliquent aux widgets situés dans chaque barre latérale."
+
+#: admin/settings.php:864
+#@ iced_mocha
+msgid "Footer Widgets Background"
+msgstr "Fond des widgets du pied de page"
+
+#: admin/settings.php:865
+#@ iced_mocha
+msgid "Footer Widgets Title Background"
+msgstr "Fond des titres des widgets du pied de page"
+
+#: admin/settings.php:867
+#@ iced_mocha
+msgid "Footer Widget Text"
+msgstr "Texte des widgets du pied de page"
+
+#: admin/settings.php:868
+#@ iced_mocha
+msgid "Footer Widgets Title Text"
+msgstr "Texte des titres des widgets du pied de page"
+
+#: admin/settings.php:869
+#@ iced_mocha
+msgid "These colours apply to the widgets in the footer area."
+msgstr "Ces couleurs s'appliquent aux widgets situés dans le pied de page"
+
+#: admin/settings.php:874
+#@ iced_mocha
+msgid "General:"
+msgstr "Général :"
+
+#: admin/settings.php:875
+#@ iced_mocha
+msgid "General Links"
+msgstr "Général - liens"
+
+#: admin/settings.php:876
+#@ iced_mocha
+msgid "General Links Hover"
+msgstr "Général - survol des liens"
+
+#: admin/settings.php:877
+#@ iced_mocha
+msgid "Sidebar Widgets:"
+msgstr "Widgets de barre latérale"
+
+#: admin/settings.php:878
+#@ iced_mocha
+msgid "Sidebar Widgets Links"
+msgstr "Widgets de barre latérale - liens"
+
+#: admin/settings.php:879
+#@ iced_mocha
+msgid "Sidebar Widgets Links Hover"
+msgstr "Widgets de barre latérale - survol des liens"
+
+#: admin/settings.php:880
+#@ iced_mocha
+msgid "Footer Widgets:"
+msgstr "Widgets de pied de page :"
+
+#: admin/settings.php:881
+#@ iced_mocha
+msgid "Footer Widgets Links"
+msgstr "Widgets de pied de page - liens"
+
+#: admin/settings.php:882
+#@ iced_mocha
+msgid "Footer Widgets Links Hover"
+msgstr "Widgets de pied de page - survol des liens"
+
+#: admin/settings.php:883
+#@ iced_mocha
+msgid "Footer:"
+msgstr "Pied de page :"
+
+#: admin/settings.php:884
+#@ iced_mocha
+msgid "Footer Links"
+msgstr "Pied de page - liens"
+
+#: admin/settings.php:885
+#@ iced_mocha
+msgid "Footer Links Hover"
+msgstr "Pied de page - survol des liens"
+
+#: admin/settings.php:886
+#@ iced_mocha
+msgid "Footer colours include the footer menu colours."
+msgstr "Les couleurs du pied de page incluent le menu"
+
+#: admin/settings.php:891
+#@ iced_mocha
+msgid "Meta Icons"
+msgstr "Métadonnées - icônes"
+
+#: admin/settings.php:892
+#@ iced_mocha
+msgid "Meta Links"
+msgstr "Métadonnées - liens"
+
+#: admin/settings.php:893
+#@ iced_mocha
+msgid "Meta Links Hover"
+msgstr "Métadonnées - survol des liens"
+
+#: admin/settings.php:894
+#@ iced_mocha
+msgid "Colours for your meta area (post information)."
+msgstr "Couleurs pour la zone des métadonnées (dans les articles)"
+
+#: admin/settings.php:899
+#@ iced_mocha
+msgid "Social Icons Background"
+msgstr "Fond des icônes des réseaux sociaux"
+
+#: admin/settings.php:900
+#@ iced_mocha
+msgid "Social Icons Background Hover"
+msgstr "Fond des icônes des réseaux sociaux - survol"
+
+#: admin/settings.php:901
+#@ iced_mocha
+msgid "Background colours for your social icons."
+msgstr "Couleurs de fond pour les icônes de réseaux sociaux"
+
+#: admin/settings.php:907
+#@ iced_mocha
+msgid "Light"
+msgstr "Clair"
+
+#: admin/settings.php:907
+#@ iced_mocha
+msgid "Dark"
+msgstr "Foncé"
+
+#: admin/settings.php:907
+#@ iced_mocha
+msgid "Simple"
+msgstr "Simple"
+
+#: admin/settings.php:915
+#@ iced_mocha
+msgid "This setting changes the look of your captions. Images that are not inserted through captions will not be affected."
+msgstr "Change l'apparence des légendes. Les images sans légende ne seront pas affectées."
+
+#: admin/settings.php:928
+#@ iced_mocha
+msgid "Normal"
+msgstr "Normal"
+
+#: admin/settings.php:928
+#@ iced_mocha
+msgid "Fixed"
+msgstr "Fixe"
+
+#: admin/settings.php:928
+#: admin/settings.php:1013
+#: admin/settings.php:1030
+#: admin/settings.php:1045
+#: admin/settings.php:1095
+#: admin/settings.php:1144
+#: admin/settings.php:1175
+#@ iced_mocha
+msgid "Hide"
+msgstr "Cacher"
+
+#: admin/settings.php:938
+#@ iced_mocha
+msgid "Site width"
+msgstr "Largeur du site"
+
+#: admin/settings.php:938
+#@ iced_mocha
+msgid "Full width"
+msgstr "Pleine largeur"
+
+#: admin/settings.php:947
+#@ iced_mocha
+msgid "Show the topbar that can include social icons and the top menu."
+msgstr "Afficher la barre supérieure, qui contient le menu du haut et les icônes des réseaux sociaux."
+
+#: admin/settings.php:962
+#@ iced_mocha
+msgid "Show breadcrumbs at the top of the content area. Breadcrumbs are a form of navigation that keeps track of your location withtin the site."
+msgstr "Afficher le fil d'Ariane (montre le chemin de la navigation sur le site)."
+
+#: admin/settings.php:977
+#@ iced_mocha
+msgid "Show numbered pagination. Where there is more than one page, instead of the bottom <b>Older Posts</b> and <b>Newer posts</b> links you have a numbered pagination. "
+msgstr "Afficher le nombre de pages, plutôt que d'afficher les liens <b>Articles précédents</b> et <b>Articles récents</b>."
+
+#: admin/settings.php:991
+#@ iced_mocha
+msgid "Sets the desired menu items alignment."
+msgstr "Alignez les éléments du menu."
+
+#: admin/settings.php:1006
+#@ iced_mocha
+msgid "The border style for your images. Only images inserted in your posts and pages will be affected. "
+msgstr "Le style de bordure des images affichées dans les articles et les pages."
+
+#: admin/settings.php:1013
+#: admin/settings.php:1030
+#: admin/settings.php:1045
+#: admin/settings.php:1144
+#: admin/settings.php:1159
+#: admin/settings.php:1175
+#@ iced_mocha
+msgid "Show"
+msgstr "Afficher"
+
+#: admin/settings.php:1021
+#@ iced_mocha
+msgid "Hide or show bullets next to lists in your content area (posts, pages etc.)."
+msgstr "Afficher ou cacher les puces des listes utilisées dans les articles et les pages."
+
+#: admin/settings.php:1038
+#@ iced_mocha
+msgid "Hide or show titles on pages."
+msgstr "Afficher ou cacher les titres sur les pages."
+
+#: admin/settings.php:1053
+#@ iced_mocha
+msgid "Hide or show titles on Categories and Archives."
+msgstr "Afficher ou cacher les titres dans les catégories et les archives."
+
+#: admin/settings.php:1068
+#@ iced_mocha
+msgid "Hide table borders and background color."
+msgstr "Cacher les bordures de tableau et le fond."
+
+#: admin/settings.php:1084
+#@ iced_mocha
+msgid "Enable the Back to Top button. The button appears after scrolling the page down."
+msgstr "Afficher le bouton \"Retour en haut de page\". Ce bouton apparaît en descendant dans la page."
+
+#: admin/settings.php:1095
+#@ iced_mocha
+msgid "Top"
+msgstr "Haut"
+
+#: admin/settings.php:1095
+#@ iced_mocha
+msgid "Bottom"
+msgstr "Bas"
+
+#: admin/settings.php:1103
+#@ iced_mocha
+msgid "The position of your meta bar (author, date, category, tags and edit button)."
+msgstr "La position de la barre de métadonnées (auteur, date, catégorie, mots-clés et bouton \"Editer\")."
+
+#: admin/settings.php:1110
+#: admin/settings.php:1126
+#@ iced_mocha
+msgid "Author"
+msgstr "Auteur"
+
+#: admin/settings.php:1110
+#: admin/settings.php:1126
+#: includes/theme-loop.php:175
+#@ iced_mocha
+msgid "Date"
+msgstr "Date"
+
+#: admin/settings.php:1110
+#: admin/settings.php:1126
+#@ iced_mocha
+msgid "Time"
+msgstr "Heure"
+
+#: admin/settings.php:1110
+#: admin/settings.php:1126
+#@ iced_mocha
+msgid "Category"
+msgstr "Catégorie"
+
+#: admin/settings.php:1110
+#: admin/settings.php:1126
+#@ iced_mocha
+msgid "Tag"
+msgstr "Mots-clés"
+
+#: admin/settings.php:1110
+#@ iced_mocha
+msgid "Comments"
+msgstr "Commentaires"
+
+#: admin/settings.php:1119
+#@ iced_mocha
+msgid "Choose the post metas you want to show on multiple post pages (home, blog, category, archive etc.)"
+msgstr "Choisissez les métadonnées pour les articles sur plusieurs pages (home, blog, catégorie, archive, etc.)"
+
+#: admin/settings.php:1126
+#: includes/theme-loop.php:257
+#@ iced_mocha
+msgid "Bookmark"
+msgstr "Favori"
+
+#: admin/settings.php:1135
+#@ iced_mocha
+msgid "Choose the post metas you want to show on sigle post pages."
+msgstr "Choisissez les métadonnées pour les articles sur une seule page (home, blog, catégorie, archive, etc.)"
+
+#: admin/settings.php:1152
+#@ iced_mocha
+msgid "Hide the explanatory text under the comments form (starts with  <i>You may use these HTML tags and attributes:...</i>)."
+msgstr "Cacher le texte d'explication sous le formulaire de commentaire (<i>Vous pouvez utiliser ces tags HTML tags et ces attributs...</i>)."
+
+#: admin/settings.php:1159
+#@ iced_mocha
+msgid "Hide in posts"
+msgstr "Cacher dans les articles"
+
+#: admin/settings.php:1159
+#@ iced_mocha
+msgid "Hide in pages"
+msgstr "Cacher dans les pages"
+
+#: admin/settings.php:1159
+#@ iced_mocha
+msgid "Hide everywhere"
+msgstr "Cacher partout"
+
+#: admin/settings.php:1167
+#@ iced_mocha
+msgid "Hide the <b>Comments are closed</b> text that by default shows up on pages or posts with comments disabled."
+msgstr "Cacher la mention <b>Les commentaires sont fermés</b> qui est affichée par défaut pour les articles ne recevant plus de commentaire."
+
+#: admin/settings.php:1183
+#@ iced_mocha
+msgid "Hide the <b>Comments off</b> text next to posts that have comments disabled."
+msgstr "Cacher la mention <b>Pas de commentaire possible</b> qui est affichée par défaut pour les articles pour lesquels les commentaires ne sont pas autorisés."
+
+#: admin/settings.php:1285
+#: admin/settings.php:1300
+#: admin/settings.php:1316
+#@ iced_mocha
+msgid "Excerpt"
+msgstr "Résumé"
+
+#: admin/settings.php:1285
+#: admin/settings.php:1300
+#: admin/settings.php:1316
+#@ iced_mocha
+msgid "Full Post"
+msgstr "Texte intégral"
+
+#: admin/settings.php:1293
+#@ iced_mocha
+msgid "Excerpts on the main page. Only standard posts will be affected. All other post formats (aside, image, chat, quote etc.) have their specific formating."
+msgstr "Résumés sur la page principale, pour les articles standards. Tous les autres (barre latérale, image, chat, citation, etc.) gardent leur format spécifique."
+
+#: admin/settings.php:1308
+#@ iced_mocha
+msgid "Choose if you want the sticky posts on your home page to be visible in full or just the excerpts. "
+msgstr "Les articles mis en avant sur la page d'accueil sont-ils visibles en entier, ou sont-ils affichés sous forme de résumé ?"
+
+#: admin/settings.php:1324
+#@ iced_mocha
+msgid "Excerpts on archive, categroy and search pages. Same as above, only standard posts will be affected."
+msgstr "Résumés dans les archives, les catégories et les recherches. Seuls les articles standards sont affectés par ce choix."
+
+#: admin/settings.php:1332
+#@ iced_mocha
+msgid "The number of words for excerpts. When that number is reached the post will be interrupted by a <i>Continue reading</i> link that will take the reader to the full post page."
+msgstr "Le nombre des mots des résumés. Quand il est atteint, l'article est interrompu et le lien <i>Suite</i> est affiché pour permettre la lecture complète de l'article."
+
+#: admin/settings.php:1347
+#@ iced_mocha
+msgid "Enable the Magazine Layout. This layout applies to pages with posts and shows 2 posts per row."
+msgstr "Activer la mise en pages \"Magazine\". Cette disposition s'applique aux pages avec articles et affiche 2 articles par rangée."
+
+#: admin/settings.php:1354
+#@ iced_mocha
+msgid "Replaces the three dots ('[...])' that are appended automatically to excerpts."
+msgstr "Remplace les points de suspension '([...])' qui sont ajoutés à la fin des résumés."
+
+#: admin/settings.php:1361
+#@ iced_mocha
+msgid "Edit the 'Continue Reading' link added to your post excerpts."
+msgstr "Permet de modifier le lien \"Suite\" ajouté aux résumés"
+
+#: admin/settings.php:1376
+#@ iced_mocha
+msgid ""
+"By default WordPress excerpts remove all HTML tags (&lt;pre&gt;, &lt;a&gt;, &lt;b&gt and all others) and only clean text is left in the excerpt.\n"
+"Enabling this option allows HTML tags to remain in excerpts so all your default formating will be kept.<br /> <b>Just a warning: </b>If HTML tags are enabled, you have to make sure\n"
+"they are not left open. So if within your post you have an opened HTML tag but the except ends before that tag closes, the rest of the site will be contained in that HTML tag. -- Leave 'Disable' if unsure -- "
+msgstr "Par défaut, les extraits dans Wordpress omettent tous les tags HTML (&lt;pre&gt;, &lt;a&gt;, &lt;b&gt, etc.). Cette option permet de les conserver, donc le format des articles est préservé. Attention : si les tags HTML sont activés, vous devez vérifier qu'ils ne restent pas ouverts. En effet, si l'un est ouvert et que le résumé s'achève avant que ce tag soit fermé, tout le reste du site sera contenu dans ce tag ! Laissez l'option sur Désactivé si vous n'êtes pas sûr."
+
+#: admin/settings.php:1402
+#@ iced_mocha
+msgid "Link the thumbnail to the post"
+msgstr "Lier la vignette à l'article"
+
+#: admin/settings.php:1403
+#@ iced_mocha
+msgid "Show featured images as thumbnails on posts. The images must be selected for each post in the Featured Image section."
+msgstr "Afficher les Images à la Une en tant que vignettes dans les articles. Les images soivent être sélectionnées pour chaque article dans la section Images à la Une."
+
+#: admin/settings.php:1418
+#@ iced_mocha
+msgid "Show the first image that you inserted in a post as a thumbnail. If there is a Featured Image selected for that post, it will have priority."
+msgstr "Affiche la première image d'un article en tant que vignette. Si une Image à la Une est sélectionnée pour cet article, elle aura la priorité."
+
+#: admin/settings.php:1434
+#@ iced_mocha
+msgid "Thumbnail alignment."
+msgstr "Alignement des vignette"
+
+#: admin/settings.php:1441
+#@ iced_mocha
+msgid "(width)"
+msgstr "(largeur)"
+
+#: admin/settings.php:1442
+#@ iced_mocha
+msgid "(height)"
+msgstr "(hauteur)"
+
+#: admin/settings.php:1448
+#@ iced_mocha
+msgid "Crop images to exact size."
+msgstr "Retaille l'image à la taille exacte."
+
+#: admin/settings.php:1451
+#@ iced_mocha
+msgid "The size (in pixels) for your thumbnails. By default imges will be scaled with aspect ratio kept. Choose to crop the images if you want the exact size."
+msgstr "La taille en pixels des vignettes. Par défaut les images seront ajustées en conservant leurs proportions. Retaillez-les si vous voulez obtenir la taille exacte."
+
+#: admin/settings.php:1467
+#@ iced_mocha
+msgid "Show featured images on headers. The header will be replaced with a featured image if you selected it as a Featured Image in the post and if it is bigger or at least equal to the current header size."
+msgstr "Afficher les images dans les en-têtes. L'en-tête sera remplacée par une Image à la Une si vous la sélectionnez en tant que telle dans l'article et si ses dimensions sont supérieures ou égales à celles de l'en-tête."
+
+#: admin/settings.php:1478
+#@ iced_mocha
+msgid "Select your desired Social network from the left dropdown menu and insert your corresponding address in the right input field. (ex: <i>http://www.facebook.com/yourname</i> )"
+msgstr "Sélectionnez un réseau social dans le menu de gauche et insérez le lien correspondant dans le chmp de droite (par exemple : <i>http://www.facebook.com/mon_nom</i> )"
+
+#: admin/settings.php:1479
+#@ iced_mocha
+msgid "You can also choose if you want the link to open in a new window and what title to dispaly while hovering over the icon."
+msgstr "Vous pouvez également choisir d'ouvrir le lien dans une nouvelle fenêtre ainsi que le titre à afficher lors du survol."
+
+#: admin/settings.php:1480
+#@ iced_mocha
+msgid "You can show up to 5 different social icons from over 35 social networks."
+msgstr "Vous pouvez afficher jusqu'à 5 réseaux sociaux différents parmi les 35 qui sont pré-paramétrés."
+
+#: admin/settings.php:1481
+#@ iced_mocha
+msgid "You can leave any number of inputs empty."
+msgstr "Vous pouvez laisser vides les champs de saisie non utiles."
+
+#: admin/settings.php:1482
+#@ iced_mocha
+msgid "You can change the background for your social colors from the colors settings section."
+msgstr "Vous pouvez changer le fond des réseaux sociaux dans la rubrique \"Couleurs\"."
+
+#: admin/settings.php:1500
+#@ iced_mocha
+msgid "Social Network Link"
+msgstr "Réseau social - lien"
+
+#: admin/settings.php:1505
+#@ iced_mocha
+msgid "Open in new window"
+msgstr "Ouvrir dans une nouvelle fenêtre"
+
+#: admin/settings.php:1507
+#@ iced_mocha
+msgid "Social Network Title"
+msgstr "Réseau social - titre"
+
+#: admin/settings.php:1550
+#@ iced_mocha
+msgid "Footer"
+msgstr "Pied de page"
+
+#: admin/settings.php:1554
+#@ iced_mocha
+msgid "Left side"
+msgstr "Côté gauche"
+
+#: admin/settings.php:1558
+#@ iced_mocha
+msgid "Right side"
+msgstr "Côté droit"
+
+#: admin/settings.php:1570
+#@ iced_mocha
+msgid "Choose the <b>areas</b> where to display the social icons."
+msgstr "Choisissez les <b>zones d'affichage</b> des icônes des réseaux sociaux."
+
+#: admin/settings.php:1583
+#@ iced_mocha
+msgid "Insert custom text or HTML code that will appear in you footer. <br /> You can use HTML to insert links, images and special characters like &copy;."
+msgstr "Insérez le texte (ou le code HTML) qui sera publié dans le pied de page. Vous pouvez insérer des liens, des images et des caractères spéciaux comme &copy;."
+
+#: admin/settings.php:1591
+#@ iced_mocha
+msgid "Insert your custom CSS here. Any CSS declarations made here will overwrite Iced Mocha Theme's (even the custom options specified right here in the Iced Mocha Theme Settings page). <br /> Your custom CSS will be preserved when updating the theme."
+msgstr "Insérez ici votre propre code CSS. Celui-ci s'appliquera en priorité, en annulant les réglages de la feuille de style de Iced Mocha Theme et même les choix effectués dans la page des réglages. <br />De plus, ce CSS sera préservé lors des mises à jour du thème."
+
+#: admin/settings.php:1598
+#@ iced_mocha
+msgid "Insert your custom Javascript code here. (Google Analytics and any other forms of Analytic software)."
+msgstr "Insérez ici votre propre code Javascript (Google Analytics, etc.)"
+
+#: admin/settings.php:1612
+#@ iced_mocha
+msgid "Enable extra compatibility tag for older Internet Explorer versions. Turning this option on will trigger W3C validation errors."
+msgstr "Active la compatibilité avec les anciennes versions d'Internet Explorer. Attention : l'activation de cette option provoque des erreurs lors de la validation du CSS par le W3C."
+
+#: content/content-aside.php:15
+#: content/content-audio.php:15
+#: content/content-chat.php:15
+#: content/content-gallery.php:18
+#: content/content-gallery.php:42
+#: content/content-image.php:14
+#: content/content-link.php:15
+#: content/content-quote.php:13
+#: content/content-status.php:14
+#: content/content-video.php:15
+#: content/content.php:21
+#, php-format
+#@ iced_mocha
+msgid "Permalink to %s"
+msgstr "Lien vers %s"
+
+#: content/content-aside.php:28
+#: content/content-audio.php:23
+#: content/content-chat.php:28
+#: content/content-image.php:22
+#: content/content-link.php:28
+#: content/content-quote.php:26
+#: content/content-status.php:32
+#: content/content-video.php:23
+#@ iced_mocha
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Suite  <span class=\"meta-nav\">&rarr;</span>"
+
+#: content/content-aside.php:33
+#@ iced_mocha
+msgid "Aside"
+msgstr "De côté"
+
+#: content/content-audio.php:27
+#@ iced_mocha
+msgid "Audio"
+msgstr "Audio"
+
+#: content/content-chat.php:33
+#@ iced_mocha
+msgid "Chat"
+msgstr "Chat"
+
+#: content/content-gallery.php:55
+#@ iced_mocha
+msgid "Gallery"
+msgstr "Galerie"
+
+#: content/content-quote.php:31
+#@ iced_mocha
+msgid "Quote"
+msgstr "Citation"
+
+#: content/content-status.php:36
+#@ iced_mocha
+msgid "Status"
+msgstr "Statut"
+
+#: content/content-video.php:27
+#@ iced_mocha
+msgid "Video"
+msgstr "Vidéo"
+
+#. translators: 1: date, 2: time
+#: includes/theme-comments.php:33
+#@ iced_mocha
+msgid "at"
+msgstr "à"
+
+#: includes/theme-comments.php:33
+#: includes/theme-comments.php:59
+#@ iced_mocha
+msgid "(Edit)"
+msgstr "(Editer)"
+
+#: includes/theme-comments.php:40
+#@ iced_mocha
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: includes/theme-comments.php:47
+#@ iced_mocha
+msgid "Reply"
+msgstr "Répondre"
+
+#: includes/theme-comments.php:59
+#@ iced_mocha
+msgid "Pingback: "
+msgstr "Pingback :"
+
+#: includes/theme-comments.php:90
+#@ iced_mocha
+msgid "<b>0</b>"
+msgstr "<b>0</b>"
+
+#: includes/theme-comments.php:90
+#@ iced_mocha
+msgid "<b>1</b>"
+msgstr "<b>1</b>"
+
+#: includes/theme-comments.php:90
+#@ iced_mocha
+msgid "<b>%</b>"
+msgstr "<b>%</b>"
+
+#: includes/theme-comments.php:90
+#@ parablola
+msgid "<b>-</b>"
+msgstr "<b>%</b>"
+
+#: includes/theme-comments.php:114
+#@ iced_mocha
+msgid "Older Comments"
+msgstr "Commentaires précédents"
+
+#: includes/theme-comments.php:115
+#@ iced_mocha
+msgid "Newer Comments"
+msgstr "Nouveaux commentaires"
+
+#: includes/theme-comments.php:143
+#@ iced_mocha
+msgid "Comments are closed."
+msgstr "Les commentaires sont terminés."
+
+#: includes/theme-comments.php:163
+#: includes/theme-comments.php:164
+#@ iced_mocha
+msgid "Name"
+msgstr "Nom*"
+
+#: includes/theme-comments.php:168
+#: includes/theme-comments.php:169
+#@ iced_mocha
+msgid "Email"
+msgstr "E-mail*"
+
+#: includes/theme-comments.php:173
+#: includes/theme-comments.php:174
+#@ iced_mocha
+msgid "Website"
+msgstr "Site Web"
+
+#: includes/theme-functions.php:46
+#@ iced_mocha
+msgid "Menu"
+msgstr "Menu"
+
+#: includes/theme-functions.php:308
+#@ iced_mocha
+msgid "Powered by"
+msgstr "Powered by"
+
+#: includes/theme-functions.php:310
+#@ iced_mocha
+msgid "Semantic Personal Publishing Platform"
+msgstr "Plateforme de publication sémantique personnelle"
+
+#: includes/theme-loop.php:162
+#@ iced_mocha
+msgid "Author "
+msgstr "Auteur"
+
+#: includes/theme-loop.php:164
+#, php-format
+#@ iced_mocha
+msgid "View all posts by %s"
+msgstr "Articles par %s"
+
+#: includes/theme-loop.php:179
+#@ iced_mocha
+msgid "Categories"
+msgstr "Catégories"
+
+#: includes/theme-loop.php:199
+#@ iced_mocha
+msgid "Tags"
+msgstr "Mots-clés"
+
+#: includes/theme-loop.php:254
+#@ iced_mocha
+msgid "Tagged"
+msgstr "Tagged"
+
+#: includes/theme-loop.php:257
+#@ iced_mocha
+msgid " Bookmark the permalink"
+msgstr "Enregistrer le lien comme favori"
+
+#: includes/theme-loop.php:257
+#@ iced_mocha
+msgid "Permalink to"
+msgstr "Lien vers "
+
+#: includes/theme-loop.php:280
+#@ iced_mocha
+msgid "<i class=\"meta-nav-prev\"></i> <span>Older posts</span>"
+msgstr "<i class=\"meta-nav-prev\"></i> <span>Articles précédents</span>"
+
+#: includes/theme-loop.php:281
+#@ iced_mocha
+msgid "<span>Newer posts</span> <i class=\"meta-nav-next\"></i>"
+msgstr "<span>Articles récents</span> <i class=\"meta-nav-next\"></i>"
+
+#: includes/theme-meta.php:26
+#, php-format
+#@ iced_mocha
+msgid "Page %s"
+msgstr "Page %s"
+
+#: includes/theme-setup.php:86
+#@ iced_mocha
+msgid "Primary Navigation"
+msgstr "Menu principal"
+
+#: includes/theme-setup.php:87
+#@ iced_mocha
+msgid "Top Navigation"
+msgstr "Menu du haut"
+
+#: includes/theme-setup.php:88
+#@ iced_mocha
+msgid "Footer Navigation"
+msgstr "Menu du pied de page"
+
+#: includes/theme-setup.php:120
+#@ iced_mocha
+msgid "Iced Mocha Theme Default Header Image"
+msgstr "Image d'en-tête de Iced Mocha Theme (par défaut)"
+
+#: includes/theme-setup.php:181
+#@ iced_mocha
+msgid "Skip to content"
+msgstr "Passer au contenu"
+
+#: includes/theme-setup.php:212
+#@ iced_mocha
+msgid "Left sidebar"
+msgstr "Barre latérale gauche"
+
+#: includes/theme-setup.php:223
+#@ iced_mocha
+msgid "Right sidebar"
+msgstr "Barre latérale droite"
+
+#: includes/theme-setup.php:232
+#@ iced_mocha
+msgid "First Footer Area"
+msgstr "Première zone de pied de page"
+
+#: includes/theme-setup.php:234
+#@ iced_mocha
+msgid "First footer area"
+msgstr "Première zone de pied de page"
+
+#: includes/theme-setup.php:243
+#@ iced_mocha
+msgid "Second Footer Area"
+msgstr "Deuxième zone de pied de page"
+
+#: includes/theme-setup.php:245
+#@ iced_mocha
+msgid "Second footer area"
+msgstr "Deuxième zone de pied de page"
+
+#: includes/theme-setup.php:254
+#@ iced_mocha
+msgid "Third Footer Area"
+msgstr "Troisième zone de pied de page"
+
+#: includes/theme-setup.php:256
+#@ iced_mocha
+msgid "The third footer area"
+msgstr "Troisième zone de pied de page"
+
+#: includes/theme-setup.php:265
+#@ iced_mocha
+msgid "Fourth Footer Area"
+msgstr "Quatrième zone de pied de page"
+
+#: includes/theme-setup.php:267
+#@ iced_mocha
+msgid "The fourth footer area"
+msgstr "Quatrième zone de pied de page"
+
+#: includes/theme-setup.php:276
+#: includes/theme-setup.php:278
+#@ iced_mocha
+msgid "Above Content Area"
+msgstr "Zone de contenu - haut"
+
+#: includes/theme-setup.php:287
+#: includes/theme-setup.php:289
+#@ iced_mocha
+msgid "Below Content Area"
+msgstr "Zone de contenu - bas"
+
+#: includes/theme-setup.php:298
+#: includes/theme-setup.php:300
+#@ iced_mocha
+msgid "Header Widgets"
+msgstr "Widgets d'en-tête"
+
+#: admin/admin-functions.php:192
+#@ iced_mocha
+msgid ""
+"Are you sure you want to load a new color scheme? \n"
+"All current saved settings under Text and Color Settings will be lost."
+msgstr ""
+"Etes-vous sûr de vouloir charger un nouveau jeu de couleurs ? \n"
+"Tous les réglages dans les rubriques Texte et Couleurs seront effacés"
+
+#: archive.php:28
+#@ iced_mocha
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:30
+#@ iced_mocha
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: content/content-gallery.php:41
+#, php-format
+#@ iced_mocha
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "Cette galerie contient <a %1$s>%2$s photo</a>."
+msgstr[1] "Cette galerie contient <a %1$s>%2$s photos</a>."
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: includes/theme-comments.php:101
+#, php-format
+#@ iced_mocha
+msgid "One Comment:"
+msgid_plural "%1$s Comments:"
+msgstr[0] "Un commentaire"
+msgstr[1] "%1$s commentaires"
+
+#: includes/theme-comments.php:186
+#: includes/theme-comments.php:187
+#@ iced_mocha
+msgctxt "noun"
+msgid "Comment"
+msgstr "Commentaire"
+
+#: includes/theme-setup.php:313
+#, php-format
+#@ iced_mocha
+msgid "Only drag [Espresso Column] widgets here. Recommended size for uploaded images: %1$dpx (width) x %2$dpx (height). Go to the Iced Mocha Theme Settings page >> Presentation Page Settings >> Columns to edit sizes and more."
+msgstr ""
+
