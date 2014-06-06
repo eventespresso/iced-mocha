@@ -58,7 +58,7 @@ add_filter( 'excerpt_more', 'iced_mocha_auto_excerpt_more' );
  * @return string Excerpt with a pretty "Continue Reading" link
  */
 function iced_mocha_custom_excerpt_more( $output ) {
-	if ( has_excerpt() && ! is_attachment() ) {
+	if ( has_excerpt() && ! is_attachment() && ! get_post_type() == 'espresso_events' ) {
 		$output .= iced_mocha_continue_reading_link();
 	}
 	return $output;
