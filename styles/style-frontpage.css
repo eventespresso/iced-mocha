@@ -41,6 +41,7 @@
 }
 
 #frontpage blockquote {
+	padding:15px 0px;
 	width: inherit;
     margin-bottom: 20px;
 	font-size: 1.5em;
@@ -66,6 +67,11 @@
 	-moz-box-sizing: border-box;
      -webkit-box-sizing: border-box;
      box-sizing: border-box; }
+	 
+.column-image img {
+	display:block;
+	margin:0 auto;
+}
 	 
 .column-header-image {
 font-size:24px;

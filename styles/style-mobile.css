@@ -60,6 +60,12 @@
 	
 	
 @media (max-width: 800px) {
+	/* Column text and Readmore button visible on mobile devices */
+	.column-image {overflow:visible;} .column-image-inside {display:none;}
+	.column-text {position:relative;top:0;left:0;-webkit-transform:none;transform:none;-webkit-transition:none;transition:none;color:#999;padding:10px 0;width:100%;display:table;margin:0 auto;}
+	.columnmore {position:relative;bottom:0;}
+	.column-image:hover .columnmore {bottom:0;}
+	
 	#header, #access, #branding, #topbar-inner,  #footer-widget-area { width:100%; }
 	.topmenu {float:left;}
 	#header-full, #footer { min-width: 100%; }
@@ -69,10 +75,11 @@
 	#footer {margin-top:0;}
 	
 	#forbottom, #colophon {margin:0 20px;}
+	.presentation-page .slider-wrapper{margin:0 auto;}
 	.presentation-page #forbottom{margin:0;}
 	.presentation-page #pp-afterslider {margin:0 20px;}
 	#front-text1, #front-text2 {padding:20px 0;} 
-	.nivo-caption {top:0;left:0;width:100%;bottom:auto;}
+	.nivo-caption {botton:20px;left:0;width:100%;}
 	
 	#bg_image {width:100%;}
 	#header-container > div {height:100%;}
@@ -88,17 +95,17 @@
 	#access .menu-header, div.menu {margin:0 5px;}
 	#container[class*='column'] #primary, #container[class*='column'] #secondary, 
 	#container[class*='column'] #content {width:100%;float:none;margin:0;clear:both;} 
-	#container[class*='column'] #content {margin-bottom:20px !important;}
+	#container[class*='column'] #content {margin-bottom:25px !important;}
 	
 	.slider-wrapper {width:100%;}
 	#slider {width:auto;height:auto;}
 	
-	#front-columns > div {width:47%;}
+	#front-columns > div {width:47%;margin-bottom:20px;}
 	#front-columns div.column1 {clear:none;}
 	#front-columns > div.column3 {margin-right:5%;}
 	#front-columns > div:nth-child(2n+2){margin-right:0;}
-	.column-image img {/*height:auto;*/}
-	.column-image > div { }
+	.column-image img {height:auto;}
+	#front-columns .column-header-image {text-align:center;margin-bottom:10px;}
 	
 	#content img, #content article.post img, #content article .wp-caption, article embed {
 		max-width:100% !important;
@@ -134,7 +141,7 @@
 	#front-text2 h1{margin-bottom:0px;}
 	#frontpage blockquote { font-size: 1.0em; line-height: 1.6em; padding: 10px 0; }
 	
-	.nivo-caption h2 {font-size:16px;padding:5px 10px;}
+	.nivo-caption h2 {font-size:16px;line-height:20px;padding:5px 10px;}
 	
 	article.intro .entry-content {font-size: 12px;}
 	.featured-post .entry-title {font-size: 14px;}
@@ -161,7 +168,8 @@
 	#header .socials a img { width: 20px; height: 20px; }
 	
 	.theme-default .nivoSlider {background-image:none;}
-	.nivo-caption {position:relative;padding:5px 5px 35px;background:#222;color:#EEE;}
+	.nivo-caption {position:relative;padding:5px 5px 35px;background:transparent;color:#333;top:0;}
+	.theme-default .nivo-controlNav {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
 	.slide-text {font-size:12px;}
 	
 	.column-header-image {margin-bottom:0;font-size:20px;}
@@ -179,13 +187,13 @@
 	#site-description {	font-size: 11px;line-height:10px;}
 	
 	
-	.nivo-caption h2 {margin-bottom:0px;font-size:14px;}
+	.nivo-caption h2 {margin-bottom:0px;font-size:14px;line-height:18px;}
 	
 	body {padding: 0;}
 	#page {margin-top: 0;}
 	.magazine-layout #content article.post, .magazine-layout .search #content article{margin:5px 0;width:100%;}
-	#front-columns > div { width:90%; display:table; margin:10px auto !important;float:none;clear:both;}
-	.column-image img {height:auto;}
+	#front-columns > div { width:auto;max-width:98%;float:none;margin:25px auto !important;clear:both;}
+	.column-image img {}
 }
 
 /* used to be 400px */
