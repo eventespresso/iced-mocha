@@ -143,6 +143,16 @@ function iced_mocha_remove_gallery_css( $css ) {
 add_filter( 'gallery_style', 'iced_mocha_remove_gallery_css' );
 
 
+function iced_mocha_author_on() {
+	global $post;
+	if (is_single() && get_the_author_meta('user_url',$post->post_author)) {
+		echo '<link rel="author" href="'.get_the_author_meta('user_url',$post->post_author).'">';
+	}
+}
+
+add_action ('wp_head','iced_mocha_author_on');
+
+
 if ( ! function_exists( 'iced_mocha_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post—date/time and author.
