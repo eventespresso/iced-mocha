@@ -1003,6 +1003,15 @@ function espresso_theme_setting_menualign_fn() {
 	echo "<div><small>".__("Sets the desired menu items alignment.","iced_mocha")."</small></div>";
 }
 
+function  espresso_theme_setting_contentmargins_fn() {
+	global $iced_mochas;
+	echo __('Margin top: ','iced_mocha');espresso_theme_proto_field( $temperas, "input4str", "iced_mocha_contentmargintop", $iced_mochas['iced_mocha_contentmargintop'], ' px ' );
+	echo "<div><small>".__("The margin between the content and the menu. It can be set to 0px if you want the content area and menu to join.","iced_mocha")."</small></div><br><br>";
+	
+	echo __('Padding left/right: ','iced_mocha');espresso_theme_proto_field( $iced_mochas, "input4str", "iced_mocha_contentpadding", $iced_mochas['iced_mocha_contentpadding'], ' px' );
+	echo "<div><small>".__("The left/right padding around the content. Should be set to 10px or less for designs without a content color.","iced_mocha")."</small></div>";
+}
+
 // RADIO-BUTTON - Name: iced_mocha_settings[image]
 function espresso_theme_setting_image_fn() {
 	global $iced_mochas;
