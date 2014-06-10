@@ -669,7 +669,7 @@ msgid "Posted on"
 msgstr ""
 
 #: admin/main.php:384
-msgid "Reset Iced Mocha Theme Settings to Defaults?"
+msgid "Reset Iced Mocha Settings to Defaults?"
 msgstr ""
 
 #: admin/prototypes.php:30
@@ -1900,7 +1900,7 @@ msgid "Insert custom text or HTML code that will appear in you footer. <br /> Yo
 msgstr ""
 
 #: admin/settings.php:1591
-msgid "Insert your custom CSS here. Any CSS declarations made here will overwrite Iced Mocha Theme's (even the custom options specified right here in the Iced Mocha Theme Settings page). <br /> Your custom CSS will be preserved when updating the theme."
+msgid "Insert your custom CSS here. Any CSS declarations made here will overwrite Iced Mocha Theme's (even the custom options specified right here in the Iced Mocha Settings page). <br /> Your custom CSS will be preserved when updating the theme."
 msgstr ""
 
 #: admin/settings.php:1598

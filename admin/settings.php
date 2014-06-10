@@ -1611,7 +1611,7 @@ function espresso_theme_setting_copyright_fn() {
 function espresso_theme_setting_customcss_fn() {
 	global $iced_mochas;
 	echo "<textarea id='iced_mocha_customcss' name='iced_mocha_settings[iced_mocha_customcss]' rows='8' cols='70' type='textarea' >".esc_textarea(htmlspecialchars_decode($iced_mochas['iced_mocha_customcss'], ENT_QUOTES))." </textarea>";
-	echo "<div><small>".__("Insert your custom CSS here. Any CSS declarations made here will overwrite Iced Mocha Theme's (even the custom options specified right here in the Iced Mocha Theme Settings page). <br /> Your custom CSS will be preserved when updating the theme.","iced_mocha")."</small></div>";
+	echo "<div><small>".__("Insert your custom CSS here. Any CSS declarations made here will overwrite Iced Mocha Theme's (even the custom options specified right here in the Iced Mocha Settings page). <br /> Your custom CSS will be preserved when updating the theme.","iced_mocha")."</small></div>";
 }
 
 // TEXTBOX - Name: iced_mocha_settings[customjs]

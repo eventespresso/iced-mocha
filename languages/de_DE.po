@@ -731,7 +731,7 @@ msgid "Posted on"
 msgstr "Beitrag vom"
 
 #: admin/main.php:384
-msgid "Reset Iced Mocha Theme Settings to Defaults?"
+msgid "Reset Iced Mocha Settings to Defaults?"
 msgstr "Iced Mocha Theme Standardeinstellungen wiederherstellen?"
 
 #: admin/prototypes.php:30

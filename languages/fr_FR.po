@@ -847,7 +847,7 @@ msgstr "Publié sur"
 
 #: admin/main.php:382
 #@ iced_mocha
-msgid "Reset Iced Mocha Theme Settings to Defaults?"
+msgid "Reset Iced Mocha Settings to Defaults?"
 msgstr "Voulez-vous rétablir les réglages standards ?"
 
 #: admin/prototypes.php:30
@@ -2371,7 +2371,7 @@ msgstr "Insérez le texte (ou le code HTML) qui sera publié dans le pied de pag
 
 #: admin/settings.php:1591
 #@ iced_mocha
-msgid "Insert your custom CSS here. Any CSS declarations made here will overwrite Iced Mocha Theme's (even the custom options specified right here in the Iced Mocha Theme Settings page). <br /> Your custom CSS will be preserved when updating the theme."
+msgid "Insert your custom CSS here. Any CSS declarations made here will overwrite Iced Mocha Theme's (even the custom options specified right here in the Iced Mocha Settings page). <br /> Your custom CSS will be preserved when updating the theme."
 msgstr "Insérez ici votre propre code CSS. Celui-ci s'appliquera en priorité, en annulant les réglages de la feuille de style de Iced Mocha Theme et même les choix effectués dans la page des réglages. <br />De plus, ce CSS sera préservé lors des mises à jour du thème."
 
 #: admin/settings.php:1598
@@ -2736,6 +2736,6 @@ msgstr "Commentaire"
 #: includes/theme-setup.php:313
 #, php-format
 #@ iced_mocha
-msgid "Only drag [Espresso Column] widgets here. Recommended size for uploaded images: %1$dpx (width) x %2$dpx (height). Go to the Iced Mocha Theme Settings page >> Presentation Page Settings >> Columns to edit sizes and more."
+msgid "Only drag [Espresso Column] widgets here. Recommended size for uploaded images: %1$dpx (width) x %2$dpx (height). Go to the Iced Mocha Settings page >> Presentation Page Settings >> Columns to edit sizes and more."
 msgstr ""
 

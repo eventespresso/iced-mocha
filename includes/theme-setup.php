@@ -6,7 +6,7 @@
  * @subpackage Functions
  */
 
-// Bringing up Iced Mocha Theme Settings page after install
+// Bringing up Iced Mocha Settings page after install
 /*
 if ( is_admin() && isset($_GET['activated'] ) && $pagenow == "themes.php" ) {
 	wp_redirect( 'themes.php?page=iced_mocha-page' );
@@ -310,7 +310,7 @@ function iced_mocha_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Presentation Page Columns', 'iced_mocha' ),
 		'id' => 'presentation-page-columns-area',
-		'description' => sprintf(__('Only drag [Espresso Column] widgets here. Recommended size for uploaded images: %1$dpx (width) x %2$dpx (height). Go to the Iced Mocha Theme Settings page >> Presentation Page Settings >> Columns to edit sizes and more.','iced_mocha' ),$iced_mocha_colimagewidth,$iced_mocha_colimageheight),
+		'description' => sprintf(__('Only drag [Espresso Column] widgets here. Recommended size for uploaded images: %1$dpx (width) x %2$dpx (height). Go to the Iced Mocha Settings page >> Presentation Page Settings >> Columns to edit sizes and more.','iced_mocha' ),$iced_mocha_colimagewidth,$iced_mocha_colimageheight),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',

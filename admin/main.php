@@ -51,7 +51,7 @@ function iced_mocha_init() {
 
 // Creating the iced_mocha subpage
 function iced_mocha_add_page_fn() {
-$page = add_theme_page('Iced Mocha Theme Settings', 'Iced Mocha Theme Settings', 'edit_theme_options', 'iced_mocha-page', 'iced_mocha_page_fn');
+$page = add_theme_page('Iced Mocha Settings', 'Iced Mocha Settings', 'edit_theme_options', 'iced_mocha-page', 'iced_mocha_page_fn');
 	add_action( 'admin_print_styles-'.$page, 'iced_mocha_admin_styles' );
 	add_action('admin_print_scripts-'.$page, 'iced_mocha_admin_scripts');
 
@@ -279,7 +279,7 @@ if ( isset( $_GET['settings-updated'] ) ) {
 }
 ?>
 <div id="jsAlert" class=""><b>Checking jQuery functionality...</b><br/><em>If this message remains visible after the page has loaded then there is a problem with your WordPress jQuery library. This can have several causes, including incompatible plugins.
-The Iced Mocha Theme Settings page cannot function without jQuery. </em></div>
+The Iced Mocha Settings page cannot function without jQuery. </em></div>
 <?php global $iced_mochas; $iced_mocha_varalert = espresso_theme_maxvarcheck(count($iced_mochas));
 if ($iced_mocha_varalert): ?><div id="varlimitalert"> <?php echo $iced_mocha_varalert; ?> </div><?php endif; ?>
 	<div id="main-options">
@@ -373,7 +373,7 @@ if ($iced_mocha_varalert): ?><div id="varlimitalert"> <?php echo $iced_mocha_var
 </div><!--  wrap -->
 
 <script type="text/javascript">
-var reset_confirmation = '<?php echo esc_html(__('Reset Iced Mocha Theme Settings to Defaults?','iced_mocha')); ?>';
+var reset_confirmation = '<?php echo esc_html(__('Reset Iced Mocha Settings to Defaults?','iced_mocha')); ?>';
 
 function startfarb(a,b) {
 	jQuery(b).css('display','none');
