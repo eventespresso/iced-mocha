@@ -316,7 +316,7 @@ msgid "Color Settings"
 msgstr "Farbeinstellungen"
 
 #: admin/main.php:119
-msgid "Graphics Settings"
+msgid "Content Settings"
 msgstr "Grafikeinstellungen"
 
 #: admin/main.php:120

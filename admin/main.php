@@ -116,7 +116,7 @@ function iced_mocha_init_fn(){
 	add_settings_section('presentation_section', __('Presentation Page','iced_mocha'), 'espresso_theme_section_presentation_fn', __FILE__);
 	add_settings_section('text_section', __('Text Settings','iced_mocha'), 'espresso_theme_section_text_fn', __FILE__);
 	add_settings_section('appereance_section',__('Color Settings','iced_mocha') , 'espresso_theme_section_appereance_fn', __FILE__);
-	add_settings_section('graphics_section', __('Graphics Settings','iced_mocha') , 'espresso_theme_section_graphics_fn', __FILE__);
+	add_settings_section('graphics_section', __('Content Settings','iced_mocha') , 'espresso_theme_section_graphics_fn', __FILE__);
 	add_settings_section('post_section', __('Post Information Settings','iced_mocha') , 'espresso_theme_section_post_fn', __FILE__);
 	add_settings_section('excerpt_section', __('Post Excerpt Settings','iced_mocha') , 'espresso_theme_section_excerpt_fn', __FILE__);
 	add_settings_section('featured_section', __('Featured Image Settings','iced_mocha') , 'espresso_theme_section_featured_fn', __FILE__);

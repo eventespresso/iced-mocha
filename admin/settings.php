@@ -1005,10 +1005,12 @@ function espresso_theme_setting_menualign_fn() {
 
 function  espresso_theme_setting_contentmargins_fn() {
 	global $iced_mochas;
-	echo __('Margin top: ','iced_mocha');espresso_theme_proto_field( $iced_mochas, "input4str", "iced_mocha_contentmargintop", $iced_mochas['iced_mocha_contentmargintop'], ' px ' );
+	echo __('Margin top: ','iced_mocha');
+	espresso_theme_proto_field( $iced_mochas, "input4str", "iced_mocha_contentmargintop", $iced_mochas['iced_mocha_contentmargintop'], ' px ' );
 	echo "<div><small>".__("The margin between the content and the menu. It can be set to 0px if you want the content area and menu to join.","iced_mocha")."</small></div><br><br>";
 	
-	echo __('Padding left/right: ','iced_mocha');espresso_theme_proto_field( $iced_mochas, "input4str", "iced_mocha_contentpadding", $iced_mochas['iced_mocha_contentpadding'], ' px' );
+	echo __('Padding left/right: ','iced_mocha');
+	espresso_theme_proto_field( $iced_mochas, "input4str", "iced_mocha_contentpadding", $iced_mochas['iced_mocha_contentpadding'], ' px' );
 	echo "<div><small>".__("The left/right padding around the content. Should be set to 10px or less for designs without a content color.","iced_mocha")."</small></div>";
 }
 

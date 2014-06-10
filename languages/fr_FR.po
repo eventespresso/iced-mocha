@@ -335,7 +335,7 @@ msgstr "Couleurs"
 
 #: admin/main.php:119
 #@ iced_mocha
-msgid "Graphics Settings"
+msgid "Content Settings"
 msgstr "Graphiques"
 
 #: admin/main.php:120

@@ -259,7 +259,7 @@ msgid "Color Settings"
 msgstr ""
 
 #: admin/main.php:119
-msgid "Graphics Settings"
+msgid "Content Settings"
 msgstr ""
 
 #: admin/main.php:120
