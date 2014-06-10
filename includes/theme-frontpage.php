@@ -50,6 +50,7 @@ function iced_mocha_presentation_css() {
 #front-columns > div.column<?php echo $iced_mocha_nrcolumns; ?> { margin-right: 0; }
 
 .column-image img {	height:<?php echo ($iced_mocha_colimageheight) ?>px;}
+.column-image img {	max-width:<?php echo $iced_mocha_colimagewidth;?>px;  max-height:<?php echo $iced_mocha_colimageheight;?>px;}
 
 .nivo-caption { background-color: rgba(<?php echo espresso_theme_hex2rgb($iced_mocha_fpslidercaptionbg); ?>,0.7); }
 .nivo-caption, .nivo-caption a { color: <?php echo $iced_mocha_fpslidercaptioncolor; ?>; }

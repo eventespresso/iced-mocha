@@ -36,21 +36,34 @@ $contentSize = $contentSize - 60;
 ?>
 #container.one-column { }
 #container.two-columns-right #secondary { width:<?php echo $sidebarSize; ?>px; float:right; }
-#container.two-columns-right #content { width:<?php echo $contentSize-$colPadding; ?>px; float:left; }
+#container.two-columns-right #content { width:<?php echo $contentSize-$colPadding; ?>px; float:left; } /*fallback*/
+#container.two-columns-right #content { width:calc(100% - <?php echo $sidebarSize+$colPadding; ?>px); float:left; }
 #container.two-columns-left #primary { width:<?php echo $sidebarSize; ?>px; float:left; }
-#container.two-columns-left #content { width:<?php echo $contentSize-$colPadding; ?>px; float:right; }
+#container.two-columns-left #content { width:<?php echo $contentSize-$colPadding; ?>px; float:right; } /*fallback*/
+#container.two-columns-left #content { 	width:-moz-calc(100% - <?php echo $sidebarSize+$colPadding; ?>px); float:right; 
+										width:-webkit-calc(100% - <?php echo $sidebarSize+$colPadding; ?>px); 
+										width:calc(100% - <?php echo $sidebarSize+$colPadding; ?>px); }
 
 #container.three-columns-right .sidey { width:<?php echo $sidebarSize/2; ?>px; float:left; }
 #container.three-columns-right #primary { margin-left:<?php echo $colPadding; ?>px; margin-right:<?php echo $colPadding; ?>px; }
-#container.three-columns-right #content { width:<?php echo $contentSize-$colPadding*2; ?>px; float:left; }
-
+#container.three-columns-right #content { width:<?php echo $contentSize-$colPadding*2; ?>px; float:left; } /*fallback*/
+#container.three-columns-right #content { 	width:-moz-calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px); float:left;
+											width:-webkit-calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px);
+											width:calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px);}
+											
 #container.three-columns-left .sidey { width:<?php echo $sidebarSize/2; ?>px; float:left; }
 #container.three-columns-left #secondary {margin-left:<?php echo $colPadding; ?>px; margin-right:<?php echo $colPadding; ?>px; }
-#container.three-columns-left #content { width:<?php echo $contentSize-$colPadding*2; ?>px; float:right;}
+#container.three-columns-left #content { width:<?php echo $contentSize-$colPadding*2; ?>px; float:right;} /*fallback*/
+#container.three-columns-left #content { width:-moz-calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px); float:right;
+										 width:-webkit-calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px);
+										 width:calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px); }
 
 #container.three-columns-sided .sidey { width:<?php echo $sidebarSize/2; ?>px; float:left; }
 #container.three-columns-sided #secondary { float:right; }
-#container.three-columns-sided #content { width:<?php echo $contentSize-$colPadding*2; ?>px; float:right;
+#container.three-columns-sided #content { width:<?php echo $contentSize-$colPadding*2; ?>px; float:right; /*fallback*/
+										  width:-moz-calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px); float:right;
+										  width:-webkit-calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px); float:right;
+										  width:calc(100% - <?php echo $sidebarSize+$colPadding*2; ?>px); float:right;
 		                                  margin: 0 <?php echo ($sidebarSize/2)+$colPadding;?>px 0 <?php echo -($contentSize+$sidebarSize); ?>px; }
 
 #footer-widget-area {width:<?php echo $totalwidth-60; ?>px;}
@@ -134,6 +147,8 @@ else { ?>
 
 .sidey .widget-container { color: <?php echo $iced_mocha_sidetxt; ?>; background-color: <?php echo $iced_mocha_sidebg; ?>; }
 .sidey .widget-title { color: <?php echo $iced_mocha_sidetitletxt; ?>; background-color: <?php echo $iced_mocha_sidetitlebg; ?>;border-color:<?php echo espresso_theme_hexadder($iced_mocha_sidetitlebg,'-40');?>;}
+.sidey .widget-container a {color:<?php echo $iced_mocha_linkcolorside;?>;}
+.sidey .widget-container a:hover {color:<?php echo $iced_mocha_linkcolorsidehover;?>;}
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
      color: <?php echo $iced_mocha_contentcolortxtheadings; ?>; }
@@ -171,7 +186,9 @@ a.continue-reading-link:hover i.icon-right-dir {color:<?php echo $iced_mocha_acc
 .entry-content fieldset, #content tr td,#content tr th,#content thead th { border-color: <?php echo $iced_mocha_accentcolord; ?>; }
  #content tr.even td { background-color: <?php echo $iced_mocha_accentcolore; ?> !important; }
 hr { background-color: <?php echo $iced_mocha_accentcolord; ?>; }
-input[type="text"], input[type="password"], input[type="email"], input[type="file"], textarea, select {
+input[type="text"], input[type="password"], input[type="email"], input[type="file"], textarea, select,
+input[type="color"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="month"],input[type="number"],input[type="range"],
+input[type="search"],input[type="tel"],input[type="time"],input[type="url"],input[type="week"] {
 	background-color: <?php echo $iced_mocha_accentcolore; ?>;
     border-color: <?php echo $iced_mocha_accentcolord; ?> <?php echo $iced_mocha_accentcolorc; ?> <?php echo $iced_mocha_accentcolorc; ?> <?php echo $iced_mocha_accentcolord; ?>;
 	color: <?php echo $iced_mocha_contentcolortxt; ?>; }
@@ -180,7 +197,9 @@ input[type="submit"], input[type="reset"] {
 	background-color: <?php echo $iced_mocha_contentcolorbg; ?>;
 	border-color: <?php echo $iced_mocha_accentcolord; ?>;
 	box-shadow: 0 -10px 10px 0 <?php echo $iced_mocha_accentcolore; ?> inset; }
-input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, textarea:hover {
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, textarea:hover,
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="range"]:hover,
+input[type="search"]:hover, input[type="tel"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover {
 	<?php if(espresso_theme_hex2rgb($iced_mocha_accentcolore)): ?>background-color: rgba(<?php echo espresso_theme_hex2rgb($iced_mocha_accentcolore); ?>,0.4); <?php endif; ?> }
 .entry-content code {
 	border-color: <?php echo $iced_mocha_accentcolord; ?>;
@@ -267,13 +286,27 @@ endfor; ?>
 <?php if ($iced_mocha_metapos == 'Top') { ?> footer.entry-meta {background-image:none !important;padding-top:0;} <?php } ?>
 	
 <?php switch ($iced_mocha_menualign): 
-		case "center": ?> #access > .menu > ul { display: table; margin: 0 auto; } <?php break;
-		case "right": ?> #access ul li { float: right; } <?php break;
+		case "center": ?> #access > .menu > ul { display: table; margin: 0 auto; } 
+							#access > .menu > ul { border-left: 1px solid <?php echo espresso_theme_hexadder($iced_mocha_menucolorbgdefault,'-30');?>; 
+										-moz-box-shadow: -1px 0 0 <?php echo espresso_theme_hexadder($iced_mocha_menucolorbgdefault,'24');?>; 
+										-webkit-box-shadow: -1px 0 0 <?php echo espresso_theme_hexadder($iced_mocha_menucolorbgdefault,'24');?>; 
+										box-shadow: -1px 0 0 <?php echo espresso_theme_hexadder($iced_mocha_menucolorbgdefault,'24');?>; } <?php 
+		break;
+		case "right": ?> #access ul li { float: right; } 
+						#access > .menu > ul > li > a > span { border-left:1px solid <?php echo espresso_theme_hexadder($iced_mocha_menucolorbgdefault,'-30');?>; 
+							-moz-box-shadow: -1px 0 0 <?php echo espresso_theme_hexadder($iced_mocha_menucolorbgdefault,'24');?>; 
+							-webkit-box-shadow: -1px 0 0 <?php echo espresso_theme_hexadder($iced_mocha_menucolorbgdefault,'24');?>; 
+							box-shadow: -1px 0 0 <?php echo espresso_theme_hexadder($iced_mocha_menucolorbgdefault,'24');?>;
+							border-right:0;	}
+		<?php break;
 		default: break; 
 	  endswitch; ?>
 #toTop {background:<?php echo $iced_mocha_contentcolorbg; ?>;margin-left:<?php echo $totalwidth+150 ?>px;} 		  
 <?php if (is_rtl() ) { ?> #toTop {margin-right:<?php echo $totalwidth+150 ?>px;-moz-border-radius:10px 0 0 10px;-webkit-border-radius:10px 0 0 10px;border-radius:10px 0 0 10px;}		<?php } ?>	
 #toTop:hover .icon-back2top:before {color:<?php echo $iced_mocha_accentcolorb;?>;}  
+
+#main {margin-top:<?php echo $iced_mocha_contentmargintop;?>px; }
+#forbottom {margin-left: <?php echo $iced_mocha_contentpadding;?>px; margin-right: <?php echo $iced_mocha_contentpadding;?>px;}
 <?php
 ////////// HEADER IMAGE //////////
 ?>
