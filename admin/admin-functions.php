@@ -261,4 +261,10 @@ function espresso_theme_maxvarcheck($themevarcount,$debug=false){
      endif;
      return $return;
 } // espresso_theme_maxvarcheck()
-?>
+
+// Synchronizing the tinymce width with the content width
+add_filter('tiny_mce_before_init', 'iced_mocha_dynamic_editor_styles', 10);
+function iced_mocha_dynamic_editor_styles($settings){
+    $settings['content_css'] .= ",".admin_url('admin-ajax.php') ."/?action=dynamic_styles";
+    return $settings;
+}
