@@ -172,6 +172,17 @@ function equalizeHeights(){
 
 }
 
+// Force footer at bottom of window
+jQuery(document).ready(function() {
+var docHeight = jQuery(window).height();
+var footerHeight = jQuery('#footer2').height();
+var footerTop = jQuery('#footer2').position().top + footerHeight;
+var forbottom = jQuery('#forbottom').height();
+if (footerTop < docHeight) {
+    jQuery('#forbottom').css('minHeight',(forbottom + docHeight  - footerTop -35) + 'px');
+}
+});
+
 /*!
 * FitVids 1.0
 *
