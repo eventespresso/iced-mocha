@@ -184,6 +184,8 @@ If you're doing event registration and ticketing any other way then you're wasti
 "iced_mocha_breadcrumbs"	=> "Enable",
 "iced_mocha_pagination"	=> "Enable",
 "iced_mocha_menualign"		=> "left",
+"iced_mocha_contentmargintop" => "20",
+"iced_mocha_contentpadding" => "30",
 "iced_mocha_caption"		=> "caption-dark",
 "iced_mocha_image_style"	=> "iced_mocha-image-one",
 "iced_mocha_contentlist"	=> "Show",
