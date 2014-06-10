@@ -175,6 +175,9 @@ else :
 	$input['iced_mocha_fwidth'] =  intval(wp_kses_data($input['iced_mocha_fwidth']));
 	$input['iced_mocha_fheight'] =  intval(wp_kses_data($input['iced_mocha_fheight']));
 
+	$input['iced_mocha_contentmargintop'] =  intval(wp_kses_data($input['iced_mocha_contentmargintop']));
+	$input['iced_mocha_contentpadding'] =  intval(wp_kses_data($input['iced_mocha_contentpadding']));
+
 /*** 2 ***/
 
 	$espresso_theme_special_terms = array('mailto:','callto://');
