@@ -47,6 +47,10 @@ $iced_mocha_defaults = array(
 "iced_mocha_slidertitle4"	=> "Host and Manage Events with WordPress",
 "iced_mocha_slidertext4"	=> "Event Espresso works perfectly for classes, workshops, fundraisers, sporting, trainings, conferences, networking, religion, social, non-profit, and nearly any other type of event.",
 "iced_mocha_sliderlink4"	=> "",
+"iced_mocha_sliderimg5" =>  "",
+"iced_mocha_slidertitle5"   => "",
+"iced_mocha_slidertext5"    => "",
+"iced_mocha_sliderlink5"    => "",
 
 "iced_mocha_nrcolumns"		=> "3",
 "iced_mocha_columnNumber"	=> "3",

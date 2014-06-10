@@ -45,7 +45,7 @@ add_action('template_redirect', 'espresso_theme_ajax_init');
 				'page_number_next' => $page_number_next,
 				'page_number_max' => $page_number_max,
 				'page_link_model' => get_pagenum_link(9999999),
-				'load_more_str' => __('More posts', 'tempera'),
+				'load_more_str' => __('More posts', 'iced_mocha'),
 				'content_css_selector' => '#content',
 				'pagination_css_selector' =>  '.pagination, .navigation',
 			)

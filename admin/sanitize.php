@@ -113,12 +113,12 @@ else :
 	$input["iced_mocha_descriptionbg"] = trim(wp_kses_data($input['iced_mocha_descriptionbg']));
 
 	$input["iced_mocha_menucolorbgdefault"] = trim(wp_kses_data($input['iced_mocha_menucolorbgdefault']));
-	$input["iced_mocha_menucolorbghover"] = trim(wp_kses_data($input['iced_mocha_menucolorbghover']));
-	$input["iced_mocha_menucolorbgactive"] = trim(wp_kses_data($input['iced_mocha_menucolorbgactive']));
-	$input["iced_mocha_menucolorshadow"] = trim(wp_kses_data($input['iced_mocha_menucolorshadow']));
+	//$input["iced_mocha_menucolorbghover"] = trim(wp_kses_data($input['iced_mocha_menucolorbghover']));
+	//$input["iced_mocha_menucolorbgactive"] = trim(wp_kses_data($input['iced_mocha_menucolorbgactive']));
+	//$input["iced_mocha_menucolorshadow"] = trim(wp_kses_data($input['iced_mocha_menucolorshadow']));
 	$input["iced_mocha_menucolortxtdefault"] = trim(wp_kses_data($input['iced_mocha_menucolortxtdefault']));
-	$input["iced_mocha_menucolortxthover"] = trim(wp_kses_data($input['iced_mocha_menucolortxthover']));
-	$input["iced_mocha_menucolortxtactive"] = trim(wp_kses_data($input['iced_mocha_menucolortxtactive']));
+	//$input["iced_mocha_menucolortxthover"] = trim(wp_kses_data($input['iced_mocha_menucolortxthover']));
+	//$input["iced_mocha_menucolortxtactive"] = trim(wp_kses_data($input['iced_mocha_menucolortxtactive']));
 
 	$input["iced_mocha_topmenucolortxt"] = trim(wp_kses_data($input['iced_mocha_topmenucolortxt']));
 	$input["iced_mocha_topmenucolortxthover"] = trim(wp_kses_data($input['iced_mocha_topmenucolortxthover']));
@@ -259,22 +259,22 @@ else :
 	$input['iced_mocha_colimageheight'] = intval(wp_kses_data($input['iced_mocha_colimageheight']));
 	
 /** 4 **/
-	$input['iced_mocha_columnimg1'] =  wp_kses_data($input['iced_mocha_columnimg1']);
-	$input['iced_mocha_columntitle1'] =  wp_kses_data($input['iced_mocha_columntitle1']);
-	$input['iced_mocha_columntext1'] =  wp_kses_post($input['iced_mocha_columntext1']);
-	$input['iced_mocha_columnlink1'] =  esc_url_raw($input['iced_mocha_columnlink1']);
-	$input['iced_mocha_columnimg2'] =  wp_kses_data($input['iced_mocha_columnimg2']);
-	$input['iced_mocha_columntitle2'] =  wp_kses_data($input['iced_mocha_columntitle2']);
-	$input['iced_mocha_columntext2'] =  wp_kses_post($input['iced_mocha_columntext2']);
-	$input['iced_mocha_columnlink2'] =  esc_url_raw($input['iced_mocha_columnlink2']);
-	$input['iced_mocha_columnimg3'] =  wp_kses_data($input['iced_mocha_columnimg3']);
-	$input['iced_mocha_columntitle3'] =  wp_kses_data($input['iced_mocha_columntitle3']);
-	$input['iced_mocha_columntext3'] =  wp_kses_post($input['iced_mocha_columntext3']);
-	$input['iced_mocha_columnlink3'] =  esc_url_raw($input['iced_mocha_columnlink3']);
-	$input['iced_mocha_columnimg4'] =  wp_kses_data($input['iced_mocha_columnimg4']);
-	$input['iced_mocha_columntitle4'] =  wp_kses_data($input['iced_mocha_columntitle4']);
-	$input['iced_mocha_columntext4'] =  wp_kses_post($input['iced_mocha_columntext4']);
-	$input['iced_mocha_columnlink4'] =  esc_url_raw($input['iced_mocha_columnlink4']);
+	//$input['iced_mocha_columnimg1'] =  wp_kses_data($input['iced_mocha_columnimg1']);
+	//$input['iced_mocha_columntitle1'] =  wp_kses_data($input['iced_mocha_columntitle1']);
+	//$input['iced_mocha_columntext1'] =  wp_kses_post($input['iced_mocha_columntext1']);
+	//$input['iced_mocha_columnlink1'] =  esc_url_raw($input['iced_mocha_columnlink1']);
+	//$input['iced_mocha_columnimg2'] =  wp_kses_data($input['iced_mocha_columnimg2']);
+	//$input['iced_mocha_columntitle2'] =  wp_kses_data($input['iced_mocha_columntitle2']);
+	//$input['iced_mocha_columntext2'] =  wp_kses_post($input['iced_mocha_columntext2']);
+	//$input['iced_mocha_columnlink2'] =  esc_url_raw($input['iced_mocha_columnlink2']);
+	//$input['iced_mocha_columnimg3'] =  wp_kses_data($input['iced_mocha_columnimg3']);
+	//$input['iced_mocha_columntitle3'] =  wp_kses_data($input['iced_mocha_columntitle3']);
+	//$input['iced_mocha_columntext3'] =  wp_kses_post($input['iced_mocha_columntext3']);
+	//$input['iced_mocha_columnlink3'] =  esc_url_raw($input['iced_mocha_columnlink3']);
+	//$input['iced_mocha_columnimg4'] =  wp_kses_data($input['iced_mocha_columnimg4']);
+	//$input['iced_mocha_columntitle4'] =  wp_kses_data($input['iced_mocha_columntitle4']);
+	//$input['iced_mocha_columntext4'] =  wp_kses_post($input['iced_mocha_columntext4']);
+	//$input['iced_mocha_columnlink4'] =  esc_url_raw($input['iced_mocha_columnlink4']);
 
 	$input['iced_mocha_columnreadmore'] =  wp_kses($input['iced_mocha_columnreadmore'],'');
 

@@ -342,7 +342,7 @@ function espresso_theme_setting_frontslider2_fn() {
 	global $iced_mochas;
 
      $items = array("Custom Slides", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
-	$itemsare = array( __("Custom Slides","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","tempera"));
+	$itemsare = array( __("Custom Slides","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","iced_mocha"));
 	echo "<strong> Slides content: </strong> ";
 	echo "<select id='iced_mocha_slideType' name='iced_mocha_settings[iced_mocha_slideType]'>";
 	foreach($items as $id=>$item) {
@@ -438,7 +438,7 @@ function espresso_theme_setting_frontcolumns_fn() {
 
 	echo '<div class="slmini">';
 	$items = array("Widget Columns", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
-	$itemsare = array( __("Widget Columns","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","tempera"));
+	$itemsare = array( __("Widget Columns","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","iced_mocha"));
 	echo "<strong> Columns content: </strong> ";
 	echo "<select id='iced_mocha_columnType' name='iced_mocha_settings[iced_mocha_columnType]'>";
 	foreach($items as $id=>$item) {
@@ -1005,7 +1005,7 @@ function espresso_theme_setting_menualign_fn() {
 
 function  espresso_theme_setting_contentmargins_fn() {
 	global $iced_mochas;
-	echo __('Margin top: ','iced_mocha');espresso_theme_proto_field( $temperas, "input4str", "iced_mocha_contentmargintop", $iced_mochas['iced_mocha_contentmargintop'], ' px ' );
+	echo __('Margin top: ','iced_mocha');espresso_theme_proto_field( $iced_mochas, "input4str", "iced_mocha_contentmargintop", $iced_mochas['iced_mocha_contentmargintop'], ' px ' );
 	echo "<div><small>".__("The margin between the content and the menu. It can be set to 0px if you want the content area and menu to join.","iced_mocha")."</small></div><br><br>";
 	
 	echo __('Padding left/right: ','iced_mocha');espresso_theme_proto_field( $iced_mochas, "input4str", "iced_mocha_contentpadding", $iced_mochas['iced_mocha_contentpadding'], ' px' );
