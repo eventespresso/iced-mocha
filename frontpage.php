@@ -69,6 +69,8 @@ function iced_mocha_excerpt_more_slider( $more ) {
           case 'Custom Slides':
 
                break;
+		  case 'Disabled':
+			   break;
      }//switch
 	 
 	 endif; // slidenumber>0
@@ -77,6 +79,8 @@ function iced_mocha_excerpt_more_slider( $more ) {
 	 add_filter( 'excerpt_more', 'iced_mocha_excerpt_more_slider', 999 );
      // switch for reading/creating the slides
      switch ($iced_mocha_slideType) {
+		  case 'Disabled':
+			   break;
           case 'Custom Slides':
                for ($i=1;$i<=5;$i++):
                     if(${"iced_mocha_sliderimg$i"}):
@@ -118,7 +122,8 @@ if (count($slides)>0):
      </div>
      <?php foreach($slides as $id=>$slide): ?>
             <div id="caption<?php echo $id;?>" class="nivo-html-caption">
-                <?php echo '<h2>'.$slide['title'].'</h2><div class="slide-text">'.$slide['text'].'</div>'; ?>
+                <?php echo (strlen($slide['title'])>0?'<h2>'.$slide['title'].'</h2>':'');
+				      echo (strlen($slide['text'])>0?'<div class="slide-text">'.$slide['text'].'</div>':''); ?>
             </div>
 	<?php endforeach; ?>
      </div>
@@ -159,6 +164,9 @@ if($iced_mocha_fronttext3) {?><div id="front-text3"> <blockquote><?php echo do_s
                $custom_query2->query(array( 'post_type' => 'any', 'post__in' => $pieces_array, 'ignore_sticky_posts' => 1,'orderby' => 'post__in' ));
                break;
           case 'Widget Columns':
+		  
+			   break;
+		  case 'Disabled':
 
                break;
      }//switch
@@ -168,6 +176,8 @@ if($iced_mocha_fronttext3) {?><div id="front-text3"> <blockquote><?php echo do_s
 	 
 	    // switch for reading/creating the columns
      switch ($iced_mocha_columnType) {
+		  case 'Disabled':
+			   break;
           case 'Widget Columns':
 		       // if widgets loaded 
                if (is_active_sidebar('presentation-page-columns-area')) {

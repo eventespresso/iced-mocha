@@ -341,8 +341,8 @@ function doAjaxRequest(){
 function espresso_theme_setting_frontslider2_fn() {
 	global $iced_mochas;
 
-     $items = array("Custom Slides", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts");
-	$itemsare = array( __("Custom Slides","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"));
+     $items = array("Custom Slides", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
+	$itemsare = array( __("Custom Slides","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","tempera"));
 	echo "<strong> Slides content: </strong> ";
 	echo "<select id='iced_mocha_slideType' name='iced_mocha_settings[iced_mocha_slideType]'>";
 	foreach($items as $id=>$item) {
@@ -437,8 +437,8 @@ function espresso_theme_setting_frontcolumns_fn() {
 	global $iced_mochas;
 
 	echo '<div class="slmini">';
-	$items = array("Widget Columns", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts");
-	$itemsare = array( __("Widget Columns","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"));
+	$items = array("Widget Columns", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
+	$itemsare = array( __("Widget Columns","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","tempera"));
 	echo "<strong> Columns content: </strong> ";
 	echo "<select id='iced_mocha_columnType' name='iced_mocha_settings[iced_mocha_columnType]'>";
 	foreach($items as $id=>$item) {
