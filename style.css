@@ -781,16 +781,16 @@ margin:0 auto;
 	padding: 9px 24px;
 }
 #content tr td {
-	border-top: 1px solid transparent;
+	/*border-top: 1px solid transparent;*/
 	padding: 6px 24px;
 }
 
 #content tr td, #content tr th, #content thead th {
-border-right:1px solid transparent;
+/*border-right:1px solid transparent;*/
 }
 
 #content tr td:last-child, #content tr th:last-child {
-border-right:none;
+/*border-right:none;*/
 }
 
 #content tr.odd td {
