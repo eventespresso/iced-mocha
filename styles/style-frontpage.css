@@ -85,8 +85,8 @@ line-height:30px;
 .slider-navhover .nivo-directionNav a.nivo-nextNav {right:-100px;transition:.3s all ease-in-out;}
 .slider-navhover:hover .nivo-directionNav  a.nivo-nextNav{right:0px;}
 
-/* Overrite margins */
-#forbottom {margin:0;padding:0;}
+/* Overwrite margins */
+body.home #forbottom, #forbottom {margin:0;padding:0;}
 
 #container {width:auto;}
 
