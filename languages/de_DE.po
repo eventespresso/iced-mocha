@@ -1054,7 +1054,7 @@ msgid "The time in which a slide will be still and visible."
 msgstr "Wie lange jedes Bild zwischen den Übergängen angezeigt wird."
 
 #: admin/settings.php:236
-msgid "Slider navigation:"
+msgid "Slider Navigation:"
 msgstr "Slider-Navigation:"
 
 #: admin/settings.php:238
@@ -1074,7 +1074,7 @@ msgid "Your slider navigation type. Shown under the slider."
 msgstr "Art der Slider-Navigation. Wird unterhalb des Slider angezeigt."
 
 #: admin/settings.php:248
-msgid "Slider arrows:"
+msgid "Slider Arrows:"
 msgstr "Slider-Pfeile:"
 
 #: admin/settings.php:250
@@ -1322,7 +1322,7 @@ msgid ""
 "More text for the Presentation Page. The top title is just below the slider, "
 "the second title is below the columns. A text area supporting HTML tags and "
 "shortcodes below each title<br>It's all optional so leave any input field "
-"empty to not dispaly it."
+"empty to not display it."
 msgstr ""
 "Hier können Sie weitere Texte definieren, die auf der Präsentationsseite "
 "angezeigt werden. Der obere Titel wird gleich unterhalb des Sliders "
@@ -2176,7 +2176,7 @@ msgstr ""
 #: admin/settings.php:1479
 msgid ""
 "You can also choose if you want the link to open in a new window and what "
-"title to dispaly while hovering over the icon."
+"title to display while hovering over the icon."
 msgstr ""
 "Sie können auswählen, ob der Link in einem neuen Fenster geöffnet werden "
 "soll und welcher Titel eingeblendet werden soll, wenn man mit der Maus über "

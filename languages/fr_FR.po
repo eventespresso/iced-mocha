@@ -1187,7 +1187,7 @@ msgstr "La durée durant laquelle chaque slide est affiché."
 
 #: admin/settings.php:236
 #@ iced_mocha
-msgid "Slider navigation:"
+msgid "Slider Navigation:"
 msgstr "Navigation du slider :"
 
 #: admin/settings.php:238
@@ -1212,7 +1212,7 @@ msgstr "Type de navigation du slider, affiché sous celui-ci."
 
 #: admin/settings.php:248
 #@ iced_mocha
-msgid "Slider arrows:"
+msgid "Slider Arrows:"
 msgstr "Flèches :"
 
 #: admin/settings.php:250
@@ -1464,7 +1464,7 @@ msgstr "Texte pour la page de présentation"
 
 #: admin/settings.php:527
 #@ iced_mocha
-msgid "More text for the Presentation Page. The top title is just below the slider, the second title is below the columns. A text area supporting HTML tags and shortcodes below each title<br>It's all optional so leave any input field empty to not dispaly it."
+msgid "More text for the Presentation Page. The top title is just below the slider, the second title is below the columns. A text area supporting HTML tags and shortcodes below each title<br>It's all optional so leave any input field empty to not display it."
 msgstr "Plus de textes pour la page de présentation ! Le \"top title\" est placé sous le slider, le \"second title\" est placé sous les colonnes. Une zone de texte, supportant les tags HTML et les shortcodes, est placée sous chacun de ces titres.<br/>Tous ces éléments étant optionnels, laissez les champs vides si besoin afin de ne pas les afficher. "
 
 #: admin/settings.php:529
@@ -2311,7 +2311,7 @@ msgstr "Sélectionnez un réseau social dans le menu de gauche et insérez le li
 
 #: admin/settings.php:1479
 #@ iced_mocha
-msgid "You can also choose if you want the link to open in a new window and what title to dispaly while hovering over the icon."
+msgid "You can also choose if you want the link to open in a new window and what title to display while hovering over the icon."
 msgstr "Vous pouvez également choisir d'ouvrir le lien dans une nouvelle fenêtre ainsi que le titre à afficher lors du survol."
 
 #: admin/settings.php:1480

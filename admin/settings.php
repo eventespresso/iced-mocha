@@ -245,7 +245,7 @@ function espresso_theme_setting_frontslider_fn() {
 	echo "<input id='iced_mocha_fpsliderpause' name='iced_mocha_settings[iced_mocha_fpsliderpause]' size='4' type='text' value='".esc_attr( $iced_mochas['iced_mocha_fpsliderpause'] )."' /> ".__("milliseconds","iced_mocha");
 	echo "<small>".__("The time in which a slide will be still and visible.","iced_mocha")."</small></div>";
 
-	echo "<div class='slmini'><b>".__("Slider navigation:","iced_mocha")."</b> ";
+	echo "<div class='slmini'><b>".__("Slider Navigation:","iced_mocha")."</b> ";
 	$items = array ("Numbers" , "Bullets" ,"None");
 	$itemsare = array( __("Numbers","iced_mocha"), __("Bullets","iced_mocha"), __("None","iced_mocha"));
 	echo "<select id='iced_mocha_fpslidernav' name='iced_mocha_settings[iced_mocha_fpslidernav]'>";
@@ -257,7 +257,7 @@ function espresso_theme_setting_frontslider_fn() {
 	echo "</select>";
 	echo "<small>".__("Your slider navigation type. Shown under the slider.","iced_mocha")."</small></div>";
 
-	echo "<div class='slmini'><b>".__("Slider arrows:","iced_mocha")."</b> ";
+	echo "<div class='slmini'><b>".__("Slider Arrows:","iced_mocha")."</b> ";
 	$items = array ("Always Visible" , "Visible on Hover" ,"Hidden");
 	$itemsare = array( __("Always Visible","iced_mocha"), __("Visible on Hover","iced_mocha"), __("Hidden","iced_mocha"));
 	echo "<select id='iced_mocha_fpsliderarrows' name='iced_mocha_settings[iced_mocha_fpsliderarrows]'>";
@@ -343,7 +343,7 @@ function espresso_theme_setting_frontslider2_fn() {
 
      $items = array("Custom Slides", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
 	$itemsare = array( __("Custom Slides","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","iced_mocha"));
-	echo "<strong> Slides content: </strong> ";
+	echo "<strong> Slides Content: </strong> ";
 	echo "<select id='iced_mocha_slideType' name='iced_mocha_settings[iced_mocha_slideType]'>";
 	foreach($items as $id=>$item) {
 		echo "<option value='$item'";
@@ -536,7 +536,7 @@ function espresso_theme_setting_fronttext_fn() {
 
      echo "<div style='width:100%;'><span>".__("Text for the Presentation Page","iced_mocha")."</span><small>".
           __("More text for the Presentation Page. The top title is just below the slider, the second title is below the columns. A text area supporting HTML tags and shortcodes below each title<br>".
-     	   "It's all optional so leave any input field empty to not dispaly it.","iced_mocha")."</small></div>";
+     	   "It's all optional so leave any input field empty to not display it.","iced_mocha")."</small></div>";
 
 	echo "<h5>".__("Top Title","iced_mocha")."</h5><br>";
      echo "<input id='iced_mocha_fronttext1' name='iced_mocha_settings[iced_mocha_fronttext1]' size='50' type='text' value='".esc_attr( $iced_mochas['iced_mocha_fronttext1'] )."' />";
@@ -1499,7 +1499,7 @@ function espresso_theme_setting_social_master($i) {
 	$espresso_theme_special_keys = array('Mail', 'Skype');
 	$espresso_theme_social_small = array (
 		'',__('Select your desired Social network from the left dropdown menu and insert your corresponding address in the right input field. (ex: <i>http://www.facebook.com/yourname</i> )','iced_mocha'),
-		'',__("You can also choose if you want the link to open in a new window and what title to dispaly while hovering over the icon.",'iced_mocha'),
+		'',__("You can also choose if you want the link to open in a new window and what title to display while hovering over the icon.",'iced_mocha'),
 		'',__("You can show up to 5 different social icons from over 35 social networks.",'iced_mocha'),
 		'',__("You can leave any number of inputs empty.",'iced_mocha'),
 		'',__("You can change the background for your social colors from the colors settings section.",'iced_mocha')

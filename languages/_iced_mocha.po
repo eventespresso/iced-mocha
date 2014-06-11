@@ -947,7 +947,7 @@ msgid "The time in which a slide will be still and visible."
 msgstr ""
 
 #: admin/settings.php:236
-msgid "Slider navigation:"
+msgid "Slider Navigation:"
 msgstr ""
 
 #: admin/settings.php:238
@@ -967,7 +967,7 @@ msgid "Your slider navigation type. Shown under the slider."
 msgstr ""
 
 #: admin/settings.php:248
-msgid "Slider arrows:"
+msgid "Slider Arrows:"
 msgstr ""
 
 #: admin/settings.php:250
@@ -1170,7 +1170,7 @@ msgid "Text for the Presentation Page"
 msgstr ""
 
 #: admin/settings.php:526
-msgid "More text for the Presentation Page. The top title is just below the slider, the second title is below the columns. A text area supporting HTML tags and shortcodes below each title<br>It's all optional so leave any input field empty to not dispaly it."
+msgid "More text for the Presentation Page. The top title is just below the slider, the second title is below the columns. A text area supporting HTML tags and shortcodes below each title<br>It's all optional so leave any input field empty to not display it."
 msgstr ""
 
 #: admin/settings.php:529
@@ -1852,7 +1852,7 @@ msgid "Select your desired Social network from the left dropdown menu and insert
 msgstr ""
 
 #: admin/settings.php:1479
-msgid "You can also choose if you want the link to open in a new window and what title to dispaly while hovering over the icon."
+msgid "You can also choose if you want the link to open in a new window and what title to display while hovering over the icon."
 msgstr ""
 
 #: admin/settings.php:1480
