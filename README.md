@@ -1,7 +1,7 @@
 #Iced Mocha Theme
 ![iced-mocha-logo](http://ee-logos.s3.amazonaws.com/Iced-Mocha-Logo-300x141.png)
 
-The Iced Mocha Theme by Event Espresso is responsive, packed with features, and fully integrated with Event Espresso 4. This started as a theme for our Event Espresso plugin test drive. We thought others may find it useful, so we have released it on Github in hopes our customers and developers will find it useful and can use it as a starting point for their event registration needs.
+The Iced Mocha Theme by Event Espresso is responsive, packed with features, and fully integrated with Event Espresso 4. Iced Mocha started as a theme for our Event Espresso test drive website to showcase the power and flexibilty of our <a href="http://eventespresso.com/">Event Espresso</a> plugin for WordPress. After using it for a few weeks, figured our customers  may find it useful for showcasing their own events. So we went ahead and released it on Github in hopes that our customers may find it useful. We also feel that Iced Mocha can be used as a starting point for developing your own Event Espresso integrated themes.
 
 ##Support and Customizations
 
