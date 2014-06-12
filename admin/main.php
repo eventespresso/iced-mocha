@@ -265,7 +265,7 @@ function iced_mocha_page_fn() {
 <div>
 	<div id="admin_header"><img src="<?php echo get_template_directory_uri() . '/admin/images/iced_mocha-logo.png' ?>" /> </div>
 	<div id="admin_links">
-		<a target="_blank" href="http://eventespresso.com/iced_mocha">Iced Mocha Theme Homepage</a>
+		<a target="_blank" href="https://github.com/eventespresso/iced-mocha/#iced-mocha-theme">Iced Mocha Theme Homepage</a>
 		<a target="_blank" href="http://eventespresso.com/support/forums/">Support</a>
 		<a target="_blank" href="http://eventespresso.com">Event Espresso</a>
 	</div>
