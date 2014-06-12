@@ -2938,7 +2938,9 @@ padding: 0px 0px 10px;
 	-moz-hyphens:none;
 	hyphens:none;
 }
-
+.event-content p {
+	padding-left: 25px;
+}
 .ee-event-img-dv {
 	width:100%;
 	overflow: hidden;
@@ -2970,15 +2972,14 @@ padding: 0px 0px 10px;
 }
 .espresso-event-details .ee-event-datetimes-li {
 }
-
+.ee-event-datetimes-li {
+	padding-left: 25px !important;
+}
 .espresso-event-details .edit-event-lnk {
 	margin:0 1em;
 }
 .espresso-venue-dv {
-	/*padding: 1em 2em;
-	margin:1em 0;
-	border:1px solid #eee;
-	background: #f8f8f8;*/
+	padding-left:25px;
 }
 
 
