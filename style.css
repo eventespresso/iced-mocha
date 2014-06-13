@@ -76,9 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 #content .entry-content h4 { font-size: 20px; }
 #content .entry-content h5 { font-size: 16px; }
 #content .entry-content h6 { font-size: 12px; }
-ol, ul {
-	list-style: none;
-}
 
 #frontpage blockquote {
 	border : 1px solid transparent;
@@ -298,24 +295,29 @@ hr {
 
 /* Text elements */
 
-.entry-content ul {
+.entry-content ul, .event-content ul {
 	margin-left:1.5em;
 }
 
 .entry-content ul li,
-.entry-content ol li {
+.entry-content ol li,
+.event-content ul li,
+.event-content ol li {
 	padding:2px 0;
 }
 
-.entry-content ul > li {
+.entry-content ul > li,
+.event-content ul > li {
 list-style:circle;
 }
 
-.entry-content ol > li {
+.entry-content ol > li,
+.event-content ol > li {
 	text-indent:0px;
 }
 
-.entry-content  li li {
+.entry-content  li li,
+.event-content  li li {
 margin-left:15px;
 }
 
