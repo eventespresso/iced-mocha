@@ -4,7 +4,7 @@
  *
  * @package Event Espresso - Iced Mocha Theme
  * @subpackage Iced Mocha Theme
- * @since Iced Mocha Theme 1.1
+ * @since Iced Mocha Theme 1.0
  */
 
 $iced_mochas = iced_mocha_get_theme_options();
