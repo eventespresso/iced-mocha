@@ -210,7 +210,7 @@ function espresso_theme_setting_frontevents_fn() {
 		array( __("Enable","iced_mocha"), __("Disable","iced_mocha"))
 	);
 	echo "<input type='text' id='iced_mocha_fronteventscount' name='iced_mocha_settings[iced_mocha_fronteventscount]' size='3' value='";
- 	echo $iced_mochas['iced_mocha_frontpostscount']."'> ".__('posts','iced_mocha');
+ 	echo $iced_mochas['iced_mocha_fronteventscount']."'> ".__('events','iced_mocha');
  	echo "<div><small>".__("Enable to display latest events on the presentation page, below the columns.","iced_mocha")."</small></div>";
 } // espresso_theme_setting_frontpage_fn()
 
