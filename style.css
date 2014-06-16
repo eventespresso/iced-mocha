@@ -2984,7 +2984,10 @@ padding: 0px 0px 10px;
 	padding-left:25px;
 }
 
-
+.tckt-slctr-tkt-details-dv h3 {font-size: 24px; font-weight: bold;}
+.tckt-slctr-tkt-details-dv h5 {font-size: 16px; font-weight: bold;}
+.tckt-slctr-tkt-sale-dates-sctn span.ticket-details-label-spn {margin-left: 25px}
+.reg-gen-details h6 {font-size: 20px !important; font-weight: bold;}
 
 /************************************** VENUE  ARCHIVES  ************************************* */
 
