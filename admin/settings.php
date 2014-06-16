@@ -341,8 +341,8 @@ function doAjaxRequest(){
 function espresso_theme_setting_frontslider2_fn() {
 	global $iced_mochas;
 
-     $items = array("Custom Slides", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
-	$itemsare = array( __("Custom Slides","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","iced_mocha"));
+    $items = array("Custom Slides", "Latest Events", "Random Events", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
+	$itemsare = array( __("Custom Slides","iced_mocha"), __("Latest Events","iced_mocha"), __("Random Events","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","iced_mocha"));
 	echo "<strong> Slides Content: </strong> ";
 	echo "<select id='iced_mocha_slideType' name='iced_mocha_settings[iced_mocha_slideType]'>";
 	foreach($items as $id=>$item) {
@@ -355,6 +355,14 @@ function espresso_theme_setting_frontslider2_fn() {
      ?>
 
      <div class="underSelector">
+          <div id="sliderLatestEvents" class="slideDivs">
+               <span><?php _e('Latest events will be loaded into the slider.','iced_mocha'); ?> </span>
+          </div>
+
+          <div id="sliderRandomEvents" class="slideDivs">
+               <span><?php _e('Random events will be loaded into the slider.','iced_mocha'); ?> </span>
+          </div>
+
           <div id="sliderLatestPosts" class="slideDivs">
                <span><?php _e('Latest posts will be loaded into the slider.','iced_mocha'); ?> </span>
           </div>

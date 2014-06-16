@@ -46,6 +46,12 @@ function iced_mocha_excerpt_more_slider( $more ) {
 
      // Switch for Query type
      switch ($iced_mocha_slideType) {
+          case 'Latest Events' :
+               $custom_query->query('post_type=espresso_events&showposts='.$iced_mocha_slideNumber);
+          break;
+          case 'Random Events' :
+               $custom_query->query('post_type=espresso_events&showposts='.$iced_mocha_slideNumber.'&orderby=rand');
+          break;
           case 'Latest Posts' :
                $custom_query->query('showposts='.$iced_mocha_slideNumber.'&ignore_sticky_posts=1');
           break;
@@ -94,9 +100,10 @@ function iced_mocha_excerpt_more_slider( $more ) {
                break;
           default:
 			   if($iced_mocha_slideNumber>0):	
-               if ( $custom_query->have_posts() ) while ($custom_query->have_posts()) :
-                    $custom_query->the_post();
-                         $img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),'slider');
+               if ( 
+                  $custom_query->have_posts() ) while ($custom_query->have_posts()) :
+                  $custom_query->the_post();
+                  $img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),'slider');
                 	$slide['image'] = $img[0];
                 	$slide['link'] = get_permalink();
                 	$slide['title'] = get_the_title();

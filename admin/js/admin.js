@@ -84,6 +84,14 @@ jQuery('#iced_mocha_slideType').change(function() {
  		jQuery('#sliderCustomSlides').show("normal");
 		break;
 
+		case "Latest Events" :
+ 		jQuery('#sliderLatestEvents').show("normal");
+		break;
+
+		case "Random Events" :
+ 		jQuery('#sliderRandomEvents').show("normal");
+		break;
+
 		case "Latest Posts" :
  		jQuery('#sliderLatestPosts').show("normal");
 		break;
