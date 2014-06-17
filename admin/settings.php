@@ -351,7 +351,7 @@ function espresso_theme_setting_frontslider2_fn() {
 		echo ">$itemsare[$id]</option>";
 	}
 	echo "</select>";
-	echo "<div><small>".__("Only the slides with a defined image will become active and visible in the live slider.<br>When using slides from posts, make sure the selected posts have featured images.<br>Read the FAQs for more info.","iced_mocha")."</small></div>";
+	echo "<div><small>".__("Only the slides with a defined image will become active and visible in the live slider.<br>When using slides from events or posts, make sure the selected events or posts have featured images.<br>Read the FAQs for more info.","iced_mocha")."</small></div>";
      ?>
 
      <div class="underSelector">

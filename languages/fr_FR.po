@@ -1298,7 +1298,7 @@ msgstr "Articles spécifiques"
 
 #: admin/settings.php:342
 #@ iced_mocha
-msgid "Only the slides with a defined image will become active and visible in the live slider.<br>When using slides from posts, make sure the selected posts have featured images.<br>Read the FAQs for more info."
+msgid "Only the slides with a defined image will become active and visible in the live slider.<br>When using slides from events or posts, make sure the selected events or posts have featured images.<br>Read the FAQs for more info."
 msgstr "Seuls les slides avec une image définie seront visibles dans le slider.<br/>Si vous utilisez des articles comme slides, assurez-vous qu'ils incluent des Images à la Une.<br/>Lisez les FAQ (en anglais) pour plus d'information."
 
 #: admin/settings.php:347
