@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage iced_mocha
  * @since iced_mocha 0.5
  */

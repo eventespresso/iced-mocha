@@ -2,7 +2,7 @@
 /**
  * The Footer widget areas.
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage iced_mocha
  * @since iced_mocha 0.5
  */

@@ -1,7 +1,7 @@
 <?php /*
  * Template Name: Two columns, Sidebar on the Left
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage iced_mocha
  * @since iced_mocha 0.5
  */

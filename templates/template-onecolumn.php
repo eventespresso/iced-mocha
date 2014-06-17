@@ -7,7 +7,7 @@
  * The "Template Name:" bit above allows this to be selectable
  * from a dropdown menu on the edit page screen.
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage iced_mocha
  * @since iced_mocha 0.5
  */

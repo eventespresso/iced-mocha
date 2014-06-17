@@ -7,7 +7,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage Iced Mocha Theme
  * @since Iced Mocha Theme 1.0
  */

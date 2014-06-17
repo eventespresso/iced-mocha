@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage iced_mocha
  * @since iced_mocha 0.5
  */

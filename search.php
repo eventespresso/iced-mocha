@@ -2,7 +2,7 @@
 /**
  * The template for displaying Search results pages.
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage Iced Mocha Theme
  * @since Iced Mocha Theme 1.0
  */

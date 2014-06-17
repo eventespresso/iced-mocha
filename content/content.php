@@ -2,7 +2,7 @@
 /**
  * The default template for displaying content
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage Iced Mocha Theme
  * @since Iced Mocha Theme 1.0
  */

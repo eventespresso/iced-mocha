@@ -5,7 +5,7 @@
  * Contains the closing of the id=main div and all content
  * after.  Calls sidebar-footer.php for bottom widgets.
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage iced_mocha
  * @since iced_mocha 0.5
  */

@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage iced_mocha
  * @since iced_mocha 0.5
  */

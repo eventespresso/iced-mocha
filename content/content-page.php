@@ -3,7 +3,7 @@
  *
  * Learn more: http://codex.wordpress.org/Post_Formats
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage Iced Mocha Theme
  */
 

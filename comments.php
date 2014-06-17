@@ -7,7 +7,7 @@
  * handled by a callback to iced_mocha_comment which is
  * located in the includes/theme-comments.php file.
  *
- * @package Event Espresso - Iced Mocha Theme
+ * @package Iced Mocha
  * @subpackage iced_mocha
  * @since iced_mocha 0.5
  */
