@@ -1,4 +1,3 @@
-<?php //echo '<h1>' . __FILE__ . '</h1>'; ?>
 <?php global $post; 
 $wrap_class = has_excerpt( $post->ID ) ? ' has-excerpt' : '';
 ?>

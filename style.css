@@ -3049,16 +3049,10 @@ h3.venue-title a {
 	line-height: 1.2em;
 }
 .venue-content {
-/*	float: left;
-	width: 205px;
-	height: 126px;
-	padding: 15px;
-	background: rgba( 0, 0, 0, .05 );
-	color: #444;
-	text-shadow: 1px 1px 0px #fff;
-	line-height: 1.2em;
-	-moz-box-sizing: content-box !important;
-	box-sizing: content-box !important;*/
+
+}
+.venue-content p {
+	padding-left: 25px;
 }
 .venue-content a {
 
@@ -3106,18 +3100,19 @@ h3.venue-title a {
 }
 
 .has-post-thumbnail .venue-header {
-	padding: 20px;
-	position: absolute;
+	position: relative !important;
 	bottom: 0;
 	left: 0;
+	padding: 1.5%;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
 }
-
-#venue-details-h1 {
-    -moz-hyphens: none;
-    font-size: 2em;
-    line-height: 1.1em;
-    word-break: keep-all;
-    z-index: 10;
+.has-post-thumbnail .venue-header h1 {
+	margin: 0;
+}
+.has-post-thumbnail .venue-header p,
+.has-excerpt .venue-header p {
+	margin:10px 0 0;
 }
 
 .venue-header.has-img h1 {

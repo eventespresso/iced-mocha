@@ -12,12 +12,12 @@ get_header();
 ?>
 
 	<section id="container" class="<?php echo iced_mocha_get_layout_class(); ?>">
-			<div id="content" role="main">
+		<div id="content" role="main">
 			<?php espresso_theme_before_content_hook(); ?>
 		
 			<div id="espresso-venue-details-wrap-dv" class="">
-				<div id="espresso-venue-details-dv" class="" >				
-			<?php
+				<div id="espresso-venue-details-dv" class="">				
+				<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
 					//  Include the post TYPE-specific template for the content.
@@ -27,11 +27,11 @@ get_header();
 						comments_template();
 					}
 				endwhile;
-			?>
+				?>
 				</div>
 			</div>
-<?php espresso_theme_after_content_hook(); ?>
-			</div><!-- #content -->
+			<?php espresso_theme_after_content_hook(); ?>
+		</div><!-- #content -->
 	<?php iced_mocha_get_sidebar(); ?>
 		</section><!-- #container -->
 

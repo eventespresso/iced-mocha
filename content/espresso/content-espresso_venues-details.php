@@ -1,4 +1,3 @@
-<?php //echo '<h1>' . __FILE__ . '</h1>'; ?>
 <?php global $post; ?>
 <div class="venue-content">
 <?php if ( apply_filters( 'FHEE__content_espresso_venues_details_template__display_entry_meta', TRUE )): ?>
