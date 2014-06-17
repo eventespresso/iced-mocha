@@ -15,6 +15,7 @@ if ( have_posts() ) : ?>
 	<header class="page-header">
 		<h1 class="page-title">
 			<?php echo __( 'Event Venues', 'event_espresso' ); ?>
+			<?php echo is_tax('espresso_event_categories')? single_term_title( ' '.__( 'in', 'event_espresso' ).' ', false):''; ?>
 		</h1>
 	</header><!-- .page-header -->
 	

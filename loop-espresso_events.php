@@ -26,6 +26,7 @@
 
 				else :
 					echo apply_filters( 'FHEE__archive_espresso_events_template__upcoming_events_h1', __( 'Upcoming Events', 'event_espresso' ));
+					echo is_tax('espresso_event_categories')? single_term_title( ' '.__( 'in', 'event_espresso' ).' ', false):'';
 
 				endif;
 			?>
