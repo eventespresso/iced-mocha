@@ -2976,6 +2976,13 @@ padding: 0px 0px 10px;
 }
 .ee-event-datetimes-li {
 	padding-left: 25px !important;
+	width: 170px;
+}
+.ee-upcoming-events-widget-ul li.ee-event-datetimes-li {
+	padding-left: 0px !important;
+}
+.ee-upcoming-events-widget-ul p {
+	padding-left: 10px !important;
 }
 .espresso-event-details .edit-event-lnk {
 	margin:0 1em;
