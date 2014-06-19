@@ -119,6 +119,10 @@ a img {
 	border: none;
 }
 
+img.size-full, img.size-large, img.header-image, img.wp-post-image {
+    height: auto;
+    max-width: 100%;
+}
 
 /* =Layout
 -------------------------------------------------------------- */
