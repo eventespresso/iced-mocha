@@ -306,9 +306,8 @@ if ($iced_mocha_varalert): ?><div id="varlimitalert"> <?php echo $iced_mocha_var
 	<div id="iced_mocha-donate" class="postbox donate">
 	 <div title="Click to toggle" class="handlediv"><br /></div>
 		<h3 class="hndle"> Coffee Break </h3>
-		<div class="inside"><?php echo "<p>While looking at Iced Mocha Theme you will notice what may appear as colors. You'll see them within images, in links and menus, defining borders and backgrounds, as part of animations, hover effects and more.  </p>
-<p>But don't let that fool you, those are not colors. What you're actually seeing is a complex mix of coffee and our own blood - you'd be surprised to see how many hues we can get by mixing those two. But as of late we've been feeling pretty dizzy and light headed and it's not from the lack of blood (we are secretly vampires).</p>
-<p>What's causing the dizziness is the limited amount of coffee. Every morning we have to make one very tough decision: either use coffee to make colors for Iced Mocha Theme or drink it and stay awake to develop Iced Mocha Theme. It's a choice we'd rather not make so...</p>"; ?>
+		<div class="inside"><?php echo "<p>The Iced Mocha theme for WordPress was developed to provide a nice WordPress theme that is fully integrated with Event Espresso 4. Based off of our&nbsp;<a href=\"http://eventespresso.com/wiki/setup-event-espresso-arabica-theme/\">Arabica – Twenty Fourteen</a> child theme, which is included within the Event Espresso 4 plugin files, we were able to provide great looking event lists and registration forms right out of the box.</p>
+<p>Much of the Iced Mocha template code is based on the <a href=\"http://wordpress.org/themes/twentyfourteen\" target=\"_blank\">Twenty Fourteen </a>theme, but with a quite a few event specific features sprinkled in. Such as the ability to automatically showcase events in a slider, widget columns, and/or upcoming events right on the home page.</p>"; ?>
 			
 		</div><!-- inside -->
 	</div><!-- donate -->
