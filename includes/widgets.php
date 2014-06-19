@@ -375,7 +375,7 @@ class Iced_Mocha_EEW_Upcoming_Events  extends WP_Widget {
 								default :
 									$len_class =  'one-line';
 							}
-							echo '<a href="' . get_permalink( $event->ID() ) . '">' . $event->name() . '</a>';
+							echo '<a class="ee-widget-event-name-a" href="' . get_permalink( $event->ID() ) . '">' . $event->name() . '</a>';
 							if ( has_post_thumbnail( $event->ID() ) && $image_size != 'none' ) {
 								echo '<a class="ee-upcoming-events-widget-img" href="' . get_permalink( $event->ID() ) . '">' . get_the_post_thumbnail( $event->ID(), $image_size ) . '</a>';
 							}
