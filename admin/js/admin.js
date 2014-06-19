@@ -152,6 +152,14 @@ jQuery('#iced_mocha_columnType').change(function() {
  		jQuery('#columnRandomPosts').show("normal");
 		break;
 
+		case "Latest Posts" :
+ 		jQuery('#columnLatestPosts').show("normal");
+		break;
+
+		case "Random Posts" :
+ 		jQuery('#columnRandomPosts').show("normal");
+		break;
+
 		case "Sticky Posts" :
  		jQuery('#columnStickyPosts').show("normal");
 		break;
@@ -179,6 +187,11 @@ jQuery('#iced_mocha_columnType').change(function() {
 	if (columnNr=="Latest Posts" || columnNr =="Random Posts" || columnNr =="Sticky Posts" || columnNr=="Latest Posts from Category" || columnNr=="Random Posts from Category" )
 			jQuery('#column-post-number').show();
 	else 	jQuery('#column-post-number').hide();
+
+	//Show number of events if that's the case
+	if (columnNr=="Latest Events" || columnNr =="Random Events" )
+			jQuery('#column-event-number').show();
+	else 	jQuery('#column-event-number').hide();
 
 });//function
 

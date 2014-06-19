@@ -42,15 +42,15 @@ function iced_mocha_excerpt_more_slider( $more ) {
      $custom_query = new WP_query();
      $slides = array();
 	 
-	 if($iced_mocha_slideNumber>0):
+	 if($iced_mocha_slideNumber>0 || $iced_mocha_slideNumberEvents>0):
 
      // Switch for Query type
      switch ($iced_mocha_slideType) {
           case 'Latest Events' :
-               $custom_query->query('post_type=espresso_events&showposts='.$iced_mocha_slideNumber);
+               $custom_query->query('post_type=espresso_events&showposts='.$iced_mocha_slideNumberEvents);
           break;
           case 'Random Events' :
-               $custom_query->query('post_type=espresso_events&showposts='.$iced_mocha_slideNumber.'&orderby=rand');
+               $custom_query->query('post_type=espresso_events&showposts='.$iced_mocha_slideNumberEvents.'&orderby=rand');
           break;
           case 'Latest Posts' :
                $custom_query->query('showposts='.$iced_mocha_slideNumber.'&ignore_sticky_posts=1');
@@ -99,7 +99,7 @@ function iced_mocha_excerpt_more_slider( $more ) {
                endfor;
                break;
           default:
-			   if($iced_mocha_slideNumber>0):	
+			   if($iced_mocha_slideNumber>0 || $iced_mocha_slideNumberEvents>0):	
                if ( 
                   $custom_query->have_posts() ) while ($custom_query->have_posts()) :
                   $custom_query->the_post();
@@ -147,9 +147,15 @@ if($iced_mocha_fronttext3) {?><div id="front-text3"> <blockquote><?php echo do_s
      $custom_query2 = new WP_query();
      $columns= array();
 	 
-	 if($iced_mocha_columnNumber>0):
+	 if($iced_mocha_columnNumber>0 || $iced_mocha_columnNumberEvents>0):
      // Switch for Query type
      switch ($iced_mocha_columnType) {
+          case 'Latest Events' :
+               $custom_query2->query('post_type=espresso_events&showposts='.$iced_mocha_columnNumberEvents);
+          break;
+          case 'Random Events' :
+               $custom_query2->query('post_type=espresso_events&showposts='.$iced_mocha_columnNumberEvents.'&orderby=rand');
+          break;
           case 'Latest Posts' :
                $custom_query2->query('showposts='.$iced_mocha_columnNumber.'&ignore_sticky_posts=1');
           break;
@@ -199,7 +205,7 @@ if($iced_mocha_fronttext3) {?><div id="front-text3"> <blockquote><?php echo do_s
 				}
                break;
           default: 
-			   if($iced_mocha_columnNumber>0):
+			   if($iced_mocha_columnNumber>0 || $iced_mocha_columnNumberEvents>0):
                if ( $custom_query2->have_posts() ) 
 					while ($custom_query2->have_posts()) :
 						$custom_query2->the_post();

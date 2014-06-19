@@ -29,6 +29,7 @@ $iced_mocha_defaults = array(
 "iced_mocha_slideType"		=> "Custom Slides",
 "iced_mocha_slideCateg"	=> "",
 "iced_mocha_slideNumber"	=> "5",
+"iced_mocha_slideNumberEvents"    => "5",
 "iced_mocha_slideSpecific"	=> "",
 
 "iced_mocha_sliderimg1"	=> get_template_directory_uri()."/images/slider/iced_mocha-slide1.jpg",
@@ -54,6 +55,7 @@ $iced_mocha_defaults = array(
 
 "iced_mocha_nrcolumns"		=> "3",
 "iced_mocha_columnNumber"	=> "3",
+"iced_mocha_columnNumberEvents" => "3",
 "iced_mocha_colimageheight"	=> "201",
 "iced_mocha_colimagewidth"		=> "318",
 "iced_mocha_columnreadmore"	=> "Read more",

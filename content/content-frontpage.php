@@ -9,11 +9,7 @@
 
 $iced_mochas = iced_mocha_get_theme_options();
 foreach ($iced_mochas as $key => $value) { ${"$key"} = $value; } 
-?>
-
-		
-
-			<?php //espresso_theme_before_content_hook();
+ //espresso_theme_before_content_hook();
 
 			if ( have_posts() ) :
 

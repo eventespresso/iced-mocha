@@ -408,6 +408,9 @@ function espresso_theme_setting_frontslider2_fn() {
           <span id="slider-post-number"><?php _e('Number of posts to show:','iced_mocha'); ?>
                <input id='iced_mocha_slideNumber' name='iced_mocha_settings[iced_mocha_slideNumber]' size='3' type='text' value='<?php echo esc_attr( $iced_mochas['iced_mocha_slideNumber'] ) ?>' />
           </span>
+          <span id="slider-event-number"><?php _e('Number of events to show:','iced_mocha'); ?>
+               <input id='iced_mocha_slideNumberEvents' name='iced_mocha_settings[iced_mocha_slideNumberEvents]' size='3' type='text' value='<?php echo esc_attr( $iced_mochas['iced_mocha_slideNumberEvents'] ) ?>' />
+          </span>
 
           <div id="sliderCustomSlides" class="slideDivs">
 
@@ -445,8 +448,8 @@ function espresso_theme_setting_frontcolumns_fn() {
 	global $iced_mochas;
 
 	echo '<div class="slmini">';
-	$items = array("Widget Columns", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
-	$itemsare = array( __("Widget Columns","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","iced_mocha"));
+	$items = array("Widget Columns", "Latest Events", "Random Events", "Latest Posts", "Random Posts", "Sticky Posts", "Latest Posts from Category" , "Random Posts from Category", "Specific Posts", "Disabled");
+	$itemsare = array( __("Widget Columns","iced_mocha"), __("Latest Events","iced_mocha"), __("Random Events","iced_mocha"), __("Latest Posts","iced_mocha"), __("Random Posts","iced_mocha"),__("Sticky Posts","iced_mocha"), __("Latest Posts from Category","iced_mocha"), __("Random Posts from Category","iced_mocha"), __("Specific Posts","iced_mocha"), __("Disabled","iced_mocha"));
 	echo "<strong> Columns content: </strong> ";
 	echo "<select id='iced_mocha_columnType' name='iced_mocha_settings[iced_mocha_columnType]'>";
 	foreach($items as $id=>$item) {
@@ -459,6 +462,14 @@ function espresso_theme_setting_frontcolumns_fn() {
      ?>
 
      <div class="underSelector">
+           <div id="columnLatestEvents" class="columnDivs">
+               <span><?php _e('Latest events will be loaded into the columns.','iced_mocha'); ?> </span>
+          </div>
+
+          <div id="columnRandomEvents" class="columnDivs">
+               <span><?php _e('Random events will be loaded into the columns.','iced_mocha'); ?> </span>
+          </div>
+
           <div id="columnLatestPosts" class="columnDivs">
                <span><?php _e('Latest posts will be loaded into the columns.','iced_mocha'); ?> </span>
           </div>
@@ -508,6 +519,10 @@ function espresso_theme_setting_frontcolumns_fn() {
 
           <span id="column-post-number"><?php _e('Number of posts to show:','iced_mocha'); ?>
                <input id='iced_mocha_columnNumber' name='iced_mocha_settings[iced_mocha_columnNumber]' size='3' type='text' value='<?php echo esc_attr( $iced_mochas['iced_mocha_columnNumber'] ) ?>' />
+          </span>
+
+           <span id="column-event-number"><?php _e('Number of events to show:','iced_mocha'); ?>
+               <input id='iced_mocha_columnNumberEvents' name='iced_mocha_settings[iced_mocha_columnNumberEvents]' size='3' type='text' value='<?php echo esc_attr( $iced_mochas['iced_mocha_columnNumberEvents'] ) ?>' />
           </span>
 
      </div>

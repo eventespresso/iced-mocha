@@ -296,7 +296,7 @@ if ($iced_mocha_varalert): ?><div id="varlimitalert"> <?php echo $iced_mocha_var
 		</form>
 		<?php   $iced_mocha_theme_data = get_transient( 'iced_mocha_theme_info');  ?>
 		<span id="version">
-		Iced Mocha Theme v<?php echo iced_mocha_VERSION; ?> by <a href="http://eventespresso.com" target="_blank">Event Espresso</a>
+		Iced Mocha Theme v<?php echo ICED_MOCHA_VERSION; ?> by <a href="http://eventespresso.com" target="_blank">Event Espresso</a>
 		</span>
 	</div><!-- main-options -->
 </div><!--lefty -->

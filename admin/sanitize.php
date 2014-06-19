@@ -225,6 +225,7 @@ else :
 	$input['iced_mocha_menugooglefont'] = 	trim(wp_kses_data($input['iced_mocha_menugooglefont']));
 
 	$input['iced_mocha_slideNumber'] =  intval(wp_kses_data($input['iced_mocha_slideNumber']));
+	$input['iced_mocha_slideNumberEvents'] =  intval(wp_kses_data($input['iced_mocha_slideNumberEvents']));
 	$input['iced_mocha_slideSpecific'] = wp_kses_data($input['iced_mocha_slideSpecific']);
 
 	$input['iced_mocha_fpsliderwidth'] =  intval(wp_kses_data($input['iced_mocha_fpsliderwidth']));
@@ -255,6 +256,7 @@ else :
 	$input['iced_mocha_sliderlink5'] =  esc_url_raw($input['iced_mocha_sliderlink5']);
 	
 	$input['iced_mocha_columnNumber'] = intval(wp_kses_data($input['iced_mocha_columnNumber']));
+	$input['iced_mocha_columnNumberEvents'] = intval(wp_kses_data($input['iced_mocha_columnNumberEvents']));
 	$input['iced_mocha_nrcolumns'] = intval(wp_kses_data($input['iced_mocha_nrcolumns']));
 	$input['iced_mocha_colimageheight'] = intval(wp_kses_data($input['iced_mocha_colimageheight']));
 	
