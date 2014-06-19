@@ -9,7 +9,7 @@
 
 /* This  retrieves  admin options. */
 $iced_mochas = iced_mocha_get_theme_options();
-foreach ($iced_mochas as $key => $value) { ${"$key"} = esc_attr($value); }
+foreach ($iced_mochas as $key => $value) { ${"$key"} = is_array( $value ) ? $value : esc_attr($value); }
 ?>
 		<div id="secondary" class="widget-area sidey" role="complementary">
 		<?php espresso_theme_before_primary_widgets_hook(); ?>

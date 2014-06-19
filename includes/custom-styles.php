@@ -14,7 +14,7 @@ add_filter('body_class','iced_mocha_body_classes');
 
 function iced_mocha_custom_styles() {
 	$iced_mochas= iced_mocha_get_theme_options();
-	foreach ($iced_mochas as $key => $value) { ${"$key"} = esc_attr($value) ; }
+	foreach ($iced_mochas as $key => $value) { ${"$key"} = is_array( $value ) ? $value : esc_attr($value); }
 	$totalwidth= $iced_mocha_sidewidth+$iced_mocha_sidebar;
 	$contentSize = $iced_mocha_sidewidth;
 	$sidebarSize= $iced_mocha_sidebar;
@@ -322,7 +322,7 @@ endfor; ?>
 // Iced Mocha Theme function for inserting the Custom CSS into the header
 function iced_mocha_customcss() {
 	$iced_mochas= iced_mocha_get_theme_options();
-	foreach ($iced_mochas as $key => $value) { ${"$key"} = esc_attr($value) ; }
+	foreach ($iced_mochas as $key => $value) { ${"$key"} = is_array( $value ) ? $value : esc_attr($value); }
 	if ($iced_mocha_customcss != "") {
 		echo '<style type="text/css">'.htmlspecialchars_decode($iced_mocha_customcss, ENT_QUOTES).'</style>';
 	}
@@ -331,7 +331,7 @@ function iced_mocha_customcss() {
 // Iced Mocha Theme function for inseting the Custom JS into the header
 function iced_mocha_customjs() {
 	$iced_mochas= iced_mocha_get_theme_options();
-	foreach ($iced_mochas as $key => $value) { ${"$key"} = esc_attr($value) ; }
+	foreach ($iced_mochas as $key => $value) { ${"$key"} = is_array( $value ) ? $value : esc_attr($value); }
 	echo '<script type="text/javascript">';
 	echo 'var espresso_theme_global_content_width = '.$iced_mocha_sidewidth.';';
 	echo 'var espresso_theme_toTop_offset = '.($iced_mocha_sidewidth+$iced_mocha_sidebar).';' ;

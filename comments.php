@@ -13,11 +13,12 @@
  */
 
 $iced_mochas = iced_mocha_get_theme_options();
-foreach ($iced_mochas as $key => $value) { ${"$key"} = esc_attr($value) ; }
+foreach ($iced_mochas as $key => $value) { ${"$key"} = is_array( $value ) ? $value : esc_attr($value); }
 $iced_mocha_comclass='';
 if ( (!comments_open()) && (get_comments_number()<1) && 
 (($iced_mocha_comclosed=="Hide everywhere") || (is_page() && $iced_mocha_comclosed=="Hide in pages") || (is_single() && $iced_mocha_comclosed=="Hide in posts") )) : $iced_mocha_comclass="hideme"; endif;
-?> <div id="comments" class="<?php echo $iced_mocha_comclass ?>"> <?php
+?> 
+<div id="comments" class="<?php echo $iced_mocha_comclass ?>"> <?php
 if (get_comments_number()<1):
 
 else:
