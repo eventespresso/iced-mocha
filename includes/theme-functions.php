@@ -448,7 +448,7 @@ function iced_mocha_get_gallery_images() {
 } // iced_mocha_get_gallery_images()
 
 
-	/** 
+	/*
  	454	* Checks the browser agent string for mobile ids and adds "mobile" class to body if true 
  	455	* @since parabola 1.2.3 
  	456	* @return array list of classes. 
@@ -519,4 +519,42 @@ function espresso_theme_hexadder($hex,$inc) {
    endif;
 } // espresso_theme_espresso_theme_hex2rgb()
 
-?>
+/*
+Toggle dates
+Credit: Josh Feck https://github.com/joshfeck/ee4-toggle-dates 
+*/
+add_action( 'wp_footer', 'espresso_theme_toggle_extra_datetimes');
+
+function espresso_theme_toggle_extra_datetimes() {
+	global $post;
+	
+	// set up a check for the [ESPRESSO_EVENTS] shortcode in the post content
+	$content_post = get_post($post);
+	$content = $content_post->post_content;
+
+	// check for Event Espresso event content and if it's there, inject some JS
+	if ( 'espresso_events' == get_post_type( $post ) || has_shortcode( $content, 'ESPRESSO_EVENTS' ) ) {
+		?>
+		<script type="text/javascript">
+		jQuery(document).ready(function($){
+				
+			$( 'ul[id^="ee-event-datetimes-ul-"]' ).each(function(){
+				var n = $( this ).find( 'li' ).length;
+				var theButton = '<ul style="list-style-type:none;"><li style="list-style-type:none;"><button class="toggle-button">More Dates</button></li></ul>';
+				if ( n > 1 ) {
+    				$( this ).find( 'li:gt(0)').hide();
+    				$( this ).after( theButton );
+    			}
+			});
+	
+		    $( '.toggle-button' ).click(function() {
+				var txt = $(' ul[id^="ee-event-datetimes-ul-"] li:not(:first-child)' ).is( ':visible' ) ? 'More Dates' : 'Less Dates';
+				$( this ).text( txt );
+				$( this ).parents( 'div.event-datetimes' ).children( '.ee-event-datetimes-ul' ).find( 'li:not(:first-child)' ).slideToggle( 'slow' );
+			});
+				
+		});
+		</script>
+		<?php
+	}
+}
