@@ -1737,7 +1737,7 @@ msgid "Bookmark"
 msgstr ""
 
 #: admin/settings.php:1135
-msgid "Choose the post metas you want to show on sigle post pages."
+msgid "Choose the post metas you want to show on single post pages."
 msgstr ""
 
 #: admin/settings.php:1152
@@ -1777,7 +1777,7 @@ msgid "Full Post"
 msgstr ""
 
 #: admin/settings.php:1293
-msgid "Excerpts on the main page. Only standard posts will be affected. All other post formats (aside, image, chat, quote etc.) have their specific formating."
+msgid "Excerpts on the main page. Only standard posts will be affected. All other post formats (aside, image, chat, quote etc.) have their specific formatting."
 msgstr ""
 
 #: admin/settings.php:1308
@@ -1785,7 +1785,7 @@ msgid "Choose if you want the sticky posts on your home page to be visible in fu
 msgstr ""
 
 #: admin/settings.php:1324
-msgid "Excerpts on archive, categroy and search pages. Same as above, only standard posts will be affected."
+msgid "Excerpts on archive, category and search pages. Same as above, only standard posts will be affected."
 msgstr ""
 
 #: admin/settings.php:1332
@@ -1807,7 +1807,7 @@ msgstr ""
 #: admin/settings.php:1376
 msgid ""
 "By default WordPress excerpts remove all HTML tags (&lt;pre&gt;, &lt;a&gt;, &lt;b&gt and all others) and only clean text is left in the excerpt.\n"
-"Enabling this option allows HTML tags to remain in excerpts so all your default formating will be kept.<br /> <b>Just a warning: </b>If HTML tags are enabled, you have to make sure\n"
+"Enabling this option allows HTML tags to remain in excerpts so all your default formatting will be kept.<br /> <b>Just a warning: </b>If HTML tags are enabled, you have to make sure\n"
 "they are not left open. So if within your post you have an opened HTML tag but the except ends before that tag closes, the rest of the site will be contained in that HTML tag. -- Leave 'Disable' if unsure -- "
 msgstr ""
 

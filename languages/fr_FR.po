@@ -2169,7 +2169,7 @@ msgstr "Favori"
 
 #: admin/settings.php:1135
 #@ iced_mocha
-msgid "Choose the post metas you want to show on sigle post pages."
+msgid "Choose the post metas you want to show on single post pages."
 msgstr "Choisissez les métadonnées pour les articles sur une seule page (home, blog, catégorie, archive, etc.)"
 
 #: admin/settings.php:1152
@@ -2218,7 +2218,7 @@ msgstr "Texte intégral"
 
 #: admin/settings.php:1293
 #@ iced_mocha
-msgid "Excerpts on the main page. Only standard posts will be affected. All other post formats (aside, image, chat, quote etc.) have their specific formating."
+msgid "Excerpts on the main page. Only standard posts will be affected. All other post formats (aside, image, chat, quote etc.) have their specific formatting."
 msgstr "Résumés sur la page principale, pour les articles standards. Tous les autres (barre latérale, image, chat, citation, etc.) gardent leur format spécifique."
 
 #: admin/settings.php:1308
@@ -2228,7 +2228,7 @@ msgstr "Les articles mis en avant sur la page d'accueil sont-ils visibles en ent
 
 #: admin/settings.php:1324
 #@ iced_mocha
-msgid "Excerpts on archive, categroy and search pages. Same as above, only standard posts will be affected."
+msgid "Excerpts on archive, category and search pages. Same as above, only standard posts will be affected."
 msgstr "Résumés dans les archives, les catégories et les recherches. Seuls les articles standards sont affectés par ce choix."
 
 #: admin/settings.php:1332
@@ -2255,7 +2255,7 @@ msgstr "Permet de modifier le lien \"Suite\" ajouté aux résumés"
 #@ iced_mocha
 msgid ""
 "By default WordPress excerpts remove all HTML tags (&lt;pre&gt;, &lt;a&gt;, &lt;b&gt and all others) and only clean text is left in the excerpt.\n"
-"Enabling this option allows HTML tags to remain in excerpts so all your default formating will be kept.<br /> <b>Just a warning: </b>If HTML tags are enabled, you have to make sure\n"
+"Enabling this option allows HTML tags to remain in excerpts so all your default formatting will be kept.<br /> <b>Just a warning: </b>If HTML tags are enabled, you have to make sure\n"
 "they are not left open. So if within your post you have an opened HTML tag but the except ends before that tag closes, the rest of the site will be contained in that HTML tag. -- Leave 'Disable' if unsure -- "
 msgstr "Par défaut, les extraits dans Wordpress omettent tous les tags HTML (&lt;pre&gt;, &lt;a&gt;, &lt;b&gt, etc.). Cette option permet de les conserver, donc le format des articles est préservé. Attention : si les tags HTML sont activés, vous devez vérifier qu'ils ne restent pas ouverts. En effet, si l'un est ouvert et que le résumé s'achève avant que ce tag soit fermé, tout le reste du site sera contenu dans ce tag ! Laissez l'option sur Désactivé si vous n'êtes pas sûr."
 

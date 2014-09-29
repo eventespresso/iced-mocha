@@ -1178,7 +1178,7 @@ foreach($items as $item):
 	$i++;
 	endforeach;
 
-	echo "<div><small>".__("Choose the post metas you want to show on sigle post pages.","iced_mocha")."</small></div>";
+	echo "<div><small>".__("Choose the post metas you want to show on single post pages.","iced_mocha")."</small></div>";
 }
 
 
@@ -1336,7 +1336,7 @@ foreach($items as $id=>$item) {
 	echo ">$itemsare[$id]</option>";
 }
 	echo "</select>";
-	echo "<div><small>".__("Excerpts on the main page. Only standard posts will be affected. All other post formats (aside, image, chat, quote etc.) have their specific formating.","iced_mocha")."</small></div>";
+	echo "<div><small>".__("Excerpts on the main page. Only standard posts will be affected. All other post formats (aside, image, chat, quote etc.) have their specific formatting.","iced_mocha")."</small></div>";
 }
 
 //CHECKBOX - Name: iced_mocha_settings[excerptsticky]
@@ -1367,7 +1367,7 @@ foreach($items as $id=>$item) {
 	echo ">$itemsare[$id]</option>";
 }
 	echo "</select>";
-	echo "<div><small>".__("Excerpts on archive, categroy and search pages. Same as above, only standard posts will be affected.","iced_mocha")."</small></div>";
+	echo "<div><small>".__("Excerpts on archive, category and search pages. Same as above, only standard posts will be affected.","iced_mocha")."</small></div>";
 }
 
 
@@ -1420,7 +1420,7 @@ foreach($items as $id=>$item) {
 }
 	echo "</select>";
 	echo "<div><small>".__("By default WordPress excerpts remove all HTML tags (&lt;pre&gt;, &lt;a&gt;, &lt;b&gt and all others) and only clean text is left in the excerpt.
-Enabling this option allows HTML tags to remain in excerpts so all your default formating will be kept.<br /> <b>Just a warning: </b>If HTML tags are enabled, you have to make sure
+Enabling this option allows HTML tags to remain in excerpts so all your default formatting will be kept.<br /> <b>Just a warning: </b>If HTML tags are enabled, you have to make sure
 they are not left open. So if within your post you have an opened HTML tag but the except ends before that tag closes, the rest of the site will be contained in that HTML tag. -- Leave 'Disable' if unsure -- ","iced_mocha")."</small></div>";
 }
 
@@ -1494,7 +1494,7 @@ function espresso_theme_setting_fsize_fn() {
 	echo "value='1' id='iced_mocha_fcrop'  name='iced_mocha_settings[iced_mocha_fcrop]' type='checkbox' /> ".__("Crop images to exact size.","iced_mocha")." </label>";
 
 
-	echo "<div><small>".__("The size (in pixels) for your thumbnails. By default imges will be scaled with aspect ratio kept. Choose to crop the images if you want the exact size.","iced_mocha")."</small></div>";
+	echo "<div><small>".__("The size (in pixels) for your thumbnails. By default images will be scaled with aspect ratio kept. Choose to crop the images if you want the exact size.","iced_mocha")."</small></div>";
 }
 
 
