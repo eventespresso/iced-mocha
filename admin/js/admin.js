@@ -127,6 +127,10 @@ jQuery('#iced_mocha_slideType').change(function() {
 	if (sliderNr=="Latest Posts" || sliderNr =="Random Posts" || sliderNr =="Sticky Posts" || sliderNr=="Latest Posts from Category" || sliderNr=="Random Posts from Category" )
 			jQuery('#slider-post-number').show();
 	else 	jQuery('#slider-post-number').hide();
+	//Show number of events if that's the case
+	if (sliderNr=="Latest Events" || sliderNr =="Random Events" )
+			jQuery('#slider-event-number').show();
+	else 	jQuery('#slider-event-number').hide();
 
 });//function
 
