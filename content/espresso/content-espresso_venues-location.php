@@ -2,7 +2,7 @@
 global $post; 
 if ( espresso_venue_has_address( $post->ID )) :
 ?>
-<div class="venue-location">
+<div class="venue-location entry-content">
 	
 	<h3 class="venue-address-h3 ee-venue-h3">
 		<span class="dashicons dashicons-location-alt"></span><?php _e( 'Location', 'event_espresso' ); ?>
