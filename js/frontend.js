@@ -8,19 +8,19 @@
 
 jQuery(document).ready(function() {
 
-// standard menu touch support for tablets
-	var isTouch = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch; // check touch support
-	jQuery('#access .menu > ul > li a').click(function(e){
-		var $link_id = jQuery(this).attr('href');
-		if (jQuery(this).parent().data('clicked') == $link_id) { // second touch
-			jQuery(this).parent().data('clicked', null);
-			return true;
-		}
-		else { // first touch
-			if (isTouch && (jQuery(this).parent().children('.sub-menu').length >0)) e.preventDefault();
-			jQuery(this).parent().data('clicked', $link_id);
-		}
-    });
+	/* Standard menu touch support for tablets */
+	var custom_event = ('ontouchstart' in window) ? 'touchstart' : 'click'; // check touch support 
+	var ios = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+		jQuery('#access .menu > ul > li a').on('click', function(e){
+			var $link_id = jQuery(this).attr('href');
+			if (jQuery(this).parent().data('clicked') == $link_id) { // second touch 
+				jQuery(this).parent().data('clicked', null);
+			}
+			else { // first touch 
+				if (custom_event != 'click' && !ios && (jQuery(this).parent().children('.sub-menu').length >0)) {e.preventDefault();}
+				jQuery(this).parent().data('clicked', $link_id);
+			}
+		}); 
 
 // Back to top button animation
 	var offset = 500;
@@ -47,9 +47,9 @@ jQuery(document).ready(function() {
 
 // Menu animation
 
-
-
-jQuery("#access ul ul").css({display: "none"}); // Opera Fix
+/* Menu animation */
+jQuery("#access ul ul").css({display: "none"}); /* Opera Fix */
+jQuery("#access > .menu ul li > a:not(:only-child)").attr("aria-haspopup","true");/* IE10 mobile Fix */
 
 jQuery("#access li").hover(function(){
 	jQuery(this).find('ul:first').stop();
