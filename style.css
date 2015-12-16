@@ -16,15 +16,18 @@ GitHub Theme URI: https://github.com/eventespresso/iced-mocha
  * http://eventespresso.com
 */
 
-@import url("fonts/fontfaces.css");
-
-IMPORTANT!
+/* -- !IMPORTANT! -- /
 
 Any changes made to this or any other of the theme's files will be lost at the next update.
 
 To safely make customizations to the theme, for CSS-only consider using the theme's dedicated 
 "Custom CSS" field found under the Miscellaneous section of the theme settings page; 
 for advanced CSS and other customizations, consider using a child theme.
+
+/* -- !IMPORTANT! -- */
+
+@import url("fonts/fontfaces.css");
+
 /* Reset default browser CSS */
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
 html, body, div, span, applet, object, iframe,
