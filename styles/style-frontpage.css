@@ -4,7 +4,7 @@
 	 display: block;
 	 float:none;
 	 clear:both;
-     margin: 0px auto;
+     margin: 0 auto 40px;
 	 }
 .slider-shadow  {
 	/*background:url(../images/slider/slider-shadow-left.png) left -10px no-repeat, url(../images/slider/slider-shadow-right.png) right -10px no-repeat;
@@ -34,13 +34,13 @@
 	clear: both;
 	font-weight: bold; }
 
-#front-text1,#front-text2  { 
+#front-text1, #front-text2  { 
 	display:block;
 	float:none;
-	padding: 30px 100px; 
+	padding: 0px 100px 30px; 
 }
 
-#frontpage blockquote {
+#front-text3 blockquote, #front-text4 blockquote{
 	padding:15px 0px;
 	width: inherit;
     margin-bottom: 20px;
@@ -85,8 +85,8 @@ line-height:30px;
 .slider-navhover .nivo-directionNav a.nivo-nextNav {right:-100px;transition:.3s all ease-in-out;}
 .slider-navhover:hover .nivo-directionNav  a.nivo-nextNav{right:0px;}
 
-/* Overwrite margins */
-body.home #forbottom, #forbottom {margin:0;padding:0;}
+/* Overrite margins */
+#forbottom {margin:0 !important;padding:0 !important;}
 
 #container {width:auto;}
 

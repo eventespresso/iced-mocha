@@ -160,6 +160,13 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 }); 
 // end document.ready
 
+/* Mobile Menu v2 */
+function iced_mocha_mobilemenu_init() {
+  var state = false;
+  jQuery("#nav-toggle").click(function(){
+    jQuery("#access").slideToggle(function(){ if (state) {jQuery(this).removeAttr( 'style' )}; state = ! state; } );
+  });
+}
 
 // Columns equalizer, used if at least one sidebar has a bg color
 function equalizeHeights(){
@@ -172,8 +179,11 @@ function equalizeHeights(){
 
 }
 
-// Force footer at bottom of window
-jQuery(document).ready(function() {
+/* Force footer at bottom of window 
+ Should not work on the Presentation Page 
+ Disabled for now
+ */
+/*jQuery(document).ready(function() {
 var docHeight = jQuery(window).height();
 var footerHeight = jQuery('#footer2').height();
 var footerTop = jQuery('#footer2').position().top + footerHeight;
@@ -182,7 +192,7 @@ if (footerTop < docHeight) {
     jQuery('#forbottom').css('minHeight',(forbottom + docHeight  - footerTop -35) + 'px');
 }
 });
-
+*/
 /*!
 * FitVids 1.0
 *
@@ -260,7 +270,7 @@ if (footerTop < docHeight) {
 // (indicating the use of another browser).
 function getInternetExplorerVersion()
 {
-  var rv = -1; // Return value assumes failure.
+  var rv = -1; /* assume not IE. */
   if (navigator.appName == 'Microsoft Internet Explorer')
   {
     var ua = navigator.userAgent;

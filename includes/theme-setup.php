@@ -15,7 +15,6 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == "themes.php" ) {
  $iced_mocha_totalSize = $iced_mocha_sidebar + $iced_mocha_sidewidth;
 
  /**
-
  *
  * @package Iced Mocha
  * @subpackage iced_mocha
@@ -60,6 +59,9 @@ function iced_mocha_setup() {
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style( "styles/editor-style.css" );
+	
+	// Support title tag since WP 4.1
+	add_theme_support( 'title-tag' );
 
 	// This theme uses post thumbnails
 	add_theme_support( 'post-thumbnails' );
@@ -123,6 +125,42 @@ function iced_mocha_setup() {
 	) );
 }
 endif;
+
+// Backwards compatibility for the title-tag
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+	add_action( 'wp_head', 'iced_mocha_render_title' );
+	add_filter( 'wp_title', 'iced_mocha_filter_wp_title' );
+	add_filter('wp_title_rss','iced_mocha_filter_wp_title_rss');
+endif;
+
+function iced_mocha_render_title() { ?>
+		<title><?php wp_title( '', true, 'right' ); ?></title>
+<?php }
+
+function iced_mocha_filter_wp_title( $title ) {
+    // Get the Site Name
+    $site_name = get_bloginfo( 'name' );
+    // Prepend name
+    $filtered_title = (((strlen($site_name)>0)&&(strlen($title)>0))?$title.' - '.$site_name:$title.$site_name);
+	// Get the Site Description
+ 	$site_description = get_bloginfo( 'description' );
+    // If site front page, append description
+    if ( (is_home() || is_front_page()) && $site_description ) {
+        // Append Site Description to title
+        $filtered_title = ((strlen($site_name)>0)&&(strlen($site_description)>0))?$site_name. " | ".$site_description:$site_name.$site_description;
+    }
+	// Add pagination if that's the case
+	global $page, $paged;
+	if ( $paged >= 2 || $page >= 2 )
+	$filtered_title .=	 ' | ' . sprintf( __( 'Page %s', 'iced_mocha' ), max( $paged, $page ) );
+
+    // Return the modified title
+    return $filtered_title;
+}
+
+function iced_mocha_filter_wp_title_rss($title) {
+	return ' ';
+}
 
 if ( ! function_exists( 'iced_mocha_admin_header_style' ) ) :
 /**

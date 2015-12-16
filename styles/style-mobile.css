@@ -1,76 +1,35 @@
 	/* =Responsive Structure 
 	----------------------------------------------- */ 
-@media (max-width: 1100px) { 
-	body.mobile #header, body.mobile #access, body.mobile #branding, body.mobile #topbar-inner, body.mobile #footer-widget-area { width:100%; } 
-	body.mobile .topmenu {float:left;}
-	body.mobile #header-full, body.mobile #footer { min-width: 100%; } 
-	body.mobile #wrapper, body.mobile #colophon, body.mobile #main, body.mobile article.post, body.mobile #container, body.mobile #linky {width: auto;} 
-	body.mobile #branding, body.mobile #bg_image { min-height:100px; } 
-	
-	body.mobile	#footer2 {margin-bottom:0;}
-	body.mobile #footer {margin-top:0;}
-	
-	body.mobile #forbottom,body.mobile  #colophon {margin:0 20px;}
-	body.mobile.presentation-page #forbottom{margin:0;}
-	body.mobile.presentation-page #pp-afterslider {margin:0 20px;}
-	body.mobile #front-text1,body.mobile  #front-text2 {padding:20px 0;} 
-	body.mobile .nivo-caption {top:0;left:0;width:100%;bottom:auto;}
-	 
-	body.mobile #bg_image {width:100%;} 
-	body.mobile #header-container > div {height:100%;} 
-	 
-	body.mobile a#logo { height:100%; display: block !important; } 
-	body.mobile a#logo img { width:auto; max-width:90%;height:80%; } 
-	body.mobile.safari a#logo img { max-height: 80px;height:auto; } 
- 
-	body.mobile .nivo-caption h2 {margin-bottom:5px;} 
-	 
-	body.mobile #slefts, body.mobile #srights {display:none;} 
- 
-	body.mobile #access .menu-header, body.mobile div.menu {margin:0 5px;} 
-	body.mobile #container[class*='column'] #primary, body.mobile #container[class*='column'] #secondary, 
-	body.mobile #container[class*='column'] #content {width:100%;float:none;margin:0;clear:both;} 
-	body.mobile #container[class*='column'] #content {margin-bottom:20px !important;} 
- 
-	body.mobile .slider-wrapper {width:100%;}
-	body.mobile #slider {width:auto;height:auto;} 
- 
-	body.mobile #content img, body.mobile #content article.post img, body.mobile #content article .wp-caption, body.mobile article embed { 
-		max-width:100% !important; 
- } 
 
- 	body.mobile #site-title span a {font-size:35px;line-height: 40px;} 
-	body.mobile #site-description {font-size:15px;line-height: 20px;} 
-
-	body.mobile #site-title, body.mobile #site-description { margin-left: 5px; } 
-
-	body.mobile article.post, body.mobile article.page {padding:20px 10px 10px;} 
-	body.mobile article.sticky {padding:20px 5px 5px;border-width:5px;} 
-	body.mobile .footertwo .widget-area, body.mobile .footerthree .widget-area, body.mobile .footerfour .widget-area {width:98%;margin-left:1%;} 
+@media (max-width: 1920px) { 
 	body.mobile {-webkit-text-size-adjust: 100%;} /* Iphone browser fix*/ 
-	body.mobile .nivo-controlNav {top:-30px;}
+	body.mobile #forbottom {min-height:0;}
 	
 	/* Column text and Readmore button visible on mobile devices */
 	body.mobile .column-image {overflow:visible;}	body.mobile .column-image-inside {display:none;}
-	body.mobile .column-text {position:relative;top:0;left:0;-webkit-transform:none;transform:none;-webkit-transition:none;transition:none;font-size:15px;line-height:1.7em;color:#999;padding:10px 0;width:100%;display:table;margin:0 auto;}
+	body.mobile .column-text {position:relative;top:0;left:0;-webkit-transform:none;transform:none;-webkit-transition:none;transition:none;color:inherit;padding:10px 0;width:100%;display:table;margin:0 auto;}
 	body.mobile .columnmore {position:relative;bottom:0;}
 	body.mobile .column-image:hover .columnmore {bottom:0;}
-	
 } 
 	
 	
 @media (max-width: 800px) {
 	/* Column text and Readmore button visible on mobile devices */
 	.column-image {overflow:visible;} .column-image-inside {display:none;}
-	.column-text {position:relative;top:0;left:0;-webkit-transform:none;transform:none;-webkit-transition:none;transition:none;color:#999;padding:10px 0;width:100%;display:table;margin:0 auto;}
-	.columnmore {position:relative;bottom:0;}
-	.column-image:hover .columnmore {bottom:0;}
+	.column-text {position:relative;top:0;left:0;-webkit-transform:none;transform:none;-webkit-transition:none;transition:none;color:inherit;padding:10px 0;width:100%;display:table;margin:0 auto;}
+	#forbottom .columnmore {position:relative;bottom:0;}
+	#forbottom .column-image:hover .columnmore {bottom:0;}
 	
 	#header, #access, #branding, #topbar-inner,  #footer-widget-area { width:100%; }
 	.topmenu {float:left;}
 	#header-full, #footer { min-width: 100%; }
 	#wrapper, #colophon,  #main, article.post, #container, #linky {width: auto;}
 	#branding, #bg_image { min-height:100px; }
+	/* Header widget mobile fix */
+	#branding {height:auto;overflow:hidden;}
+	#header-widget-area {position:relative;top:0;left:0;width:100%;}
+	#header-widget-area .yoyo > li {margin-bottom:2px;}
+	
 	#footer2 {margin-bottom:0;}
 	#footer {margin-top:0;}
 	
@@ -100,12 +59,12 @@
 	.slider-wrapper {width:100%;}
 	#slider {width:auto;height:auto;}
 	
-	#front-columns > div {width:47%;margin-bottom:20px;}
-	#front-columns div.column1 {clear:none;}
-	#front-columns > div.column3 {margin-right:5%;}
-	#front-columns > div:nth-child(2n+2){margin-right:0;}
+	#forbottom #front-columns > div {width:47%;margin-bottom:20px;}
+	#forbottom #front-columns div.column1 {clear:none;}
+	#forbottom #front-columns > div.column3 {margin-right:5%;}
+	#forbottom #front-columns > div:nth-child(2n+2){margin-right:0;}
 	.column-image img {height:auto;}
-	#front-columns .column-header-image {text-align:center;margin-bottom:10px;}
+	#forbottom #front-columns .column-header-image {text-align:center;margin-bottom:10px;}
 	
 	#content img, #content article.post img, #content article .wp-caption, article embed {
 		max-width:100% !important;
@@ -125,8 +84,6 @@
 @media (max-width: 650px) {
 	body, #content, #content p, #content ul, #content ol,#content code, #content pre, #content blockquote {
 		font-size: 13px !important;}
-
-	#main {margin-top:1px;}	
 	#forbottom, #colophon {margin:0 10px;}
 	.presentation-page #forbottom{margin:0;}
 	.presentation-page #pp-afterslider {margin:0 10px;}
@@ -153,11 +110,7 @@
 	#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
 		margin-left:0 !important;}
 		
-	#front-columns > div { margin-bottom: 10px; }
-		
 	.widget-area a:link, .widget-area a:visited { font-size:12px !important; }	
-	.tinynav	{ display: block;}
-    #access .menu ul:first-child { display: none;}
 	.theme-default .nivo-caption { font-size:9px; }	
 	#content p, #content ul, #content ol, .sidey, .sidey a, table, table td { line-height: 1.4em; }
 	
@@ -168,7 +121,7 @@
 	#header .socials a img { width: 20px; height: 20px; }
 	
 	.theme-default .nivoSlider {background-image:none;}
-	.nivo-caption {position:relative;padding:5px 5px 35px;background:transparent;color:#333;top:0;}
+	.nivo-caption {position:relative;padding:5px 5px 35px;background:transparent;color:inherit;top:0;}
 	.theme-default .nivo-controlNav {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
 	.slide-text {font-size:12px;}
 	
@@ -176,6 +129,24 @@
 	
 	.footermenu {display:table;margin:0 auto;float:none;}
 	
+	#main {margin-top:0px;}	
+	#nav-toggle { display: block; float: left; margin: 0 auto; cursor:pointer;
+				  width: 92%; height: 40px; padding: 2px 4%; }
+	#nav-toggle span { }
+	#nav-toggle span:before { content: "\e820"; font-family: "elusive"; font-size: 16px; height: 40px; line-height: 40px; }
+	#access { display: none; margin-top: 0; padding-bottom: 5px; }
+	#access .menu ul, #access .menu ul li { width: 100%; }
+	#access > .menu li ul { position: inherit; margin-top: 0 !important; }
+	#access > .menu ul ul ul { width: 95%; left: 5%; }
+	#access > .menu > ul > li > a > span { border-width: 0 0 1px 0; border-style: solid; box-shadow: 0 1px 0 rgba(255,255,255,0.5);}	
+	#access > .menu ul li > a:not(:only-child) span:after {
+	font-family:"Elusive"; content: '\e80a';
+    position: absolute; right: 5px; top: 10px; z-index: 251;
+	-moz-transition:all .2s ease-in-out; -o-transition:all .2s ease-in-out; 
+	-webkit-transition:all .2s ease-in-out; transition:all .2s ease-in-out; }
+	#access > .menu ul li:hover > a:not(:only-child) span:after { top:20px; opacity:0; }
+	#access > .menu ul li > a:not(:only-child) span { padding-right:18px; }
+	#access > .menu > ul ul > li a:not(:only-child) span:after { transform: rotate(0deg); -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); }
 }
 
 
@@ -188,11 +159,11 @@
 	
 	
 	.nivo-caption h2 {margin-bottom:0px;font-size:14px;line-height:18px;}
-	
+	/*.nivo-slice {z-index:-1;} */ /* This would remove slider animations if needed */
 	body {padding: 0;}
 	#page {margin-top: 0;}
-	.magazine-layout #content article.post, .magazine-layout .search #content article{margin:5px 0;width:100%;}
-	#front-columns > div { width:auto;max-width:98%;float:none;margin:25px auto !important;clear:both;}
+	.magazine-layout #content article.post, .magazine-layout .search #content article {margin:5px 0;width:100%;}
+	#forbottom #front-columns > div { width:auto;max-width:98%;float:none;margin:25px auto !important;clear:both;}
 	.column-image img {}
 }
 

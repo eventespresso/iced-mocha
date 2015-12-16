@@ -7,6 +7,7 @@ Template Name: Category page with intro
 
 <section id="container" class="<?php echo iced_mocha_get_layout_class(); ?>">
 	<div id="content" role="main">
+		<?php espresso_theme_before_content_hook(); ?>
 
 	 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -41,7 +42,7 @@ Template Name: Category page with intro
 	endwhile;
 	if($iced_mocha_pagination=="Enable") iced_mocha_pagination($the_query->max_num_pages); else iced_mocha_content_nav( 'nav-below' );	
 	?>
-		
+	<?php espresso_theme_after_content_hook(); ?>
 	</div><!-- #content -->
 	
 	<?php iced_mocha_get_sidebar(); ?>

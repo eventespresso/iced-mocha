@@ -13,7 +13,7 @@ function espresso_theme_proto_font($fonts,$sizes,$size,$font,$gfont,$labelsize,$
 	<select id='<?php echo $labelfont; ?>' class='admin-fonts fontnameselect' name='iced_mocha_settings[<?php echo $labelfont; ?>]'>";
 	<?php if (strlen($general)>0): ?>
 		<optgroup>
-			<option value="<?php echo $general; ?>"><?php echo $general; ?></option>
+			<option value="General Font"><?php echo $general; ?></option>
 		</optgroup>
 	<?php endif;
 	foreach ($fonts as $fgroup => $fsubs): ?>
@@ -31,9 +31,14 @@ function espresso_theme_proto_font($fonts,$sizes,$size,$font,$gfont,$labelsize,$
 <?php
 } // espresso_theme_font_selector()
 
+function espresso_theme_color_clean($color){
+	if (strlen($color)>1): return "#".str_replace("#","",$color);
+	else: return $color;
+	endif;
+} // espresso_theme_color_clean()
 
 function espresso_theme_color_field($id,$title,$value,$hint=""){
-	echo '<input type="text" id="'.$id.'" class="colorthingy" title="'.$title.'" name="iced_mocha_settings['.$id.']" value="'.esc_attr($value).'"  />';
+	echo '<input type="text" id="'.$id.'" class="colorthingy" title="'.$title.'" name="iced_mocha_settings['.$id.']" value="'.esc_attr(espresso_theme_color_clean($value)).'"  />';
     echo '<div id="'.$id.'2"></div>';
 	if (strlen($hint)>0) echo "<div><small>".$hint."</small></div>";
 } // espresso_theme_color_field()
@@ -48,7 +53,7 @@ function espresso_theme_proto_field($settings,$type,$name,$values,$labels='',$cl
 	endif;
 	switch ($type):
 		case "checkbox": 
-			$data = "<input value='1' id='$name' name='${settings['id']}[$name]' type='checkbox' ".checked($values,'1'). " class='$cls'/> ".
+			$data = "<input value='1' id='$name' name='${settings['id']}[$name]' type='checkbox' ".checked($values,'1',0). " class='$cls'/> ".
 			$data .= "<label for='$name' class='socialsdisplay'>";
 			$data .= $labels." </label>\n";
 		break; 

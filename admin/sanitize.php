@@ -98,6 +98,8 @@ else :
 
 	$input['iced_mocha_hheight'] =  intval(wp_kses_data($input['iced_mocha_hheight']));
 	$input['iced_mocha_copyright'] = trim(wp_kses_post($input['iced_mocha_copyright']));
+	
+	$input["iced_mocha_headerwidgetwidth"] = trim(wp_kses_data($input['iced_mocha_headerwidgetwidth']));
 
 	$input["iced_mocha_backcolorheader"] = trim(wp_kses_data($input['iced_mocha_backcolorheader']));
 	$input["iced_mocha_backcolormain"] = trim(wp_kses_data($input['iced_mocha_backcolormain']));
@@ -174,6 +176,7 @@ else :
 
 	$input['iced_mocha_fwidth'] =  intval(wp_kses_data($input['iced_mocha_fwidth']));
 	$input['iced_mocha_fheight'] =  intval(wp_kses_data($input['iced_mocha_fheight']));
+	$input['iced_mocha_excerptcont'] =  wp_kses_data($input['iced_mocha_excerptcont']);
 
 	$input['iced_mocha_contentmargintop'] =  intval(wp_kses_data($input['iced_mocha_contentmargintop']));
 	$input['iced_mocha_contentpadding'] =  intval(wp_kses_data($input['iced_mocha_contentpadding']));
@@ -188,8 +191,10 @@ else :
 		$j=$i+1;
 		if (in_array($input['iced_mocha_social'.$i],$espresso_theme_special_keys)) :
 			$input['iced_mocha_social'.$j]	= wp_kses_data(str_replace($espresso_theme_special_terms,'',$input['iced_mocha_social'.$j]));
-			if ($input['iced_mocha_social'.$i]=='Mail') {$input['iced_mocha_social'.$j]='mailto:'.$input['iced_mocha_social'.$j];};
-			if ($input['iced_mocha_social'.$i]=='Skype') {$input['iced_mocha_social'.$j]='callto://'.$input['iced_mocha_social'.$j];};
+			if (in_array($input['iced_mocha_social'.$i],$espresso_theme_special_keys)):
+				$prefix = $espresso_theme_special_terms[array_search($input['iced_mocha_social'.$i],$espresso_theme_special_keys)];
+				$input['iced_mocha_social'.$j] = $prefix.$input['iced_mocha_social'.$j];
+			endif;
 		else :
 			$input['iced_mocha_social'.$j] = esc_url_raw($input['iced_mocha_social'.$j]);
 		endif;

@@ -7,7 +7,10 @@ require_once(dirname(__FILE__) . "/prototypes.php");
 // Loading function that generates the custom css
 require_once(dirname(dirname(__FILE__)) . "/includes/custom-styles.php");
 
-// Loading the admin files
+// WP customizer handler
+require_once(get_template_directory() . "/admin/customizer.php");
+
+// Admin Side
 
 if( is_admin() ) {
 // Loading the settings arrays

@@ -27,7 +27,7 @@ foreach ($options as $key => $value) {
 		</header><!-- .entry-header -->
 		
 			<?php espresso_theme_post_before_content_hook();  
-			?><?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
+			?><?php if ( is_archive() || is_search() || is_page() ) : // Display excerpts for archives and search. ?>
 			
 						<?php if ($iced_mocha_excerptarchive != "Full Post" ){ ?>
 						<div class="entry-summary">

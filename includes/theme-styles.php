@@ -9,21 +9,8 @@
 // Adding the viewport meta if the mobile view has been enabled
 
 function iced_mocha_register_styles() {
-	global $iced_mochas;
-	foreach ($iced_mochas as $key => $value) { ${"$key"} = $value ;}
-
-	wp_register_style( 'iced_mochas', get_stylesheet_uri() );
-
-	if($iced_mocha_mobile=="Enable") { wp_register_style( 'iced_mocha-mobile', get_template_directory_uri() . '/styles/style-mobile.css' );}
-	if($iced_mocha_frontpage=="Enable" ) { wp_register_style( 'iced_mocha-frontpage', get_template_directory_uri() . '/styles/style-frontpage.css' );}
-
-	if($iced_mocha_googlefont) wp_register_style( 'iced_mocha_googlefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+', $iced_mocha_googlefont )));
-	if($iced_mocha_googlefonttitle) wp_register_style( 'iced_mocha_googlefonttitle', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$iced_mocha_googlefonttitle )));
-	if($iced_mocha_googlefontside) wp_register_style( 'iced_mocha_googlefontside',esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$iced_mocha_googlefontside )));
-	if($iced_mocha_headingsgooglefont) wp_register_style( 'iced_mocha_headingsgooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$iced_mocha_headingsgooglefont )));
-	if($iced_mocha_sitetitlegooglefont) wp_register_style( 'iced_mocha_sitetitlegooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$iced_mocha_sitetitlegooglefont )));
-	if($iced_mocha_menugooglefont) wp_register_style( 'iced_mocha_menugooglefont', esc_attr("//fonts.googleapis.com/css?family=".preg_replace( '/\s+/', '+',$iced_mocha_menugooglefont )));
-
+	wp_register_style( 'iced_mocha-style', get_stylesheet_uri() );
+	wp_register_style( 'iced_mocha-fonts', get_template_directory_uri() . '/fonts/fontfaces.css' );
 }
 
 add_action('init', 'iced_mocha_register_styles' );
@@ -32,16 +19,38 @@ add_action('init', 'iced_mocha_register_styles' );
 function iced_mocha_enqueue_styles() {
 	global $iced_mochas;
 	foreach ($iced_mochas as $key => $value) { ${"$key"} = $value ;}
+	
+	$gfonts = array();
+	
+	if($iced_mocha_mobile=="Enable") { wp_register_style( 'iced_mocha-mobile', get_template_directory_uri() . '/styles/style-mobile.css' );}
+	if($iced_mocha_frontpage=="Enable" ) { wp_register_style( 'iced_mocha-frontpage', get_template_directory_uri() . '/styles/style-frontpage.css' );}
 
-	wp_enqueue_style( 'iced_mochas');
-	wp_enqueue_style( 'iced_mochas2');
-	wp_enqueue_style( 'iced_mocha_googlefont');
-	wp_enqueue_style( 'iced_mocha_googlefonttitle');
-	wp_enqueue_style( 'iced_mocha_googlefontside');
-	wp_enqueue_style( 'iced_mocha_headingsgooglefont');
-	wp_enqueue_style( 'iced_mocha_sitetitlegooglefont');
-	wp_enqueue_style( 'iced_mocha_menugooglefont');
-	// presentation page styling enqued in frontpage.php
+	if($iced_mocha_googlefont) $gfonts[] = esc_attr(preg_replace( '/\s+/', '+', $iced_mocha_googlefont ));
+	if($iced_mocha_googlefonttitle) $gfonts[] = esc_attr(preg_replace( '/\s+/', '+',$iced_mocha_googlefonttitle ));
+	if($iced_mocha_googlefontside) $gfonts[] = esc_attr(preg_replace( '/\s+/', '+',$iced_mocha_googlefontside ));
+	if($iced_mocha_headingsgooglefont) $gfonts[] = esc_attr(preg_replace( '/\s+/', '+',$iced_mocha_headingsgooglefont ));
+	if($iced_mocha_sitetitlegooglefont) $gfonts[] = esc_attr(preg_replace( '/\s+/', '+',$iced_mocha_sitetitlegooglefont ));
+	if($iced_mocha_menugooglefont) $gfonts[] = esc_attr(preg_replace( '/\s+/', '+',$iced_mocha_menugooglefont ));
+	
+	wp_enqueue_style( 'iced_mocha-fonts');
+	
+	// enqueue fonts with subsets separately
+	foreach($gfonts as $i=>$gfont):
+		if (strpos($gfont,"&") === false):
+		   // do nothing
+		else:
+			wp_enqueue_style( 'iced_mocha-googlefont_'.$i, '//fonts.googleapis.com/css?family=' . $gfont );	
+			unset($gfonts[$i]);
+		endif;		
+	endforeach;
+	
+	// merged fonts
+	if ( count($gfonts)>0 ):
+		wp_enqueue_style( 'iced_mocha-googlefonts', '//fonts.googleapis.com/css?family=' . implode( "|" , array_unique($gfonts) ), array(), null, 'screen' );
+	endif;
+	wp_enqueue_style( 'iced_mocha-style');
+	
+	// presentation page styling enqueued in frontpage.php
 	if (($iced_mocha_frontpage=="Enable") && is_front_page()) { wp_enqueue_style( 'iced_mocha-frontpage' ); }
 
 }
@@ -54,33 +63,18 @@ function iced_mocha_styles_echo() {
 	foreach ($iced_mochas as $key => $value) { ${"$key"} = $value ;}
 	echo preg_replace("/[\n\r\t\s]+/"," " ,iced_mocha_custom_styles())."\n";
 
-
-
 	if(($iced_mocha_frontpage=="Enable")&&is_front_page()) { echo preg_replace("/[\n\r\t\s]+/"," " ,iced_mocha_presentation_css())."\n";}
 	echo preg_replace("/[\n\r\t\s]+/"," " ,iced_mocha_customcss())."\n";
 }
 
 add_action('wp_head', 'iced_mocha_styles_echo', 20);
 
-function iced_mocha_mobile_meta() {
-global $iced_mochas;
-foreach ($iced_mochas as $key => $value) {
-    							 ${"$key"} = $value ;
-									}
-return '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">';
-}
-
 function iced_mocha_load_mobile_css() {
 global $iced_mochas;
-foreach ($iced_mochas as $key => $value) {
-    							 ${"$key"} = $value ;
-									}
-	if ($iced_mocha_mobile=="Enable") {
-		echo "\n".iced_mocha_mobile_meta()."\n";
-		echo "<link rel='stylesheet' id='iced_mocha_style_mobile'  href='".get_template_directory_uri() . '/styles/style-mobile.css' . "' type='text/css' media='all' />";
-	}
+if ($iced_mochas['iced_mocha_mobile']=="Enable") {
+	echo "<link rel='stylesheet' id='iced_mocha_style_mobile'  href='".get_template_directory_uri() . '/styles/style-mobile.css' . "' type='text/css' media='all' />";
 }
-
+}
 add_action ('wp_head','iced_mocha_load_mobile_css', 30);
 
 // JS loading and hook into wp_enque_scripts

@@ -4,7 +4,7 @@ Theme URI: https://github.com/eventespresso/iced-mocha/#iced-mocha-theme
 Description: We had to follow a very strict recipe to get Iced Mocha Theme just right. We started with a very solid framework of over 200 settings, added a very light user interface, threw in a couple of mobiles and tablets to give it that responsive elasticity, added over 50 fonts, weren't satisfied so we poured all the Google fonts into the mix, then scattered 12 widget areas for consistency, dissolved a slider and unlimited columns into a customizable Presentation Page then mixed it in as well. We then sprinkled all post formats, 8 layouts including magazine and blog, powdered 40+ social icons and even blended in a customizable top bar for extra density. We also made it translation ready and gave it RTL language support for some cultural diversity. The secret ingredient was love and we might've spilled too much of that. But now Iced Mocha Theme has just the right feel and the right texture and is exactly what your empty WordPress canvas needs.
 Author: Event Espresso
 Author URI: http://eventespresso.com
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: white, black, blue, orange, red, gray, silver, light, dark, one-column, two-columns, three-columns, right-sidebar, left-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, front-page-post-form, full-width-template,  microformats, post-formats, rtl-language-support,  sticky-post, theme-options, threaded-comments, translation-ready
@@ -18,6 +18,13 @@ GitHub Theme URI: https://github.com/eventespresso/iced-mocha
 
 @import url("fonts/fontfaces.css");
 
+IMPORTANT!
+
+Any changes made to this or any other of the theme's files will be lost at the next update.
+
+To safely make customizations to the theme, for CSS-only consider using the theme's dedicated 
+"Custom CSS" field found under the Miscellaneous section of the theme settings page; 
+for advanced CSS and other customizations, consider using a child theme.
 /* Reset default browser CSS */
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
 html, body, div, span, applet, object, iframe,
@@ -222,6 +229,7 @@ height:75px;
 padding:0;
 position:relative;
 overflow:hidden;
+width:100%;
 }
 
 a#logo {
@@ -480,6 +488,9 @@ margin-top:20px;
 /* =Menu -PRIMARY
 -------------------------------------------------------------- */
 
+
+#nav-toggle { display: none; }
+
 #access {
 	display: block;
 	float: left;
@@ -528,9 +539,24 @@ border-right:1px solid transparent;
 	transition:all .2s ease-in-out;
 }
 
+
+#access > .menu > ul ul > li a:not(:only-child) span:after {
+	transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);  }
+#access > .menu li a:not(:only-child) span {
+    padding-right: 18px; }
+
 #access > .menu > ul > li:hover > a:not(:only-child) span:after {
     top:20px;
 	opacity:0;
+	filter: alpha(opacity=0);
+}
+
+#access > .menu > ul ul > li:hover > a:not(:only-child) span:after {
+    right:-20px;
+	opacity:0;
+	filter: alpha(opacity=0);
 }
 
 #access > .menu > ul > li > a:not(:only-child) span {
@@ -1357,6 +1383,7 @@ display:block;
 }
 #content .wp-smiley {
 	margin: 0;
+	width:auto !important;
     -moz-box-shadow: none !important;
 	-webkit-box-shadow: none !important ;
 	box-shadow: none !important;
@@ -2331,6 +2358,7 @@ color:#333;
 	position:absolute;
 	top:0px;
 	left:0px;
+	max-width: none;
 }
 .nivo-main-image {
 	display: block !important;
@@ -2350,6 +2378,8 @@ color:#333;
 	margin:0;
 	z-index:6;
 	display:none;
+	filter:alpha(opacity=0);
+	opacity:0;
 }
 /* The slices and boxes in the Slider */
 .nivo-slice {
@@ -2375,6 +2405,7 @@ color:#333;
 	width:43%;
 	z-index:8;
 	padding: 10px;
+	filter:alpha(opacity=8);
 	opacity: 0.8;
 	overflow: hidden;
 	display: none;
@@ -2388,6 +2419,7 @@ color:#333;
 .nivo-caption h2 {
 	margin-bottom:10px;
 	font-size:24px;
+	line-height:30px;
 	padding:5px 10px 15px 5px;
 	border-bottom:1px solid #444;
 	font-weight:normal;
@@ -2404,6 +2436,7 @@ line-height:1.5em;
 
 .nivo-caption a {
 	display:inline !important;
+	text-decoration: underline; 
 }
 .nivo-html-caption {
     display:none;
@@ -2632,6 +2665,12 @@ a.continue-reading-link:hover:after { width:100%;}
 	float:none;
 	overflow:hidden;
 }
+#front-columns > li {
+	float: left;
+    list-style: none;
+    margin-right: 5%;
+    padding: 0;
+}
 .column-image {
 	width:100%;
 	display:block;
@@ -2719,6 +2758,20 @@ background:#fff;
 transition:background .2s ease-out;
 }
 
+
+
+.coldisplay1 .column-text,
+.coldisplay1 .column-image-inside {left: 0;}
+.coldisplay1 .columnmore {bottom: 20px;}
+.coldisplay1 .column-image:hover .column-image-inside {background:rgba(0,0,0,0.9);}
+
+
+.coldisplay2 .column-image {overflow:visible;}
+.coldisplay2 .column-image-inside {display:none;}
+.coldisplay2 .column-text {position:relative;top:0;left:0;padding:10px 5px;-webkit-transform:none;-moz-transform:none;transform:none;color:inherit;}
+.coldisplay2 .columnmore, .coldisplay2 .column-image:hover .columnmore {bottom: 0px; position: relative;}
+
+
 .column-arrow:before {
 /*
 font-family:"elusive";
@@ -2768,6 +2821,33 @@ padding: 0px 0px 10px;
 .magazine-layout span.edit-link {float:left;margin-left:0;margin-right:10px; }
 .magazine-layout .entry-header { clear: both; }
 
+/* Ajax load more posts button */
+
+#espresso_theme_ajax_more_trigger{
+display:table;
+float:none;
+clear:both;
+min-width:200px;
+background:url(images/loading.gif) no-repeat -100px center ;
+padding:7px 20px;
+border-radius:10px;
+margin:0 auto;
+text-align:center;
+cursor:pointer;
+-moz-transition:opacity .3s ease-in-out;
+-o-transition:opacity .3s ease-in-out;
+-webkit-transition:opacity .3s ease-in-out;
+transition:opacity .3s ease-in-out;
+}
+
+#espresso_theme_ajax_more_trigger:hover {
+opacity:0.8;
+}
+.espresso_theme_click_loading {
+background:url(images/loading.gif) transparent no-repeat center center !important;
+text-indent:-9999px;
+}
+
 
 /* shareaddy fix */ .sharedaddy ul > li { background: none !important; text-indent: 0 !important; }
 
@@ -2775,6 +2855,14 @@ padding: 0px 0px 10px;
 
 /* video fix */
 #content embed, #content iframe {max-width:100%;}
+
+/* WooCommerce compatibility styling */
+
+body.woocommerce #forbottom { padding-top: 20px; }
+body.woocommerce .page-title { display: inherit; margin-bottom: 20px; padding: 10px; }
+body.woocommerce-page .entry-content .checkout ul > li { list-style: none outside none; }
+body.woocommerce-cart .entry-content fieldset, body.woocommerce-cart #content tr td, 
+body.woocommerce-cart #content tr th, body.woocommerce-cart #content thead th { border: 0; }
 
 /******************* Event Espresso Template Styles  ****************** */
 

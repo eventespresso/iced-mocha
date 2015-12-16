@@ -8,7 +8,8 @@
  */
 
 // variable for theme version
-define ("ICED_MOCHA_VERSION","1.0");
+define ('_ESPRESSO_THEME_NAME','Iced Mocha');
+define ('ICED_MOCHA_VERSION','1.0');
 
 require_once(dirname(__FILE__) . "/admin/main.php"); // Load necessary admin files
 

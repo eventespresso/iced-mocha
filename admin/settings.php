@@ -112,8 +112,9 @@ function espresso_theme_setting_mobile_fn() {
 		selected($iced_mochas['iced_mocha_mobile'],$item);
 		echo ">$itemsare[$id]</option>";
 	}
-	echo "</select></span>";
-	$checkedClass = ($iced_mochas['iced_mocha_hcontain']=='1') ? ' checkedClass' : '';
+	echo "</select></span>&nbsp;";
+	//$checkedClass = ($iced_mochas['iced_mocha_hcontain']=='1') ? ' checkedClass' : '';
+	espresso_theme_proto_field( $iced_mochas, "checkbox", "iced_mocha_zoom", $iced_mochas['iced_mocha_zoom'], __('Allow zoom', 'iced_mocha'));
 	echo "<div><small>".__("Enable to make Iced Mocha Theme fully responsive. The layout and general sizes of your blog will adjust depending on what device and what resolution it is viewed in.<br> Do not disable unless you have a good reason to.","iced_mocha")."</small></div>";
 } // espresso_theme_setting_mobile_fn()
 
@@ -134,6 +135,7 @@ function espresso_theme_setting_himage_fn() {
 	//$checkedClass = ($iced_mochas['iced_mocha_hcenter']=='1') ? ' checkedClass' : '';
 	echo "<a href=\"?page=custom-header\" class=\"button\" target=\"_blank\">".__('Define header image','iced_mocha')."</a><br>";
 	espresso_theme_proto_field( $iced_mochas, "checkbox", "iced_mocha_hcenter", $iced_mochas['iced_mocha_hcenter'], __('Center the header image horizontally','iced_mocha'));
+	echo "<br>";
 	espresso_theme_proto_field( $iced_mochas, "checkbox", "iced_mocha_hratio", $iced_mochas['iced_mocha_hratio'], __('Keep header image aspect ratio.', 'iced_mocha'));
 	echo "<div><small>".__("By default the header has a minimum height set. This option removes that and the header becomes fully responsive, scalling to any size.<br> Only enable this if you're <b>not</b> using a logo or site title and description in the header. ","iced_mocha")."</small></div>";
 }
@@ -172,9 +174,18 @@ function espresso_theme_setting_favicon_fn() {
 	//espresso_theme_proto_field( $iced_mochas, "", "", $iced_mochas[''], '');
 	echo "<div><small>".__("Limitations: It has to be an image. It should be max 64x64 pixels in dimensions. Recommended file extensions .ico and .png. <br> <strong>Note that some browsers do not display the changed favicon instantly.</strong>","iced_mocha")."</small></div>"; ?>
 	<span class="description"><br><a href="#" class="upload_image_button button"><?php _e( 'Select / Upload Image', 'iced_mocha' );?></a> </span>
-</div>
+</div><?php
 
-<?php
+}
+
+// SELECT - Name: iced_mocha_settings[headerwidgetwidth]
+function espresso_theme_setting_headerwidgetwidth_fn() {
+	global $iced_mochas;
+	espresso_theme_proto_field( $iced_mochas, "select", "iced_mocha_headerwidgetwidth",
+			array("60%" , "50%" , "33%" , "25%"),
+			array( __("60%","iced_mocha"), __("50%","iced_mocha"), __("33%","iced_mocha"), __("25%","iced_mocha"))
+	);
+	echo "<div><small>".__("Limit the header widget area max width as percentage of the entire header width.","iced_mocha")."</small></div>";
 }
 
 ////////////////////////////////
@@ -528,7 +539,20 @@ function espresso_theme_setting_frontcolumns_fn() {
      </div>
 </div>
 
-<?php	echo "<div class='slmini'><b>".__("Columns per row:","iced_mocha")."</b> ";
+<?php	
+	echo "<div class='slmini'><b>".__("Column Display:","iced_mocha")."</b> ";
+	$items = array ("0" , "1", "2");
+	$itemsare = array( __("Animated","iced_mocha"), __("Static on Image","iced_mocha"), __("Static under Image","iced_mocha"));
+	echo "<select id='iced_mocha_coldisplay' name='iced_mocha_settings[iced_mocha_coldisplay]'>";
+	foreach($items as $id=>$item) {
+		echo "<option value='$item'";
+		selected($iced_mochas['iced_mocha_coldisplay'],$item);
+		echo ">$itemsare[$id]</option>";
+	}
+	echo "</select>";
+	echo "<small>".__("How to display your Presentation Page Columns.", "iced_mocha")."</small></div>";
+
+	echo "<div class='slmini'><b>".__("Columns per row:","iced_mocha")."</b> ";
 	$items = array ("1", "2" , "3" , "4");
 	echo "<select id='iced_mocha_nrcolumns' name='iced_mocha_settings[iced_mocha_nrcolumns]'>";
 	foreach($items as $item) {

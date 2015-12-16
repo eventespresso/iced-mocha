@@ -4,7 +4,39 @@
  * Since Iced Mocha 1.0
 */
 
-add_action('template_redirect', 'espresso_theme_ajax_init');
+if (  'posts' == get_option( 'show_on_front' )) add_action('pre_get_posts', 'espresso_theme_query_offset', 1 );
+
+function espresso_theme_query_offset(&$query) {
+
+	$iced_mochas = iced_mocha_get_theme_options();
+	foreach ($iced_mochas as $key => $value) { ${"$key"} = $value; } 
+
+	if ( !is_front_page() || $iced_mocha_frontpage != "Enable" )  {
+		return;
+	}
+
+    //Determine how many posts per page you want (we'll use WordPress's settings)
+    $ppp = $iced_mochas['iced_mocha_frontpostscount'];
+
+    //Detect and handle pagination...
+    if ( $query->is_paged ) {
+
+        //Manually determine page query offset (offset + current page (minus one) x posts per page)
+        $page_offset =  ($query->query_vars['paged']-1) * $ppp ;
+
+        //Apply adjust page offset
+        $query->set('offset', $page_offset );
+
+    }
+    else {
+
+        //This is the first page. No offset
+        $query->set('offset',0);
+
+    }
+}
+
+if (  'posts' == get_option( 'show_on_front' )) add_action('template_redirect', 'espresso_theme_ajax_init');
 
 	 function espresso_theme_ajax_init() {
 	    // loading our theme settings
@@ -12,6 +44,7 @@ add_action('template_redirect', 'espresso_theme_ajax_init');
 		foreach ($iced_mochas as $key => $value) { ${"$key"} = $value; } 
 		
 		if(is_front_page() && $iced_mocha_frontpage=="Enable") {  
+				$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 			$the_query = new WP_Query( array('posts_per_page'=>$iced_mochas['iced_mocha_frontpostscount']) ); 
 		}
 	/*	elseif (is_page_template('templates/template-blog.php')) {

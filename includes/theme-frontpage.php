@@ -35,10 +35,12 @@ function iced_mocha_presentation_css() {
 <?php if ($iced_mocha_fpslider_bordersize): ?> border:<?php echo $iced_mocha_fpslider_bordersize ;?>px solid <?php echo $iced_mocha_fpsliderbordercolor; ?>; <?php endif; ?> }
 .theme-default .nivo-controlNav {top:-<?php echo $iced_mocha_fpslider_bordersize+33 ?>px;}
 
-#front-text1 h1, #front-text2 h1{
-	color: <?php echo $iced_mocha_fronttitlecolor; ?>; }
+#front-text1 h1, #front-text2 h1 {
+	color: <?php echo $iced_mocha_fronttitlecolor; ?>; 
+	font-size: <?php echo round(30*(preg_replace("/[^\d]/","",$iced_mocha_headingsfontsize)/100),0) ?>px;
+    line-height: <?php echo round(42*(preg_replace("/[^\d]/","",$iced_mocha_headingsfontsize)/100),0) ?>px; }
 
-#front-columns > div {
+#front-columns > div, #front-columns > li {
 	width: <?php switch ($iced_mocha_nrcolumns) {
     case 0: break;
 	case 1: echo "100"; break;
@@ -47,9 +49,9 @@ function iced_mocha_presentation_css() {
     case 4: echo "21.2"; break;
 	} ?>%; }
 
-#front-columns > div.column<?php echo $iced_mocha_nrcolumns; ?> { margin-right: 0; }
+#front-columns > div.column<?php echo $iced_mocha_nrcolumns; ?>, #front-columns > li:nth-child(n+<?php echo $iced_mocha_nrcolumns; ?>) { margin-right: 0; }
 
-.column-image img {	height:<?php echo ($iced_mocha_colimageheight) ?>px;}
+.column-image {	max-width:<?php echo $iced_mocha_colimagewidth;?>px;margin:0 auto;}
 .column-image img {	max-width:<?php echo $iced_mocha_colimagewidth;?>px;  max-height:<?php echo $iced_mocha_colimageheight;?>px;}
 
 .nivo-caption { background-color: rgba(<?php echo espresso_theme_hex2rgb($iced_mocha_fpslidercaptionbg); ?>,0.7); }
