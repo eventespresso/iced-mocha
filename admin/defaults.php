@@ -11,11 +11,12 @@ $iced_mocha_defaults = array(
 "iced_mocha_sidebar"	=> 250,
 "iced_mocha_mobile"	=> "Enable",
 "iced_mocha_hcontain"	=> "",
-
+"iced_mocha_zoom"      => 0,
 "iced_mocha_frontpage"		=> "Enable",
 "iced_mocha_frontposts"	=> "Disable",
 "iced_mocha_frontevents" => "Disable",
 "iced_mocha_frontpostscount" 		=> get_option('posts_per_page'),
+"iced_mocha_frontpostsperrow"      => "2", 
 "iced_mocha_fronteventscount"        => get_option('posts_per_page'), 
 "iced_mocha_fpsliderwidth"			=> "1150",
 "iced_mocha_fpsliderheight"		=> "400",
@@ -74,6 +75,7 @@ $iced_mocha_defaults = array(
 "iced_mocha_slidertext10"    => "",
 "iced_mocha_sliderlink10"    => "",
 
+"iced_mocha_coldisplay"    => "0",
 "iced_mocha_nrcolumns"		=> "3",
 "iced_mocha_columnNumber"	=> "3",
 "iced_mocha_columnNumberEvents" => "3",
@@ -285,6 +287,7 @@ If you're doing event registration and ticketing any other way then you're wasti
 "iced_mocha_socialsdisplay5" => "1",
 
 "iced_mocha_postboxes" => array(),
+"iced_mocha_current_admin_menu" => '',
 "iced_mocha_copyright"	=> "This text can be changed from the Miscellaneous section of the settings page. <br />
 <b>Lorem ipsum</b> dolor sit amet, <a href='#'>consectetur adipiscing</a> elit, cras ut imperdiet augue. ",
 "iced_mocha_customcss"	=> "/* Iced Mocha Theme Custom CSS */  ",

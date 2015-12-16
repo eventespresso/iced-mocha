@@ -12,12 +12,16 @@ class ColumnsWidget extends WP_Widget
 { 	
   var $iced_mochas; // theme options read in the constructor
   
-  function ColumnsWidget() { 
+  public function __construct() { 
     $widget_ops = array('classname' => 'ColumnsWidget', 'description' => 'Add columns in the presentation page' );
 	$control_ops = array('width' => 350, 'height' => 350); // making widget window larger
-	$this->WP_Widget('columns_widget', 'Espresso Column', $widget_ops, $control_ops);
-	$this->iced_mochas= iced_mocha_get_theme_options(); // reading theme options
-  }
+	parent::__construct('columns_widget', 'espresso_theme Column', $widget_ops, $control_ops);
+	$this->iced_mochas = iced_mocha_get_theme_options(); // reading theme options
+  } // construct()
+  
+  public function ColumnsWidget(){
+	self::__construct();	  
+  } // PHP4 constructor
 
   function form($instance) {
     $instance = wp_parse_args( (array) $instance, array( 'image' => '', 'title' => '' , 'text' => '',  'link' => '',  'blank' => '' ) );
@@ -44,44 +48,32 @@ class ColumnsWidget extends WP_Widget
 	$instance['link'] = $new_instance['link'];
 	$instance['blank'] = $new_instance['blank'];
     return $instance;
-  }
+  } // update()
   
-  function widget($args, $instance) { 
+   function widget($args, $instance) { 
 	$iced_mocha_nrcolumns = $this->iced_mochas['iced_mocha_nrcolumns']; // getting the number of columns setting
-	$iced_mocha_columnreadmore = $this->iced_mochas['iced_mocha_columnreadmore']; // read more setting
 	global $iced_mocha_column_counter; // globabl counter for incrementing further
 	$blank="";
 	if($instance['blank']) $blank="target='_blank'";
 	
 	if($instance['image']) : 
 		$iced_mocha_column_counter++; // incrementing counter only if widget has image
-		$counter = $iced_mocha_column_counter; ?>
-		<div class="column<?php echo ($counter%$iced_mocha_nrcolumns)?$counter%$iced_mocha_nrcolumns:$iced_mocha_nrcolumns; ?>"> 
-			<a  <?php echo $blank;?> href="<?php echo esc_url($instance['link']) ?>">	 
-				<?php if ($instance['title']) { echo "<h3 class='column-header-image'>".$instance['title']."</h3>"; } ?>
-			</a>
-					
-			<?php if ($instance['image']) :	?>
-				<div class="column-image">
-					<div class="column-image-inside">	</div>
-					<img  src="<?php echo esc_url($instance['image']) ?>" id="columnImage<?php echo $counter; ?>" alt="" />
-					<?php if ($instance['text']) : ?>		
-						<div class="column-text">
-							<?php echo esc_attr($instance['text']); ?>							
-						</div>
-					<?php endif; ?>
-					<?php if($iced_mocha_columnreadmore && $instance['link'] ): ?>
-						<div class="columnmore">
-							<a <?php echo $blank;?> href="<?php echo esc_url($instance['link']) ?>"><?php echo esc_attr($iced_mocha_columnreadmore) ?> <i class="column-arrow"></i> </a>
-						</div>
-					<?php endif; ?>			
-				</div><!--column-image-->
-			<?php endif; ?>
-	
-		</div>
-	<?php endif; // if image
-  }// widget() function
-}// ColumnsWidget
+		$counter = $iced_mocha_column_counter; 
+		$coldata = array(
+			'colno' => (($counter%$iced_mocha_nrcolumns)?$counter%$iced_mocha_nrcolumns:$iced_mocha_nrcolumns),
+			'counter' => $counter,
+			'image' => esc_url($instance['image']),
+			'link' => esc_url($instance['link']),
+			'blank' => ($instance['blank']?'target="_blank"':''),
+			'title' =>  $instance['title'],
+			'text' => $instance['text'],
+			'readmore' => $this->iced_mochas['iced_mocha_columnreadmore'],  // read more setting
+		);		
+		iced_mocha_singlecolumn_output($coldata);	
+	endif; 
+  } // widget()
+  
+} // ColumnsWidget class
 
 add_action( 'widgets_init', create_function('', 'return register_widget("ColumnsWidget");') );
 
@@ -101,7 +93,43 @@ function iced_mocha_widget_scripts() {
 
 add_action ('admin_print_scripts-widgets.php','iced_mocha_widget_scripts');
 
+/**
+ * presentation page column output
+ */
+if ( ! function_exists('iced_mocha_singlecolumn_output') ):
+function iced_mocha_singlecolumn_output($data){
+	foreach ($data as $key => $value) { ${"$key"} = $value; }
+	$counter = 0;
+	?>
+		<div class="column<?php echo $colno; ?>">
+			<?php if ($image) {	?>
+				<a href="<?php echo $link; ?>" <?php echo $blank; ?> class="clickable-column">
+					<?php if ($title) { echo "<h3 class='column-header-image'>".$title."</h3>"; } ?>
+				</a>
 
+				<div class="column-image">
+					<div class="column-image-inside">  </div>
+						<a href="<?php echo $link; ?>" <?php echo $blank; ?> class="clickable-column">
+							<img  src="<?php echo esc_url($image) ?>" id="columnImage<?php echo $counter; ?>" alt="<?php echo ($title?wp_kses($title,array()):''); ?>" />
+						</a>
+					
+					<?php if ($text) { ?>		
+						<div class="column-text">
+							<?php echo $text; ?>							
+						</div>
+					<?php if ( $readmore && $link ): ?>
+						<div class="columnmore">
+							<a href="<?php echo $link; ?>" <?php echo $blank; ?>><?php echo $readmore ?> <i class="column-arrow"></i> </a>
+						</div>
+						<?php endif; ?>
+					<?php } ?>
+					
+				</div><!--column-image-->
+			<?php } ?>
+		</div><!-- column -->
+	<?php
+} // iced_mocha_singlecolumn_output()
+endif;
 
 /**
  * ------------------------------------------------------------------------

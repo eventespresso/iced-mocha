@@ -1,0 +1,54 @@
+<wpml-config> 
+    <admin-texts>
+        <key name="iced_mocha_settings">
+			<key name="iced_mocha_logoupload" />
+			<key name="iced_mocha_favicon" />
+		
+            <key name="iced_mocha_sliderimg1" />
+            <key name="iced_mocha_slidertitle1" />
+     	    <key name="iced_mocha_slidertext1" />
+           	<key name="iced_mocha_sliderlink1" />
+            <key name="iced_mocha_sliderimg2" />
+            <key name="iced_mocha_slidertitle2" />
+            <key name="iced_mocha_slidertext2" />
+            <key name="iced_mocha_sliderlink2" />
+            <key name="iced_mocha_sliderimg3" />
+            <key name="iced_mocha_slidertitle3" />
+            <key name="iced_mocha_slidertext3" />
+            <key name="iced_mocha_sliderlink3" />
+            <key name="iced_mocha_sliderimg4" />
+            <key name="iced_mocha_slidertitle4" />
+            <key name="iced_mocha_slidertext4" />
+            <key name="iced_mocha_sliderlink4" />
+            <key name="iced_mocha_sliderimg5" />
+            <key name="iced_mocha_slidertitle5" />
+            <key name="iced_mocha_slidertext5" />
+            <key name="iced_mocha_sliderlink5" />
+            <key name="iced_mocha_slidereadmore" />
+			
+            <key name="iced_mocha_columnstitle" />
+            <key name="iced_mocha_fronttext1" />
+            <key name="iced_mocha_fronttext3" />
+            <key name="iced_mocha_fronttext2" />
+            <key name="iced_mocha_fronttext4" />
+            <key name="iced_mocha_fronttext5" />
+            <key name="iced_mocha_fronttext6" />
+			
+            <key name="iced_mocha_excerptcont" />
+			
+            <key name="iced_mocha_social2" />
+            <key name="iced_mocha_social_title1" />
+            <key name="iced_mocha_social4" />
+            <key name="iced_mocha_social_title3" />
+            <key name="iced_mocha_social6" />
+            <key name="iced_mocha_social_title5" />
+            <key name="iced_mocha_social8" />
+            <key name="iced_mocha_social_title7" />
+            <key name="iced_mocha_social10" />
+            <key name="iced_mocha_social_title9" />
+
+            <key name="iced_mocha_copyright" />			
+			
+        </key>
+    </admin-texts>  
+</wpml-config>

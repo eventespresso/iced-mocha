@@ -6,6 +6,7 @@ jQuery(document).ready(function() {
 
 var uploadparent = 0;
  function media_upload( button_class) {
+    if (!window.wp || !window.wp.media || !window.wp.media.editor || !window.wp.media.editor.send || !window.wp.media.editor.send.attachment) return; 
     var _custom_media = true,
     _orig_send_attachment = wp.media.editor.send.attachment;
     jQuery('body').on('click',button_class, function(e) {
@@ -205,6 +206,13 @@ jQuery('#iced_mocha_columnType').trigger('change');
 //var iced_mocha_customcss = CodeMirror.fromTextArea(document.getElementById("iced_mocha_customcss"), { lineNumbers: true });
 //var iced_mocha_customjs = CodeMirror.fromTextArea(document.getElementById("iced_mocha_customjs"), { lineNumbers: true });
 
+/* Backwards compatibility for the accordion's current slide saving */
+var espresso_theme_active_slide = parseInt(jQuery('#iced_mocha_current').val());
+if (vercomp(jQuery.ui.version, '1.11.2')) {
+	 espresso_theme_active_slide = parseInt((espresso_theme_active_slide-1)/2);
+}
+
+
 // Create accordion from existing settings table
 	jQuery('.form-table').wrap('<div>');
 	jQuery(function() {
@@ -214,7 +222,7 @@ jQuery('#iced_mocha_columnType').trigger('change');
 				heightStyle: "content", // required in jQueryUI 1.10
 				collapsible: true,
 				navigation: true,
-				active: false
+				active: parseInt(espresso_theme_active_slide)
 				});
 	});
 
@@ -225,8 +233,93 @@ jQuery('#iced_mocha_columnType').trigger('change');
 	
 	googleFontChange('.googlefonts');
 	colorThingy();
+	
+	jQuery('#accordion h3').on('click',function() {
+		var clicked = parseInt(jQuery(this).attr('id').replace( /^\D+/g, ''));
+		var current = parseInt(jQuery('#iced_mocha_current').val().replace( /^\D+/g, ''));
+		if (clicked == current) jQuery('#iced_mocha_current').val('');
+		else jQuery('#iced_mocha_current').val(clicked);
+	});
+
+	jQuery("#main-options #accordion h2").each(function(){
+		jQuery(this).replaceWith("<h3>" + jQuery(this).html() + "</h3>");
+	});
 		
 });// ready
+
+/* Farbtastic colour selector handler */
+function startfarb(a,b) {
+	jQuery(b).css('display','none');
+	jQuery(b).farbtastic(a).addtitle({id: a});
+
+	jQuery(a).click(function() {
+			if(jQuery(b).css('display') == 'none')	{
+                                        			jQuery(b).parents('div:eq(0)').addClass('ui-accordion-content-overflow');
+                                                    jQuery(b).css({'display':'inline-block','position':'absolute',marginLeft:'100px',opacity:0}).animate({opacity:1,marginLeft:'0px'},150);
+                                                       }
+	});
+
+	jQuery(document).mousedown( function() {
+		if(jQuery(b).css('display') != 'none') setTimeout(function () { jQuery(b).css('display','none');},150);
+		jQuery(b).animate({opacity:0,marginLeft:'100px'},150, function(){ jQuery(b).parents('div:eq(0)').removeClass('ui-accordion-content-overflow'); });
+		/* todo: find a better way to remove class after the fade on IEs */
+	});
+}
+
+/* Help icon loader */
+function tooltip_terain() {
+jQuery('#accordion small').parent('div').append('<a class="tooltip"><img src="'+iced_mocha_help_icon+'" /></a>').
+	each(function() {
+	/*jQuery(this).children('a.tooltip').attr('title',jQuery(this).children('small').html() );*/
+	var tooltip_info = jQuery(this).children('small').html();
+	jQuery(this).children('.tooltip').tooltip({content : tooltip_info});
+     jQuery(this).children('.tooltip').tooltip( "option", "items", "a" );
+	/*jQuery(this).children('.tooltip').tooltip( "option", "show", "false");*/
+	jQuery(this).children('.tooltip').tooltip( "option", "hide", "false");
+	jQuery(this).children('small').remove();
+	if (!jQuery(this).hasClass('slmini') && !jQuery(this).hasClass('slidercontent') && !jQuery(this).hasClass('slideDivs')) jQuery(this).addClass('tooltip_div');
+	});
+}
+
+/* colour selector for old WP */
+function coloursel(el){
+	var id = "#"+jQuery(el).attr('id');
+	jQuery(id+"2").hide();
+	var bgcolor = jQuery(id).val();
+	if (bgcolor <= "#666666") { jQuery(id).css('color','#ffffff'); } else { jQuery(id).css('color','#000000'); };
+	jQuery(id).css('background-color',jQuery(id).val());
+}
+
+/* jQuery version comparison helper */
+function vercomp(ver, req) {
+    var v = ver.split('.');
+    var q = req.split('.');
+    for (var i = 0; i < v.length; ++i) {
+        if (q.length == i) { return true; } /* v is bigger */
+        if (parseInt(v[i]) == parseInt(q[i])) { continue; } /* nothing to do here, move along */
+        else if (parseInt(v[i]) > parseInt(q[i])) { return true; } /* v is bigger */
+        else { return false; } /* q is bigger */
+    }
+    if (v.length != q.length) { return false; } /* q is bigger */
+    return true; /* v = q */
+}
+
+/* farbtastic title addon function */
+(function($){
+        $.fn.extend({
+            addtitle: function(options) {
+                var defaults = {
+                    id: ''
+                }
+                var options = $.extend(defaults, options);
+            return this.each(function() {
+                    var o = options;
+					var title = jQuery(o.id).attr('title');
+                    if (title===undefined) { } else { jQuery(o.id+'2').children('.farbtastic').append('<span class="mytitle">'+title+'</span>'); }
+            });
+        }
+        });
+})(jQuery);
   
 // Columns image width hint
 function column_image_width_hint(total, colcount) {

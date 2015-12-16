@@ -8,19 +8,19 @@
 
 jQuery(document).ready(function() {
 
-// standard menu touch support for tablets
-	var isTouch = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch; // check touch support
-	jQuery('#access .menu > ul > li a').click(function(e){
-		var $link_id = jQuery(this).attr('href');
-		if (jQuery(this).parent().data('clicked') == $link_id) { // second touch
-			jQuery(this).parent().data('clicked', null);
-			return true;
-		}
-		else { // first touch
-			if (isTouch && (jQuery(this).parent().children('.sub-menu').length >0)) e.preventDefault();
-			jQuery(this).parent().data('clicked', $link_id);
-		}
-    });
+	/* Standard menu touch support for tablets */
+	var custom_event = ('ontouchstart' in window) ? 'touchstart' : 'click'; // check touch support 
+	var ios = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+		jQuery('#access .menu > ul > li a').on('click', function(e){
+			var $link_id = jQuery(this).attr('href');
+			if (jQuery(this).parent().data('clicked') == $link_id) { // second touch 
+				jQuery(this).parent().data('clicked', null);
+			}
+			else { // first touch 
+				if (custom_event != 'click' && !ios && (jQuery(this).parent().children('.sub-menu').length >0)) {e.preventDefault();}
+				jQuery(this).parent().data('clicked', $link_id);
+			}
+		}); 
 
 // Back to top button animation
 	var offset = 500;
@@ -47,9 +47,9 @@ jQuery(document).ready(function() {
 
 // Menu animation
 
-
-
-jQuery("#access ul ul").css({display: "none"}); // Opera Fix
+/* Menu animation */
+jQuery("#access ul ul").css({display: "none"}); /* Opera Fix */
+jQuery("#access > .menu ul li > a:not(:only-child)").attr("aria-haspopup","true");/* IE10 mobile Fix */
 
 jQuery("#access li").hover(function(){
 	jQuery(this).find('ul:first').stop();
@@ -160,6 +160,13 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 }); 
 // end document.ready
 
+/* Mobile Menu v2 */
+function iced_mocha_mobilemenu_init() {
+  var state = false;
+  jQuery("#nav-toggle").click(function(){
+    jQuery("#access").slideToggle(function(){ if (state) {jQuery(this).removeAttr( 'style' )}; state = ! state; } );
+  });
+}
 
 // Columns equalizer, used if at least one sidebar has a bg color
 function equalizeHeights(){
@@ -172,8 +179,11 @@ function equalizeHeights(){
 
 }
 
-// Force footer at bottom of window
-jQuery(document).ready(function() {
+/* Force footer at bottom of window 
+ Should not work on the Presentation Page 
+ Disabled for now
+ */
+/*jQuery(document).ready(function() {
 var docHeight = jQuery(window).height();
 var footerHeight = jQuery('#footer2').height();
 var footerTop = jQuery('#footer2').position().top + footerHeight;
@@ -182,7 +192,7 @@ if (footerTop < docHeight) {
     jQuery('#forbottom').css('minHeight',(forbottom + docHeight  - footerTop -35) + 'px');
 }
 });
-
+*/
 /*!
 * FitVids 1.0
 *
@@ -260,7 +270,7 @@ if (footerTop < docHeight) {
 // (indicating the use of another browser).
 function getInternetExplorerVersion()
 {
-  var rv = -1; // Return value assumes failure.
+  var rv = -1; /* assume not IE. */
   if (navigator.appName == 'Microsoft Internet Explorer')
   {
     var ua = navigator.userAgent;

@@ -1,17 +1,14 @@
 /*
-Theme Name: Iced Mocha Theme
+Theme Name: iced_mocha
+@update	1.2.4
 */
 
 
-/*
-RTL Basics
-*/
+/* RTL Basics */
 
 body {
 	direction:rtl;
-	unicode-bidi:embed;
-}
-
+	unicode-bidi:embed; }
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -22,88 +19,109 @@ body {
 
 /* Text elements */
 ul,ol {
-	margin-left:0;
-	margin-right:1.5em;
-}
+	margin-right:0;
+	margin-left:1.5em; }
 
-.widget-area ul ul li {
-}
-#calendar_wrap {
-    margin-right: 10px;
-}
+.widget-area ul ul li { }
+#calendar_wrap { margin-right: 10px; }
 
 
 /* Text meant only for screen readers */
 .screen-reader-text {
-	left: 9000px;
+	right: 9000px;
+	left: auto;
 	text-indent:-9000px;
-	overflow:hidden;
-}
+	overflow:hidden; }
 
 
 /* =Header
 -------------------------------------------------------------- */
 
 #site-title {
-	float: right;
-    margin-right: 20px;
-    padding-right: 20px;
-}
+	float: right; }
 
 #site-description {
-	clear: left;
-	float: right;
-}
+	clear: right;
+	float: right; }
 
 /* =Menu
 -------------------------------------------------------------- */
+/* =Menu -PRIMARY
+-------------------------------------------------------------- */
 
-#access .menu-header,
-div.menu {
-}
-#access .menu-header li,
-div.menu li{
-}
+#access > .menu > ul > li > a:not(:only-child) span:after {
+    left: 5px;
+	right: auto; }
 
-#access ul ul {right:0;margin-right:0;}
-#access > .menu > ul > li > ul:before {left:inherit;right:10px;}
-#access ul li {}
-#access ul ul ul {left: inherit;right: 100% }
+#access > .menu > ul > li > a:not(:only-child) span {
+padding-right: 13px;
+padding-left: 18px; }
+
+#access ul ul {
+	margin-left:auto;
+	margin-right:0px; }
+
+#access > .menu > ul > li > ul:before {
+ left: auto;
+ right:10px; }
+
 #access ul ul ul:before {
-	left:inherit;right:-6px;
-	border-left:6px solid #2D2D2D;
-	border-right:0;
-}
+ left: auto;
+ right: -6px; }
+
+#access ul ul li { /* level 2 */
+	float:right; }
+
+#access ul ul ul {
+	left: auto;
+	right: 100%; }
+
+
+/* =Menu -SECONDARY
+-------------------------------------------------------------- */
+
+.topmenu { float:left; }
+
+.topmenu ul li { float:right; }
+
+.footermenu { float:right; }
+
+.footermenu > ul {
+	float:right;
+	margin-left:auto;
+	margin-right:20px; }
+
+.footermenu ul li { float:right; }
+
+.footermenu ul li:after {
+margin-left:auto;
+margin-right:10px; }
+
 
 /* =Content
 -------------------------------------------------------------- */
 
-#content table {
-	text-align: right;
-}
+#content table { text-align: right; }
+
+#content table tr td img { max-width:none; }
 
 #content .format-status .entry-meta2 {
 	clear:left;
 	float:right;
 	margin-right:0;
-	padding-right:0;
-}
+	padding-right:0; }
 
-.status_content {
-float:right;
-}
+.status_content { float:right; }
 
 .entry-meta span, .entry-meta2 span{
 	float: right;
 	padding-left:6px;
-	margin-right:0;
-}
+	margin-right:0; }
 
 span.edit-link, .comments-link  {
 	float:left;
 	margin-left:0;
-	margin-right:10px;
-}
+	margin-right:10px; }
 
 .comments-link {float: left; }
 
@@ -111,161 +129,181 @@ span.edit-link, .comments-link  {
 
 #content h3.entry-format { float:right; }
 
-#content .format-status h3.entry-format {margin-left:10px;}
+#content .format-status h3.entry-format { margin-left:10px; }
 
 
 .entry-content input.file,
 .entry-content input.button {
 	margin-left: 24px;
-	margin-right:0;
-}
+	margin-right:0; }
+	
 .entry-content blockquote.left {
 	float: right;
 	margin-right: 0;
 	margin-left: 24px;
-	text-align: left;
-}
+	text-align: left; }
+	
 .entry-content blockquote.right {
 	float: left;
 	margin-right: 24px;
 	margin-left: 0;
-	text-align: right;
-}
+	text-align: right; }
+	
 #entry-author-info #author-avatar {
 	float: right;
-	margin: 0 0 0 -104px;
-}
+	margin: 0 0 0 -104px; }
+	
 #entry-author-info #author-description {
 	float: right;
-	margin: 0 104px 0 0;
-}
+	margin: 0 104px 0 0; }
+	
+.pagination span, 
+.pagination a,
+#respond .required  { float:right; }
 
-.sticky hgroup {
-}
+#respond label, #commentform { float:right; }
 
-.pagination span, .pagination a {
-float:right;
-}
+#commentform label { width:15%; }
 
-#respond label {
-float:right;
-}
-#commentform {
-float:right;
-}
+#respond .comment-notes { 
+	float:right;
+	text-align:right; }
 
-#commentform label {
-width:15%;
-}
+/* Slider 
+-------------------------------------------------------------- */
 
-#respond .required {
-float:right;
-}
+.nivo-caption {
+	left: 60px;
+	right: inherit; }
 
-#respond .comment-notes {
-float:right;
-text-align:right;
-}
+
 /* Gallery listing
 -------------------------------------------------------------- */
 
 .category-gallery .gallery-thumb {
 	float: right;
  	margin-left:20px;
-	margin-right:0;
-}
+	margin-right:0; }
 
 
 /* Images
 -------------------------------------------------------------- */
 
-#content .gallery .gallery-caption {
-	margin-right: 0;
-}
+#content .gallery .gallery-caption { 	margin-right: 0; }
 
-#content .gallery .gallery-item {
-	float: right;
-}
-
-#content .entry-title {
-	float:none;
-}
+#content .gallery .gallery-item { float: right; }
+ 
+#content .entry-title { float:none; }
 
 /* =Navigation
 -------------------------------------------------------------- */
-.nav-previous {
-text-align:left;
-}
-.nav-next {
-}
+.nav-previous { text-align:left; }
+.nav-next { }
 
 /* =Comments
 -------------------------------------------------------------- */
 
 .commentlist .avatar {
 	right: 0;
-	left: auto;
-}
-.comment-author .says, #comments .pingback .url  {
-	font-style: normal;
-}
+	left: auto; }
+	
+.comment-author .says, #comments .pingback .url  { font-style: normal; }
 
 /* Comments form */
-.children #respond {
-	margin: 0 0 0 48px;
-}
+.children #respond { margin: 0 0 0 48px; }
 
 /* =Widget Areas
 -------------------------------------------------------------- */
 
-.widget-title {
-text-align:right;
-padding-left:0 !important;
-padding-right:20px !important;
-}
+#header-widget-area {
+	right: inherit; 
+	left: 0; }
 
-.widget-area ul {
-	margin-right: 0;
-}
+.widget-title {
+	text-align:right;
+	padding-left:0 !important;
+	padding-right:20px !important; }
+
+.widget-area ul { margin-right: 0; }
+
 .widget-area ul ul {
 	margin-right: 1.3em;
-	margin-left: 0;
-}
-#wp-calendar caption {
-	text-align: right;
-}
-#wp-calendar tfoot #next {
-	text-align: left;
-}
+	margin-left: 0; }
+	
+#wp-calendar caption { text-align: right; }
+
+#wp-calendar tfoot #next { 	text-align: left; }
 
 /* Main sidebars */
 #main .widget-area ul {
 	margin-right: 0;
-	padding: 0 0 0 20px;
-}
+	padding: 0 0 0 20px; }
+	
 #main .widget-area ul ul {
 	margin-right: 1.3em;
-	margin-left: 0;
-}
+	margin-left: 0; }
 
 /* =Footer
 -------------------------------------------------------------- */
-#site-generator {
-	font-style:normal;
-}
+#site-generator { font-style:normal; }
+
 #site-generator a {
 	background-position: right center;
 	padding-right: 20px;
-	padding-left: 0;
+	padding-left: 0; }
+
+#header-container > div#sheader { 
+	left: 0; 
+	right: auto; }
+	
+.theme-default .nivo-controlNav:before, 
+.theme-default .nivo-controlNav:after { 
+	display: block; }
+	
+.columnmore { 
+	float: left; 
+	left: -10px; 
+	right: inherit; }
+	
+.reply a { text-align:left; }
+
+.commentlist .avatar,
+.avatar-container,
+.icon-replies { 
+	float:right; }
+	
+.commentlist .children { 
+	margin-left: 0; 
+	margin-right: 20px; }
+	
+.icon-angle-right:before { content: '\e833'; }
+
+#toTop {
+	-moz-border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	border-radius:  4px 0 0 4px; }
+	
+#nav-toggle { text-align: right !important; }
+
+#container.two-columns-right #secondary { 
+	float: left !important; }
+
+#container.two-columns-right #content {
+	float: right !important; }
+	
+/* =Magazine Layout
+-------------------------------------------------------------- */
+.magazine-layout #content article.post, .magazine-layout.search #content article {
+    float: right;
+    margin-right: 0;
+}
+.magazine-layout #content article:nth-of-type(2n+1) {
+    margin-left: 4%;
 }
 
-#header-container > div#sheader { left: 0; right: auto; }
-.theme-default .nivo-controlNav:before, .theme-default .nivo-controlNav:after { display: block; }
-.columnmore { float: left; left: -10px; right: inherit; }
-.reply a { text-align:left; }
-.commentlist .avatar { float: right; }
-.avatar-container {float:right;}
-.icon-replies {float:right;}
-.commentlist .children { margin-left: 0; margin-right: 20px; }
-.icon-angle-right:before {content: '\e833';}
+/* mobile menu sub-sub items fix */
+@media screen and (max-width: 640px) {
+	body #access > .menu ul ul ul { right: 0; left: initial; }
+}
 
+/* NIF */

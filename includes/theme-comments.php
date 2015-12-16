@@ -19,7 +19,15 @@ if ( ! function_exists( 'iced_mocha_comment' ) ) :
 function iced_mocha_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
+		case 'pingback'  :
+		case 'trackback' :
+	?>
+	<li class="post pingback">
+		<p><?php _e( 'Pingback: ', 'iced_mocha' ); ?><?php comment_author_link(); ?><?php edit_comment_link( __('(Edit)', 'iced_mocha'), ' ' ); ?></p>
+	<?php
+		break;
 		case '' :
+		default : 
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 		<div id="comment-<?php comment_ID(); ?>">

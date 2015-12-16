@@ -2,29 +2,31 @@
 
 @import url("../../fonts/fontfaces.css");
 
- /* Farbtastic overwrites */
+/* Farbtastic overwrites */
 
 .farbtastic {
- position: absolute !important;
- z-index:2;
-margin-left:10px;
-margin-top:-100px;
-background-color:#F7F7F7;
-border:1px solid #CCC;
+	position: absolute !important;
+	z-index: 2;
+	margin-left: 10px;
+	margin-top: -100px;
+	background-color: #F7F7F7;
+	border: 1px solid #CCC;
 }
 .farbtastic * {
-  position: absolute;
-  cursor: crosshair;
+	position: absolute;
+	cursor: crosshair;
 }
-.farbtastic, .farbtastic .wheel {
-  width: 195px;
-  height: 195px;
+.farbtastic, 
+.farbtastic .wheel {
+	width: 195px;
+	height: 195px;
 }
-.farbtastic .color, .farbtastic .overlay {
-  top: 47px;
-  left: 47px;
-  width: 101px;
-  height: 101px;
+.farbtastic .color, 
+.farbtastic .overlay {
+	top: 47px;
+	left: 47px;
+	width: 101px;
+	height: 101px;
 }
 
 .farbtastic span.mytitle {
@@ -46,7 +48,6 @@ border:1px solid #CCC;
 }
 
 /* end of Farbtastic overwrites  */
-
 
 #main-options  {
 width:100%;
@@ -323,17 +324,35 @@ padding:5px 0;
 opacity:1;
 }
 
-.presets {
-width:auto;
-padding:0;
-margin-right:10px;
-margin-bottom:5px;
-border-width:5px !important;
+.images.presets {
+	width:auto;
+	padding:0;
+	margin-right:30px;
+	margin-bottom:10px;
+	background:#FFF;
+	-moz-box-shadow:2px 0px 1px #E8E8EA;
+	-webkit-box-shadow:2px 0px 1px #E8E8EA;
+	box-shadow:2px 0px 1px #E8E8EA;
+	border:0;
+	border-bottom:2px solid #BBB;
+	padding:7px;
 }
 
-.presets:hover {
-background:#EEE;
-border-width:5px !important;
+.images.presets img {
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+.images.presets:hover {
+	border:0 ;
+	background:#FFF ;
+	border-bottom:2px solid #F00;
+	opacity:1 ;
+}
+
+.layouts img, .images img {
+	pointer-events: none; /* IE11 FIX */
 }
 
 
@@ -428,9 +447,9 @@ box-shadow:0 0 2px #FFF inset;
 
 
 .borderful {
-border-color:#45B5C4 !important;
-background:rgba(146,210,220,.3) !important;
-opacity:1;
+	border-color:#2595A4 !important;
+	background:rgba(146,210,220,.4) !important;
+	opacity:1;
 }
 
  label.layouts.checkedClass,  label.images.checkedClass, label.pins.checkedClass, label.sidebullets.checkedClass {

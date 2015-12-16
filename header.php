@@ -36,6 +36,7 @@
 				<?php espresso_theme_header_widgets_hook(); ?>
 				<div style="clear:both;"></div>
 			</div><!-- #branding -->
+			<a id="nav-toggle"><span>&nbsp;</span></a>
 			<nav id="access" role="navigation">
 				<?php espresso_theme_access_hook();?>
 			</nav><!-- #access -->

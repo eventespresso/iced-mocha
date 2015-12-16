@@ -17,6 +17,7 @@ get_header(); ?>
 		<section id="container" class="one-column">
 	
 			<div id="content" role="main">
+				<?php espresso_theme_before_content_hook(); ?>
 
 				<?php get_template_part( 'content/content', 'page'); ?>
 

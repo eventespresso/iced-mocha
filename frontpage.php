@@ -10,7 +10,8 @@
 //wp_enqueue_style( 'iced_mocha-frontpage' );
 
 function iced_mocha_excerpt_length_slider( $length ) {
-	return 50;
+	$iced_mochas = iced_mocha_get_theme_options();
+	return ceil($iced_mochas['iced_mocha_excerptwords']/2);
 }
 
 function iced_mocha_excerpt_more_slider( $more ) {
@@ -82,13 +83,14 @@ function iced_mocha_excerpt_more_slider( $more ) {
 	 endif; // slidenumber>0
 
 	 add_filter( 'excerpt_length', 'iced_mocha_excerpt_length_slider', 999 );
+	 remove_filter( 'get_the_excerpt', 'iced_mocha_custom_excerpt_more' ); // remove theme continue-reading on slider posts
 	 add_filter( 'excerpt_more', 'iced_mocha_excerpt_more_slider', 999 );
      // switch for reading/creating the slides
      switch ($iced_mocha_slideType) {
 		  case 'Disabled':
 			   break;
           case 'Custom Slides':
-               for ($i=1;$i<=5;$i++):
+               for ($i=1;$i<=10;$i++):
                     if(${"iced_mocha_sliderimg$i"}):
                          $slide['image'] = esc_url(${"iced_mocha_sliderimg$i"});
                          $slide['link'] = esc_url(${"iced_mocha_sliderlink$i"});
@@ -223,37 +225,32 @@ if($iced_mocha_fronttext3) {?><div id="front-text3"> <blockquote><?php echo do_s
 	
 
 
-function iced_mocha_columns_output($columns,$nr_columns,$readmore){ 
- $counter=0; ?> 
- <div id="front-columns"><?php 
-	foreach($columns as $column): 
-		if($column['image']) : $counter++;?>  
-		<div class="column<?php echo ($counter%$nr_columns)?$counter%$nr_columns:$nr_columns; ?>"> 
-			<a  href="<?php echo esc_url($column['link']) ?>">	 
-				<?php if ($column['title']) { echo "<h3 class='column-header-image'>".$column['title']."</h3>"; } ?>
-			</a>
-					
-			<?php if ($column['image']) {	?>
-				<div class="column-image">
-					<div class="column-image-inside">	</div>
-						<img  src="<?php echo esc_url($column['image']) ?>" id="columnImage<?php echo $counter; ?>" alt="" />
-						
-					<?php if ($column['text']) { ?>		
-						<div class="column-text">
-							<?php echo esc_attr($column['text']); ?>							
-						</div>
-					<?php if($readmore && $column['link'] ): ?>
-						<div class="columnmore">
-							<a href="<?php echo esc_url($column['link']) ?>"><?php echo esc_attr($readmore) ?> <i class="column-arrow"></i> </a>
-						</div>
-						<?php endif; ?>
-					<?php } ?>
-				</div><!--column-image-->
-			<?php } ?>
-		</div><?php endif; // if image
-	endforeach; ?>
-</div> <?php 
-} // iced_mocha_columns_readmore
+function iced_mocha_columns_output($columns,$nr_columns,$readmore){
+  $counter=0;
+  $iced_mochas = iced_mocha_get_theme_options();
+    foreach ($iced_mochas as $key => $value) { ${"$key"} = $value; }
+  ?>
+ <div id="front-columns"> 
+ <?php
+  foreach($columns as $column):
+    if($column['image']) :
+      $counter++;
+      if (!isset($column['blank'])) $column['blank'] = 0;
+      $coldata = array(
+        'colno' => (($counter%$nr_columns)?$counter%$nr_columns:$nr_columns),
+        'counter' => $counter,
+        'image' => esc_url($column['image']),
+        'link' => esc_url($column['link']),
+        'blank' => ($column['blank']?'target="_blank"':''),
+        'title' =>  wp_kses_data($column['title']),
+        'text' => wp_kses_data($column['text']),
+        'readmore' => wp_kses_data($readmore),
+      );
+      iced_mocha_singlecolumn_output($coldata);
+    endif;
+  endforeach; ?>
+</div><?php
+} // iced_mocha_columns()
 
 
 // Second FrontPage title

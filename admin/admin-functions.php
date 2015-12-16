@@ -56,7 +56,7 @@ if ( isset( $_POST['iced_mocha_export'] ) ){
 function iced_mocha_import_form(){
 
     $bytes = apply_filters( 'import_upload_size_limit', wp_max_upload_size() );
-    $size = wp_convert_bytes_to_hr( $bytes );
+    $size = size_format( $bytes );
     $upload_dir = wp_upload_dir();
     if ( ! empty( $upload_dir['error'] ) ) :
         ?><div class="error"><p><?php _e('Before you can upload your import file, you will need to fix the following error:', 'iced_mocha'); ?></p>

@@ -42,9 +42,9 @@ function iced_mocha_onload() {
 jQuery(document).ready(function(){
 <?php if ($iced_mocha_mobile=="Enable") { // If mobile view is enabled ?>
 	// Add select navigation to small screens
-     jQuery("#access > .menu > ul").tinyNav({
-          	header: ' = <?php _e('Menu','iced_mocha'); ?> = ' // Show header instead of the active item
-			});
+	/* enable mobile menu handle */
+          	//header: ' = <?php _e('Menu','iced_mocha'); ?> = ' // Show header instead of the active item
+	iced_mocha_mobilemenu_init();
 <?php } ?>
 });
 
@@ -198,7 +198,7 @@ function iced_mocha_breadcrumbs() {
 	$separator = "<i class='icon-angle-right'></i> ";
 	if (is_page() && !is_front_page() || is_single() || is_category() || is_archive()) {
 		echo '<div class="breadcrumbs">';
-        echo '<a href="'.get_bloginfo('url').'"><i class="icon-homebread"></i></a>'.$separator ;
+        echo '<a href="'.home_url().'"><i class="icon-homebread"></i></a>'.$separator ;
 
         if (is_page()) {
 
@@ -223,6 +223,10 @@ function iced_mocha_breadcrumbs() {
             $category = get_the_category();
             echo ''.$category[0]->cat_name.'';
         }
+		
+		if (is_tag()) {
+			echo ''.__('Tag','iced_mocha').''.$separator.single_tag_title('', false);
+		} 
 
         // Current page
         if (is_page() || is_single()) {
@@ -374,6 +378,7 @@ function iced_mocha_ajax_get_latest_posts($count,$categName){
 endif;
 
 
+if ( ! function_exists( 'iced_mocha_get_sidebar' ) ) :
 function iced_mocha_get_sidebar() {
 	$iced_mochas = iced_mocha_get_theme_options();
 	foreach ($iced_mochas as $key => $value) { ${"$key"} = $value ; }
@@ -396,7 +401,9 @@ function iced_mocha_get_sidebar() {
 		break;
 	}
 } // iced_mocha_get_sidebar()
+endif;
 
+if ( ! function_exists( 'iced_mocha_get_layout_class' ) ) :
 function iced_mocha_get_layout_class() {
 	$iced_mochas = iced_mocha_get_theme_options();
 	foreach ($iced_mochas as $key => $value) { ${"$key"} = $value ; }
@@ -410,6 +417,7 @@ function iced_mocha_get_layout_class() {
 		default: return "one-column"; break;
 	}
 } // iced_mocha_get_layout_class()
+endif;
 
 
 /** 
@@ -488,7 +496,7 @@ function espresso_theme_hex2rgb($hex) {
         return implode(",", $rgb); // returns the rgb values separated by commas
    else: return "";  // input string is not a valid hex color code
    endif;
-} // espresso_theme_espresso_theme_hex2rgb()
+} // espresso_theme_hex2rgb()
 
 
 function espresso_theme_hexadder($hex,$inc) {
@@ -517,7 +525,7 @@ function espresso_theme_hexadder($hex,$inc) {
 		return $newhex;
    else: return "";  // input string is not a valid hex color code
    endif;
-} // espresso_theme_espresso_theme_hex2rgb()
+} // espresso_theme_hex2rgb()
 
 /*
 Toggle dates
