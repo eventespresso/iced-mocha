@@ -20,8 +20,30 @@ get_header();
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
-					//  Include the post TYPE-specific template for the content.
-					espresso_get_template_part( 'content/espresso/content', 'espresso_events' );
+
+					$event_class = has_excerpt( $post->ID ) ? ' has-excerpt' : '';
+					$event_class = apply_filters( 'FHEE__content_espresso_events__event_class', $event_class );
+					
+					do_action( 'AHEE_event_details_before_post', $post ); 
+					?>
+
+					<article id="post-<?php the_ID(); ?>" <?php post_class( $event_class ); ?>>
+
+						<div id="espresso-event-header-dv-<?php echo $post->ID;?>" class="espresso-event-header-dv">
+							<?php espresso_get_template_part( 'content/espresso/content', 'espresso_events-thumbnail' ); ?>
+							<?php espresso_get_template_part( 'content/espresso/content', 'espresso_events-header' ); ?>
+						</div>
+
+						<div class="espresso-event-wrapper-dv">
+							<?php the_content(); ?>
+							<footer class="event-meta">
+								<?php do_action( 'AHEE_event_details_footer_top', $post ); ?>
+								<?php do_action( 'AHEE_event_details_footer_bottom', $post ); ?>
+							</footer>
+						</div>
+					</article>
+					
+					<?php
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) {
 						comments_template();
