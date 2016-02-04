@@ -1,4 +1,8 @@
 #Iced Mocha Theme
+
+[![Latest Tag](https://img.shields.io/badge/Version-1.0.5-blue.svg?style=plastic)](https://github.com/eventespresso/iced-mocha/releases)
+[![WordPress](https://img.shields.io/badge/WordPress-v4.4.x+%20tested-brightgreen.svg?style=plastic)](https://wordpress.org/)
+
 ![iced-mocha-logo](http://ee-logos.s3.amazonaws.com/Iced-Mocha-Logo-300x141.png)
 
 The Iced Mocha Theme by Event Espresso is responsive, packed with features, and fully integrated with Event Espresso 4. Iced Mocha started as a theme for our Event Espresso test drive website to showcase the power and flexibilty of our <a href="http://eventespresso.com/">Event Espresso</a> plugin for WordPress. 
@@ -7,7 +11,7 @@ After using Iced Mocha for a few weeks, we figured that our customers may find i
 
 ##Support and Customizations
 
-This is a free theme and is not currently supported for free. You are welcome to <a href="https://github.com/eventespresso/iced-mocha/issues/new">create</a> <a href="https://github.com/eventespresso/iced-mocha/issues?state=open">issue tickets</a> within Github or ask questions in our <a href="http://eventespresso.com/forum/event-espresso-public/">community support forums</a>, but you are not gauranteed to get an answer without paying for support.
+This is a free theme and is not currently supported for free. You are welcome to <a href="https://github.com/eventespresso/iced-mocha/issues/new">create</a> <a href="https://github.com/eventespresso/iced-mocha/issues?state=open">issue tickets</a> within Github or ask questions in our <a href="http://eventespresso.com/forum/event-espresso-public/">community support forums</a>, but you are not guaranteed to get an answer without paying for support.
 
 **Paying for Support**<br>
 If you would like to pay for support, we request that you please purchase an Event Espresso <a href="http://eventespresso.com/pricing/?ee_ver=ee4">plugin support license</a> and a <a href="http://eventespresso.com/product/premium-support-token/">support token</a>.
