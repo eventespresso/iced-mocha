@@ -1,6 +1,6 @@
 #Iced Mocha Theme
 
-[![Latest Tag](https://img.shields.io/badge/Version-1.0.5-blue.svg?style=plastic)](https://github.com/eventespresso/iced-mocha/releases)
+[![Latest Tag](https://img.shields.io/badge/Version-1.0.6-blue.svg?style=plastic)](https://github.com/eventespresso/iced-mocha/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-v4.4.x+%20tested-brightgreen.svg?style=plastic)](https://wordpress.org/)
 
 ![iced-mocha-logo](http://ee-logos.s3.amazonaws.com/Iced-Mocha-Logo-300x141.png)
