@@ -37,3 +37,31 @@ function espresso_pagination() {
 	));
 	echo ! empty( $pagination ) ? '<div class="ee-pagination-dv clear">' . $pagination . '</div>' : '';
 }
+
+/**
+ * 	espresso_locate_template_custom_directory
+ *
+ *  @access 	public
+ *  @return 	array		array of full template paths.
+ */
+function espresso_locate_template_custom_directory( $full_template_paths, $template_filename ) {	
+
+	//Build the new full template path to check within iced-mocha
+	$theme_espresso_template_dir = get_stylesheet_directory() . '/content/espresso/' . $template_filename;
+
+	//Add the new template path to the paths check by locate_template()
+	array_unshift( $full_template_paths, $theme_espresso_template_dir );
+
+	//Debug line - output all of template paths EE will search.
+	//d($full_template_paths);
+	
+	return $full_template_paths;
+
+}
+add_filter( 'FHEE__EEH_Template__locate_template__full_template_paths', 'espresso_locate_template_custom_directory', 10, 2 );
+
+//Use the custom template order when using single-espresso_events.php template file.
+add_filter( 'FHEE__EED_Event_Single__template_include__allow_custom_selected_template', '__return_true' );
+
+//Use the custom template order when using archive-espresso_events.php template file.
+add_filter( 'FHEE__EED_Event_Archive__template_include__allow_custom_selected_template', '__return_true' );
