@@ -165,6 +165,7 @@
 	.magazine-layout #content article.post, .magazine-layout .search #content article {margin:5px 0;width:100%;}
 	#forbottom #front-columns > div { width:auto;max-width:98%;float:none;margin:25px auto !important;clear:both;}
 	.column-image img {}
+	.display-tckt-slctr-tkt-details { display: block; }
 }
 
 /* used to be 400px */
