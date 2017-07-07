@@ -172,6 +172,9 @@ class Iced_Mocha_EEW_Upcoming_Events  extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
+		if ( ! class_exists( 'EE_Registry' ) ) {
+			return;
+		}
 		EE_Registry::instance()->load_helper( 'Form_Fields' );
 		EE_Registry::instance()->load_class( 'Question_Option', array(), FALSE, FALSE, TRUE );
 		// Set up some default widget settings.
@@ -340,6 +343,9 @@ class Iced_Mocha_EEW_Upcoming_Events  extends WP_Widget {
 	public function widget( $args, $instance ) {
 
 		global $post;
+		if ( ! class_exists( 'EE_Registry' ) ) {
+			return;
+		}
 		// make sure there is some kinda post object
 		if ( $post instanceof WP_Post ) {
 			// but NOT an events archives page, cuz that would be like two event lists on the same page
@@ -428,5 +434,6 @@ class Iced_Mocha_EEW_Upcoming_Events  extends WP_Widget {
 
 }
 // Register and load the widget
-add_action( 'widgets_init', create_function('', 'return register_widget("Iced_Mocha_EEW_Upcoming_Events");') );
-
+if ( defined( 'EVENT_ESPRESSO_MAIN_FILE' ) ) {
+	add_action( 'widgets_init', create_function('', 'return register_widget("Iced_Mocha_EEW_Upcoming_Events");') );
+}
