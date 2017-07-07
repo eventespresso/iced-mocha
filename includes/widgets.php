@@ -342,10 +342,12 @@ class Iced_Mocha_EEW_Upcoming_Events  extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 
-		global $post;
 		if ( ! class_exists( 'EE_Registry' ) ) {
 			return;
 		}
+
+		global $post;
+
 		// make sure there is some kinda post object
 		if ( $post instanceof WP_Post ) {
 			// but NOT an events archives page, cuz that would be like two event lists on the same page
